@@ -1,3 +1,22 @@
+@import "../component/carousel";
+
+@include yo-carousel(
+
+){
+  height: 100%;
+  ul.cont {
+    height: 100%;
+    li {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+  }
+};
+
+
+
 .m-board {
   div.swiper {
   	width:100%;
@@ -8,6 +27,6 @@
     }
   }
   ul{
-  
+
   }
 }

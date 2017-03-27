@@ -561,7 +561,7 @@ _reactDom2.default.render(_react2.default.createElement(
   _react2.default.createElement(
     _reactRouter.Route,
     { path: '/', component: _index2.default },
-    _react2.default.createElement(_reactRouter.IndexRoute, { component: _board2.default }),
+    _react2.default.createElement(_reactRouter.IndexRedirect, { to: '/board', component: _board2.default }),
     _react2.default.createElement(_reactRouter.Route, { path: 'board', component: _board2.default }),
     _react2.default.createElement(_reactRouter.Route, { path: 'kind', component: _kind2.default }),
     _react2.default.createElement(_reactRouter.Route, { path: 'cart', component: _cart2.default }),
