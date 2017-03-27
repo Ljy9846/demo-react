@@ -1,0 +1,19 @@
+@import "../fragment/yo-header";
+
+#root{
+	height: 100%;
+}
+
+
+@font-face {
+  font-family: yofont;
+  src: url(/iconfont/iconfont.woff) format("woff"),
+  url(/iconfont/iconfont.ttf) format("truetype");
+}
+
+@include yo-header(
+  $bgcolor: #ffee11,
+  $border-width: 0,
+  $item-ico-color: #914e07,
+  $font-size: 0.16rem
+)
