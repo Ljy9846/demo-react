@@ -1,0 +1,66 @@
+.m-index{
+	@include flexbox();
+	@include flex-direction(column);
+	height: 100%;
+	header{
+		height: 0.44rem;
+		.regret,.affirm{
+			color: #914e07;
+		}
+		input{
+			color: #000;
+		}
+		input{
+			border:none;
+			border-radius:0.05rem;
+			font-size:0.15rem;
+			background: #fff;
+			padding: 0rem 0.1rem;
+			line-height:0.3rem;
+			font-size: 0.14rem;
+		}
+	}
+	section{
+		background: gray;
+		flex:1;
+	}
+	footer{
+		height: 0.5rem;
+		background: #fff;
+		@include border(1px 0 0 0,#ccc);
+		ul{
+			height: 100%;
+			@include flexbox();
+			li{
+				@include flex();
+          		a{
+          			height: 100%;
+					@include flexbox();
+					@include flex-direction(column);
+					
+					@include align-items(center);
+	          		@include justify-content(center);
+	          		i, b {
+			        	color: rgba(0, 0, 0, 0.5)
+			        }
+			        i {
+			        	font-size: 0.25rem;
+			        	line-height: 0.25rem;
+						color: #914e07;
+			        }
+			        b {
+			        	font-weight: normal;
+			        	font-size: 0.12rem;
+						color: #914e07;
+			        	// @include transform(scale(0.5));
+			        }
+			        &.active i,
+			        &.active b {
+			        	font-weight: bold;
+			        	color: rgba(145, 78, 7, 1)
+			        }
+          		}
+			}
+		}
+	}
+}
