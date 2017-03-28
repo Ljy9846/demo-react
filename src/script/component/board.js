@@ -2,60 +2,87 @@ import React from "react"
 import Carousel from '../../component_dev/carousel/src/'
 
 
-class Board extends React.Component {
-	constructor(props) {
-    super(props)
-    this.state = {
-      swiperList: [<div/>]
-    }
-  }
-	render() {
-		return (
+class Board extends React.Component{
+	constructor (props) {
+	    super(props)
+	    this.state = {
+	      bannerlist: [<div/>],
+	      homenav:[],
+	      newlist:[],
+	      productlist:[]
+	    }
+	}
+	render(){
+		return(
 			<div className="m-board">
 				<div className="swiper">
-					<Carousel autoplay={true}>
-            {this.state.swiperList}
-          </Carousel>
-        </div>
-        <ul>
-          <li>
-            <img src="./images/nav4.png" />
-            <p></p>
-          </li>
-          <li>
-            <img />
-            <p></p>
-          </li>
-          <li>
-            <img />
-            <p></p>
-          </li>
-          <li>
-            <img />
-            <p></p>
-          </li>
-          <li>
-            <img />
-            <p></p>
-          </li>
-        </ul>
+					<Carousel>
+			            {this.state.bannerlist}
+			        </Carousel>
+				</div>
+				<div className="homenav">
+					<ul>
+						{
+							this.state.homenav.map(function(item){
+								return(
+									<li key={item.id}>
+										<img src={item.icon}/>
+										<p>{item.label}</p>
+									</li>
+								)
+							})
+						}
+					</ul>
+				</div>
+				<div className="new">
+					{
+						this.state.newlist.map(function(ite){
+							return(
+								<a key={ite.id} href='{item.jump_url}'>
+									<img src={ite.icon}/>
+								</a>
+							)
+						})
+					}
+				
+				</div>
+				<div className="product">
+					{
+						this.state.productlist.map(function(it){
+							return(
+								<div key={it.id}>
+									<img src={it.skuInfo.skuThumbnail} />
+									<div className="product-right">
+										<h3>{it.skuInfo.name}</h3>
+										<span>it.</span>
+									</div>
+									
+								</div>
+							)
+						})
+					}
+				
+				</div>
+				
 			</div>
 		)
 	}
-
 	componentDidMount() {
-    let url = '/api/v2/movie/in_theaters?count=3'
-    fetch(url)
-      .then(response=>response.json())
-      .then(res=>{
-        let Lis = res.subjects.map(val=>{
-          return (<li className="item"><img className="img" src={val.images.large} /></li>)
-        })
-        this.setState({
-          swiperList: Lis
-        })
-      })
+	    fetch('/api/list.php')
+	    .then(response=>response.json())
+	    .then(res=>{
+	    	let list = res.data.bannerList.map(val=>{
+				return(
+					<li className="item"><img className="img" src={val.image} /></li>
+				)
+			})
+	      	this.setState({
+		        bannerlist:list,
+		        homenav:res.data.subButtonList,
+		        newlist:res.data.marketingActivities,
+		        productlist:res.data.productList
+	        })
+	    })
   }
 }
-
 export default Board

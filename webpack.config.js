@@ -19,12 +19,11 @@ module.exports = {
     port: 8000,
     historyApiFallback: false,
     proxy: {
-      '/api': {
-        target: 'https://api.douban.com/',
-        pathRewrite: {'^/api': ''},
-        changeOrigin: true
-      }
-    }
+	    '/api': {
+			target: 'http://localhost:3000',
+			pathRewrite: {'^/api': ''}
+	    }
+	}
   },
 
   module: {
