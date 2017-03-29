@@ -18,10 +18,11 @@ module.exports = {
     host: 'localhost',
     port: 8000,
     historyApiFallback: false,
-    proxy: {
+   proxy: {
 	    '/api': {
-			target: 'http://localhost:3000',
-			pathRewrite: {'^/api': ''}
+			target: 'http://m.api.haoshiqi.net/',
+			pathRewrite: {'^/api': ''},
+			changeOrigin: true
 	    }
 	}
   },
