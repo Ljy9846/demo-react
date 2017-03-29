@@ -3,7 +3,9 @@
 	height:100%;
 	width:100%;
 	color:#4d4d4d;
-
+	a{
+		color:#4d4d4d;
+	}
 	.myIcon{
 		padding:0.1rem 0.15rem;
 		position:relative;
@@ -185,7 +187,7 @@
 	}
 	p{
 		padding:0 0.15rem;
-		span{
+		a{
 			color:#914e07;
 		}
 	}
@@ -243,7 +245,7 @@
 	}
 	p{
 		padding:0 0.15rem;
-		span{
+		a{
 			color:#914e07;
 		}
 	}

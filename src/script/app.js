@@ -9,7 +9,7 @@ import Index from './component/index'
 import Board from './component/board'
 import Kind from './component/kind'
 import Cart from './component/cart'
-import My from './component/my'
+import { My, LoginUp, LoginIn } from './component/my'
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -19,6 +19,8 @@ ReactDOM.render(
   		<Route path="kind" component={Kind}></Route>
   		<Route path="cart" component={Cart}></Route>
   		<Route path="my" component={My}></Route>
+      <Router path="my/loginup" component={LoginUp}/>
+      <Router path="my/loginin" component={LoginIn}/>
   	</Route>
   </Router>,
   document.getElementById('root')
