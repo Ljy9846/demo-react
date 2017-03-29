@@ -10,6 +10,7 @@ import Board from './component/board'
 import Kind from './component/kind'
 import Cart from './component/cart'
 import My from './component/my'
+import Search from './component/search'
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -20,6 +21,7 @@ ReactDOM.render(
   		<Route path="cart" component={Cart}></Route>
   		<Route path="my" component={My}></Route>
   	</Route>
+	<Route path="search" component={Search}></Route>
   </Router>,
   document.getElementById('root')
 )

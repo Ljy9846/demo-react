@@ -1,0 +1,40 @@
+{
+    "errno": 0,
+    "errmsg": "success",
+    "data": {
+        "list": [
+            {
+                "value": "芒果",
+                "priority": 6,
+                "searchCnt": 1000
+            },
+            {
+                "value": "提拉米苏",
+                "priority": 5,
+                "searchCnt": 1000
+            },
+            {
+                "value": "牛奶",
+                "priority": 4,
+                "searchCnt": 1000
+            },
+            {
+                "value": "蛋糕",
+                "priority": 3,
+                "searchCnt": 1000
+            },
+            {
+                "value": "罐头",
+                "priority": 2,
+                "searchCnt": 1000
+            },
+            {
+                "value": "丽芝士",
+                "priority": 1,
+                "searchCnt": 1000
+            }
+        ]
+    },
+    "timestamp": 1490756570,
+    "serverlogid": "3af2ad372fa4c74b4b1c26e11803b5bd"
+}

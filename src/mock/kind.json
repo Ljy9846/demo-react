@@ -1,0 +1,96 @@
+{
+    "errno": 0,
+    "errmsg": "success",
+    "data": {
+        "list": [
+            {
+                "id": 1,
+                "name": "休闲零食",
+                "thumbnail": "http://hsq-img.image.alimmdn.com/category/nut.png",
+                "subCategories": [
+                    {
+                        "id": 6,
+                        "name": "饼干糕点",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/bingangaodian.png"
+                    },
+                    {
+                        "id": 7,
+                        "name": "坚果炒货",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/jianguochaohuo.png"
+                    },
+                    {
+                        "id": 8,
+                        "name": "糖果巧克力",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/tangguoqiaokeli.png"
+                    },
+                    {
+                        "id": 9,
+                        "name": "膨化食品",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/penghuashipin.png"
+                    },
+                    {
+                        "id": 10,
+                        "name": "肉脯干卤味",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/roupuganruwei.png"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "饮料冲调",
+                "thumbnail": "http://hsq-img.image.alimmdn.com/category/drink.png",
+                "subCategories": [
+                    {
+                        "id": 11,
+                        "name": "咖啡茶饮",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/kafeichayin.png"
+                    },
+                    {
+                        "id": 12,
+                        "name": "水/饮料",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/yinliao.png?t=1477639830129"
+                    },
+                    {
+                        "id": 13,
+                        "name": "含乳饮品",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/hanruyinpin.png"
+                    },
+                    {
+                        "id": 14,
+                        "name": "果蔬汁/蜂蜜冲饮",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/guoshuzhi.png"
+                    },
+                    {
+                        "id": 72,
+                        "name": "酒",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/jiu.png?t=1477640325940"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "速食调味",
+                "thumbnail": "http://hsq-img.image.alimmdn.com/category/noodles.png",
+                "subCategories": [
+                    {
+                        "id": 15,
+                        "name": "罐头速食",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/guantoushipin.png"
+                    },
+                    {
+                        "id": 16,
+                        "name": "调味酱料",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/tiaoweijiangliao.jpg"
+                    },
+                    {
+                        "id": 17,
+                        "name": "粮油",
+                        "thumbnail": "http://hsq-img.image.alimmdn.com/category/liangyou.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "timestamp": 1490672931,
+    "serverlogid": "ebdb4759abca4edb341693b7a8bb725f"
+}

@@ -1,0 +1,1806 @@
+{
+    "errno": 0,
+    "errmsg": "success",
+    "data": {
+        "totalCnt": 950,
+        "totalPage": 48,
+        "list": [
+            {
+                "itemid": 9591,
+                "last_update_time": 1490748662,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "上海市",
+                "brand_id": "1067",
+                "create_time": 1490748662,
+                "id": "9591",
+                "attr_ids": "[]",
+                "title": "【包邮】德芙巧克力奥地利进口巧丝202.5g18支装糖果休闲零食",
+                "delivery_time_after_buy": "48",
+                "merchantId": "249",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170209/ma200b2fe2ee176d9c65d882adde330da1",
+                "_version_": 1563163332510220288,
+                "cateid": [
+                    "休闲零食_糖果巧克力_巧克力"
+                ],
+                "purchase_price": "2990",
+                "highest_price": "1794",
+                "main_sku": "11289",
+                "price": 2990,
+                "skuInfo": {
+                    "weight": 202,
+                    "updated_at": 1487236356,
+                    "attrs": [
+                        {
+                            "批次": "1512057600"
+                        }
+                    ],
+                    "expired_date": 1512057600,
+                    "now_price": 2990,
+                    "audit_status": 2,
+                    "id": 11289,
+                    "manufactured_date": 1480521600,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 249,
+                    "liked_cnt": 0,
+                    "lowest_price": 2990,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170209/ma200b2fe2ee176d9c65d882adde330da1",
+                    "skuId": 11289,
+                    "seller_time": 1487062772,
+                    "audit_time": 1487062772,
+                    "price": 2990,
+                    "offline_before_expired": 2592000,
+                    "market_price": 5990,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170209/ma200b2fe2ee176d9c65d882adde330da1@180w_180h_90Q.jpg",
+                    "merchant_item_code": "hsqdfqs",
+                    "merchant_id": 249,
+                    "online_time": 1487062772,
+                    "selled_cnt": 132,
+                    "name": "【包邮】德芙巧克力奥地利进口巧丝202.5g18支装糖果休闲零食",
+                    "today_discount": 50,
+                    "product_id": 9591,
+                    "created_at": 1486632383,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 367,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "2990",
+                "cates": "休闲零食_糖果巧克力_巧克力",
+                "merchant_id": "249",
+                "ugc_cnt": "0",
+                "selled_cnt": 132,
+                "categories": "1 8 24",
+                "today_discount": 50,
+                "name": "【包邮】德芙巧克力奥地利进口巧丝202.5g18支装糖果休闲零食",
+                "lowest_price": "1794",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 117225,
+                "tags": [
+                    {
+                        "text": "5折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 10964,
+                "last_update_time": 1490748658,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "上海市",
+                "brand_id": "971",
+                "create_time": 1490748658,
+                "id": "10964",
+                "attr_ids": "[]",
+                "title": "【包邮】巧罗巧克力夹心曲奇饼干220g*2盒",
+                "delivery_time_after_buy": "48",
+                "merchantId": "396",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170321/ma95d2cc4c932d52957432a7b1c7b85d40",
+                "_version_": 1563163329804894208,
+                "cateid": [
+                    "休闲零食_糖果巧克力_巧克力"
+                ],
+                "purchase_price": "2190",
+                "highest_price": "2190",
+                "main_sku": "12844",
+                "price": 2190,
+                "skuInfo": {
+                    "weight": 440,
+                    "updated_at": 1490148315,
+                    "attrs": [
+                        {
+                            "批次": "1507996800"
+                        }
+                    ],
+                    "expired_date": 1507996800,
+                    "now_price": 2190,
+                    "audit_status": 2,
+                    "id": 12844,
+                    "manufactured_date": 1484496000,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 396,
+                    "liked_cnt": 0,
+                    "lowest_price": 2190,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170321/ma95d2cc4c932d52957432a7b1c7b85d40",
+                    "skuId": 12844,
+                    "seller_time": 1490085695,
+                    "audit_time": 1490085695,
+                    "price": 2190,
+                    "offline_before_expired": 2592000,
+                    "market_price": 9900,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170321/ma95d2cc4c932d52957432a7b1c7b85d40@180w_180h_90Q.jpg",
+                    "merchant_item_code": "QL-CP20161009-010",
+                    "merchant_id": 396,
+                    "online_time": 1490085695,
+                    "selled_cnt": 658,
+                    "name": "【包邮】巧罗巧克力夹心曲奇饼干220g*2盒",
+                    "today_discount": 23,
+                    "product_id": 10964,
+                    "created_at": 1490084638,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 1721,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "13200",
+                "cates": "休闲零食_糖果巧克力_巧克力",
+                "merchant_id": "396",
+                "ugc_cnt": "0",
+                "selled_cnt": 658,
+                "categories": "1 8 24",
+                "today_discount": 23,
+                "name": "【包邮】巧罗巧克力夹心曲奇饼干220g*2盒",
+                "lowest_price": "2190",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 97413,
+                "tags": [
+                    {
+                        "text": "2.3折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 8428,
+                "last_update_time": 1490748660,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "河北省",
+                "brand_id": "813",
+                "create_time": 1490748660,
+                "id": "8428",
+                "attr_ids": "[u'1']",
+                "title": "【包邮】唇动白色经典巧克力蛋糕整箱1kg 早餐糕点",
+                "delivery_time_after_buy": "72",
+                "merchantId": "635",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20161216/ma18c816798f04c648c1737e51e19a882e",
+                "_version_": 1563163331303309312,
+                "cateid": [
+                    "休闲零食_饼干糕点_糕点"
+                ],
+                "purchase_price": "3990",
+                "highest_price": "3990",
+                "main_sku": "9957",
+                "price": 3990,
+                "skuInfo": {
+                    "weight": 1000,
+                    "updated_at": 1489974803,
+                    "attrs": [
+                        {
+                            "口味": "牛奶味1Kg箱装"
+                        },
+                        {
+                            "批次": "1501430400"
+                        }
+                    ],
+                    "expired_date": 1501430400,
+                    "now_price": 3990,
+                    "audit_status": 2,
+                    "id": 9957,
+                    "manufactured_date": 1485878400,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 635,
+                    "liked_cnt": 0,
+                    "lowest_price": 3990,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20161216/ma18c816798f04c648c1737e51e19a882e",
+                    "skuId": 9957,
+                    "seller_time": 1488188136,
+                    "audit_time": 1488188136,
+                    "price": 3990,
+                    "offline_before_expired": 2592000,
+                    "market_price": 6650,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20161216/ma18c816798f04c648c1737e51e19a882e@180w_180h_90Q.jpg",
+                    "merchant_item_code": "00002A1508057",
+                    "merchant_id": 635,
+                    "online_time": 1488188136,
+                    "selled_cnt": 974,
+                    "name": "【包邮】唇动白色经典巧克力蛋糕整箱1kg 早餐糕点",
+                    "today_discount": 60,
+                    "product_id": 8428,
+                    "created_at": 1481880488,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 4084,
+                    "locked_stock": 1,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "6650",
+                "cates": "休闲零食_饼干糕点_糕点",
+                "merchant_id": "635",
+                "ugc_cnt": "0",
+                "selled_cnt": 974,
+                "categories": "1 6 19",
+                "today_discount": 60,
+                "name": "【包邮】唇动白色经典巧克力蛋糕整箱1kg 早餐糕点",
+                "lowest_price": "3990",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 97413,
+                "tags": [
+                    {
+                        "text": "6折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 9863,
+                "last_update_time": 1490748661,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "北京市",
+                "brand_id": "1206",
+                "create_time": 1490748661,
+                "id": "9863",
+                "attr_ids": "[]",
+                "title": "【包邮】中粮山萃每日坚果混合坚果仁25g*30袋干果大礼盒孕妇儿童食品零食",
+                "delivery_time_after_buy": "48",
+                "merchantId": "692",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170220/ma38cc112c537d94f1d4f00bbc40de1609",
+                "_version_": 1563163332123295744,
+                "cateid": [
+                    "休闲零食_坚果炒货_坚果"
+                ],
+                "purchase_price": "9900",
+                "highest_price": "9900",
+                "main_sku": "11620",
+                "price": 9900,
+                "skuInfo": {
+                    "weight": 750,
+                    "updated_at": 1489025598,
+                    "attrs": [
+                        {
+                            "批次": "1512489600"
+                        }
+                    ],
+                    "expired_date": 1512489600,
+                    "now_price": 9900,
+                    "audit_status": 2,
+                    "id": 11620,
+                    "manufactured_date": 1486310400,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 692,
+                    "liked_cnt": 0,
+                    "lowest_price": 9900,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170220/ma38cc112c537d94f1d4f00bbc40de1609",
+                    "skuId": 11620,
+                    "seller_time": 1488251455,
+                    "audit_time": 1488251455,
+                    "price": 9900,
+                    "offline_before_expired": 2592000,
+                    "market_price": 29800,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170220/ma38cc112c537d94f1d4f00bbc40de1609@180w_180h_90Q.jpg",
+                    "merchant_item_code": "山萃6939656103183",
+                    "merchant_id": 692,
+                    "online_time": 1488251455,
+                    "selled_cnt": 801,
+                    "name": "【包邮】中粮山萃每日坚果混合坚果仁25g*30袋干果大礼盒孕妇儿童食品零食",
+                    "today_discount": 34,
+                    "product_id": 9863,
+                    "created_at": 1487570654,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 9198,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "29800",
+                "cates": "休闲零食_坚果炒货_坚果",
+                "merchant_id": "692",
+                "ugc_cnt": "0",
+                "selled_cnt": 801,
+                "categories": "1 7 21",
+                "today_discount": 34,
+                "name": "【包邮】中粮山萃每日坚果混合坚果仁25g*30袋干果大礼盒孕妇儿童食品零食",
+                "lowest_price": "9900",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 97413,
+                "tags": [
+                    {
+                        "text": "3.4折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 8256,
+                "last_update_time": 1490748658,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "广东省",
+                "brand_id": "1316",
+                "create_time": 1490748658,
+                "id": "8256",
+                "attr_ids": "[]",
+                "title": "上岛果园 70g芒果干 超值包邮",
+                "delivery_time_after_buy": "48",
+                "merchantId": "543",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20161209/mabb16fbc4d455c711581127ee3492cc7a",
+                "_version_": 1563163329766096896,
+                "cateid": [
+                    "休闲零食_坚果炒货_干果"
+                ],
+                "purchase_price": "1250",
+                "highest_price": "990",
+                "main_sku": "9776",
+                "price": 1250,
+                "skuInfo": {
+                    "weight": 70,
+                    "updated_at": 1488360156,
+                    "attrs": [
+                        {
+                            "批次": "1510156800"
+                        }
+                    ],
+                    "expired_date": 1510156800,
+                    "now_price": 1250,
+                    "audit_status": 2,
+                    "id": 9776,
+                    "manufactured_date": 1481212800,
+                    "fpostage_amount": 0,
+                    "ugc_cnt": 0,
+                    "merchantId": 543,
+                    "liked_cnt": 0,
+                    "lowest_price": 1250,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20161209/mabb16fbc4d455c711581127ee3492cc7a",
+                    "skuId": 9776,
+                    "seller_time": 1481508748,
+                    "audit_time": 1481508748,
+                    "price": 1250,
+                    "offline_before_expired": 2592000,
+                    "market_price": 1650,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20161209/mabb16fbc4d455c711581127ee3492cc7a@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 543,
+                    "online_time": 1481508748,
+                    "selled_cnt": 5451,
+                    "name": "上岛果园 【70g芒果干】   超值包邮",
+                    "today_discount": 76,
+                    "product_id": 8256,
+                    "created_at": 1481260934,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 24575,
+                    "locked_stock": 13,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "1650",
+                "cates": "休闲零食_坚果炒货_干果",
+                "merchant_id": "543",
+                "ugc_cnt": "0",
+                "selled_cnt": 5451,
+                "categories": "1 7 22",
+                "today_discount": 76,
+                "name": "上岛果园 70g芒果干 超值包邮",
+                "lowest_price": "990",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 90808,
+                "tags": [
+                    {
+                        "text": "7.6折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 11142,
+                "last_update_time": 1490748662,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "上海市",
+                "brand_id": "1711",
+                "create_time": 1490748662,
+                "id": "11142",
+                "attr_ids": "[]",
+                "title": "【包邮】乐事薯片经典原味+红烩味+得克萨斯味70g*3包*2组",
+                "delivery_time_after_buy": "48",
+                "merchantId": "504",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170327/ma38bdc6b0a336cdeb384732069b578a4c",
+                "_version_": 1563163332380196864,
+                "cateid": [
+                    "休闲零食_膨化食品_薯条"
+                ],
+                "purchase_price": "3290",
+                "highest_price": "2990",
+                "main_sku": "13027",
+                "price": 3290,
+                "skuInfo": {
+                    "weight": 420,
+                    "updated_at": 1490597157,
+                    "attrs": [
+                        {
+                            "批次": "1504800000"
+                        }
+                    ],
+                    "expired_date": 1504800000,
+                    "now_price": 3290,
+                    "audit_status": 2,
+                    "id": 13027,
+                    "manufactured_date": 1481472000,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 504,
+                    "liked_cnt": 0,
+                    "lowest_price": 3290,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170327/ma38bdc6b0a336cdeb384732069b578a4c",
+                    "skuId": 13027,
+                    "seller_time": 1490594172,
+                    "audit_time": 1490594172,
+                    "price": 3290,
+                    "offline_before_expired": 2592000,
+                    "market_price": 4760,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170327/ma38bdc6b0a336cdeb384732069b578a4c@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 504,
+                    "online_time": 1490594172,
+                    "selled_cnt": 34,
+                    "name": "【包邮】乐事薯片经典原味+红烩味+得克萨斯味70g*3包*2组",
+                    "today_discount": 70,
+                    "product_id": 11142,
+                    "created_at": 1490584099,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 116,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "6000",
+                "cates": "休闲零食_膨化食品_薯条",
+                "merchant_id": "504",
+                "ugc_cnt": "0",
+                "selled_cnt": 34,
+                "categories": "1 9 26",
+                "today_discount": 100,
+                "name": "【包邮】乐事薯片经典原味+红烩味+得克萨斯味70g*3包*2组",
+                "lowest_price": "2990",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 89157,
+                "tags": [],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 9747,
+                "last_update_time": 1490748659,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "福建省",
+                "brand_id": "571",
+                "create_time": 1490748659,
+                "id": "9747",
+                "attr_ids": "[]",
+                "title": "【包邮】小丫快跑芒果干70g买五包送一包",
+                "delivery_time_after_buy": "48",
+                "merchantId": "284",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170215/mafaef0eb47c685ccfadeddc901df76546",
+                "_version_": 1563163330631172096,
+                "cateid": [
+                    "休闲零食_坚果炒货_干果"
+                ],
+                "purchase_price": "990",
+                "highest_price": "990",
+                "main_sku": "11469",
+                "price": 990,
+                "skuInfo": {
+                    "weight": 70,
+                    "updated_at": 1488770292,
+                    "attrs": [
+                        {
+                            "批次": "1517932800"
+                        }
+                    ],
+                    "expired_date": 1517932800,
+                    "now_price": 990,
+                    "audit_status": 2,
+                    "id": 11469,
+                    "manufactured_date": 1486396800,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 284,
+                    "liked_cnt": 0,
+                    "lowest_price": 990,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170215/mafaef0eb47c685ccfadeddc901df76546",
+                    "skuId": 11469,
+                    "seller_time": 1487235019,
+                    "audit_time": 1487235019,
+                    "price": 990,
+                    "offline_before_expired": 2592000,
+                    "market_price": 1500,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170215/mafaef0eb47c685ccfadeddc901df76546@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 284,
+                    "online_time": 1487235019,
+                    "selled_cnt": 2652,
+                    "name": "【包邮】小丫快跑芒果干70g买五包送一包",
+                    "today_discount": 66,
+                    "product_id": 9747,
+                    "created_at": 1487148091,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 867,
+                    "locked_stock": 23,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "1900",
+                "cates": "休闲零食_坚果炒货_干果",
+                "merchant_id": "284",
+                "ugc_cnt": "0",
+                "selled_cnt": 2652,
+                "categories": "1 7 22",
+                "today_discount": 66,
+                "name": "【包邮】小丫快跑芒果干70g买五包送一包",
+                "lowest_price": "990",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 87506,
+                "tags": [
+                    {
+                        "text": "6.6折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 8684,
+                "last_update_time": 1490748658,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "福建省",
+                "brand_id": "1250",
+                "create_time": 1490748658,
+                "id": "8684",
+                "attr_ids": "[]",
+                "title": "【包邮】卡尔顿 长崎蛋糕松软绵密 日式糕点短保 早餐糕点零食礼盒800g",
+                "delivery_time_after_buy": "72",
+                "merchantId": "635",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170315/ma950caf62a81a2625767e8b32249f57ff",
+                "_version_": 1563163329763999744,
+                "cateid": [
+                    "休闲零食_饼干糕点_糕点"
+                ],
+                "purchase_price": "2990",
+                "highest_price": "2990",
+                "main_sku": "12566",
+                "price": 2990,
+                "skuInfo": {
+                    "weight": 800,
+                    "updated_at": 1489628244,
+                    "attrs": [
+                        {
+                            "批次": "1494172800"
+                        }
+                    ],
+                    "expired_date": 1494172800,
+                    "now_price": 2990,
+                    "audit_status": 2,
+                    "id": 12566,
+                    "manufactured_date": 1488988800,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 635,
+                    "liked_cnt": 0,
+                    "lowest_price": 2990,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170315/ma950caf62a81a2625767e8b32249f57ff",
+                    "skuId": 12566,
+                    "seller_time": 1489547242,
+                    "audit_time": 1489547242,
+                    "price": 2990,
+                    "offline_before_expired": 1296000,
+                    "market_price": 4280,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170315/ma950caf62a81a2625767e8b32249f57ff@180w_180h_90Q.jpg",
+                    "merchant_item_code": "20160908A003",
+                    "merchant_id": 635,
+                    "online_time": 1489547242,
+                    "selled_cnt": 353,
+                    "name": "【包邮】卡尔顿 长崎蛋糕松软绵密 日式糕点短保 早餐糕点零食礼盒800g",
+                    "today_discount": 70,
+                    "product_id": 8684,
+                    "created_at": 1489546970,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 197,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "1296000",
+                "market_price": "5000",
+                "cates": "休闲零食_饼干糕点_糕点",
+                "merchant_id": "635",
+                "ugc_cnt": "0",
+                "selled_cnt": 353,
+                "categories": "1 6 19",
+                "today_discount": 70,
+                "name": "【包邮】卡尔顿 长崎蛋糕松软绵密 日式糕点短保 早餐糕点零食礼盒800g",
+                "lowest_price": "2990",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 84204,
+                "tags": [
+                    {
+                        "text": "7折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 11100,
+                "last_update_time": 1490748658,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "福建省",
+                "brand_id": "1388",
+                "create_time": 1490748658,
+                "id": "11100",
+                "attr_ids": "[]",
+                "title": "【包邮】波沽屋闽台手造夹酱麻薯多口味混合500克*3",
+                "delivery_time_after_buy": "48",
+                "merchantId": "455",
+                "priority": "6",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170324/ma51f1e23ab0c67d0092520d1eecd24490",
+                "_version_": 1563163329802797056,
+                "cateid": [
+                    "休闲零食_饼干糕点_糕点"
+                ],
+                "purchase_price": "2990",
+                "highest_price": "2990",
+                "main_sku": "12981",
+                "price": 2990,
+                "skuInfo": {
+                    "weight": 1500,
+                    "updated_at": 1490335067,
+                    "attrs": [
+                        {
+                            "批次": "1500048000"
+                        }
+                    ],
+                    "expired_date": 1500048000,
+                    "now_price": 2990,
+                    "audit_status": 2,
+                    "id": 12981,
+                    "manufactured_date": 1489507200,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 455,
+                    "liked_cnt": 0,
+                    "lowest_price": 2990,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170324/ma51f1e23ab0c67d0092520d1eecd24490",
+                    "skuId": 12981,
+                    "seller_time": 1490332667,
+                    "audit_time": 1490332667,
+                    "price": 2990,
+                    "offline_before_expired": 2592000,
+                    "market_price": 8970,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170324/ma51f1e23ab0c67d0092520d1eecd24490@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 455,
+                    "online_time": 1490332667,
+                    "selled_cnt": 23,
+                    "name": "【包邮】波沽屋闽台手造夹酱麻薯多口味混合500克*3",
+                    "today_discount": 34,
+                    "product_id": 11100,
+                    "created_at": 1490332359,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 977,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "8970",
+                "cates": "休闲零食_饼干糕点_糕点",
+                "merchant_id": "455",
+                "ugc_cnt": "0",
+                "selled_cnt": 23,
+                "categories": "1 6 19",
+                "today_discount": 100,
+                "name": "【包邮】波沽屋闽台手造夹酱麻薯多口味混合500克*3",
+                "lowest_price": "2990",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 74297,
+                "tags": [],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 7919,
+                "last_update_time": 1490748661,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "上海市",
+                "brand_id": "1298",
+                "create_time": 1490748661,
+                "id": "7919",
+                "attr_ids": "[]",
+                "title": "【包邮】京隆拿破仑蛋糕1000g整箱奶油夹心早餐糕点心",
+                "delivery_time_after_buy": "48",
+                "merchantId": "405",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170301/maf1fffcce188bc27b6beb8e3b0a7e2781",
+                "_version_": 1563163331924066304,
+                "cateid": [
+                    "休闲零食_饼干糕点_糕点"
+                ],
+                "purchase_price": "3180",
+                "highest_price": "3180",
+                "main_sku": "11972",
+                "price": 3180,
+                "skuInfo": {
+                    "weight": 1000,
+                    "updated_at": 1489036676,
+                    "attrs": [
+                        {
+                            "批次": "1494432000"
+                        }
+                    ],
+                    "expired_date": 1494432000,
+                    "now_price": 3180,
+                    "audit_status": 2,
+                    "id": 11972,
+                    "manufactured_date": 1486742400,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 405,
+                    "liked_cnt": 0,
+                    "lowest_price": 3180,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170301/maf1fffcce188bc27b6beb8e3b0a7e2781",
+                    "skuId": 11972,
+                    "seller_time": 1488347328,
+                    "audit_time": 1488347328,
+                    "price": 3180,
+                    "offline_before_expired": 2592000,
+                    "market_price": 3980,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170301/maf1fffcce188bc27b6beb8e3b0a7e2781@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 405,
+                    "online_time": 1488347328,
+                    "selled_cnt": 680,
+                    "name": "【包邮】京隆拿破仑蛋糕1000g整箱奶油夹心早餐糕点心",
+                    "today_discount": 80,
+                    "product_id": 7919,
+                    "created_at": 1488341609,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 1318,
+                    "locked_stock": 1,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "5000",
+                "cates": "休闲零食_饼干糕点_糕点",
+                "merchant_id": "405",
+                "ugc_cnt": "0",
+                "selled_cnt": 680,
+                "categories": "1 6 19",
+                "today_discount": 80,
+                "name": "【包邮】京隆拿破仑蛋糕1000g整箱奶油夹心早餐糕点心",
+                "lowest_price": "2980",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 74297,
+                "tags": [],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 10363,
+                "last_update_time": 1490748659,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "亚洲其他国家",
+                "brand_id": "1570",
+                "create_time": 1490748659,
+                "id": "10363",
+                "attr_ids": "[]",
+                "title": "秒杀 泰国进口小老板脆海苔休闲零食一袋36g口味随机发",
+                "delivery_time_after_buy": "48",
+                "merchantId": "616",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170307/ma97fcdb8892c8f65546f3b3b2c20e0029",
+                "_version_": 1563163330192867328,
+                "cateid": [
+                    "休闲零食_肉脯干卤味_海苔"
+                ],
+                "purchase_price": "370",
+                "highest_price": "380",
+                "main_sku": "12171",
+                "price": 370,
+                "skuInfo": {
+                    "weight": 36,
+                    "updated_at": 1489712310,
+                    "attrs": [
+                        {
+                            "批次": "1494345600"
+                        }
+                    ],
+                    "expired_date": 1494345600,
+                    "now_price": 370,
+                    "audit_status": 2,
+                    "id": 12171,
+                    "manufactured_date": 1462809600,
+                    "fpostage_amount": 0,
+                    "ugc_cnt": 0,
+                    "merchantId": 616,
+                    "liked_cnt": 0,
+                    "lowest_price": 370,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170307/ma97fcdb8892c8f65546f3b3b2c20e0029",
+                    "skuId": 12171,
+                    "seller_time": 1488851816,
+                    "audit_time": 1488851816,
+                    "price": 370,
+                    "offline_before_expired": 2592000,
+                    "market_price": 850,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170307/ma97fcdb8892c8f65546f3b3b2c20e0029@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 616,
+                    "online_time": 1488851816,
+                    "selled_cnt": 469,
+                    "name": "秒杀 泰国进口小老板脆海苔休闲零食一袋36g口味随机发",
+                    "today_discount": 44,
+                    "product_id": 10363,
+                    "created_at": 1488791008,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 5,
+                    "left_stock": 56,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "1800",
+                "cates": "休闲零食_肉脯干卤味_海苔",
+                "merchant_id": "616",
+                "ugc_cnt": "0",
+                "selled_cnt": 469,
+                "categories": "1 10 59",
+                "today_discount": 44,
+                "name": "秒杀 泰国进口小老板脆海苔休闲零食一袋36g口味随机发",
+                "lowest_price": "380",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 72646,
+                "tags": [
+                    {
+                        "text": "4.4折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 10427,
+                "last_update_time": 1490748661,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "欧洲",
+                "brand_id": "1644",
+                "create_time": 1490748661,
+                "id": "10427",
+                "attr_ids": "[u'1']",
+                "title": "秒杀 希腊进口Twisties 翠丝迪威化棒400g/罐",
+                "delivery_time_after_buy": "48",
+                "merchantId": "616",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170307/ma41f72084fbd89c083a817b5674a90511",
+                "_version_": 1563163331997466624,
+                "cateid": [
+                    "休闲零食_饼干糕点_饼干"
+                ],
+                "purchase_price": "1550",
+                "highest_price": "1550",
+                "main_sku": "12242",
+                "price": 1550,
+                "skuInfo": {
+                    "weight": 400,
+                    "updated_at": 1489711943,
+                    "attrs": [
+                        {
+                            "口味": "咖啡味"
+                        },
+                        {
+                            "批次": "1521648000"
+                        }
+                    ],
+                    "expired_date": 1521648000,
+                    "now_price": 1550,
+                    "audit_status": 2,
+                    "id": 12242,
+                    "manufactured_date": 1458662400,
+                    "fpostage_amount": 0,
+                    "ugc_cnt": 0,
+                    "merchantId": 616,
+                    "liked_cnt": 0,
+                    "lowest_price": 1550,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170307/ma41f72084fbd89c083a817b5674a90511",
+                    "skuId": 12242,
+                    "seller_time": 1488935489,
+                    "audit_time": 1488935489,
+                    "price": 1550,
+                    "offline_before_expired": 2592000,
+                    "market_price": 3200,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170307/ma41f72084fbd89c083a817b5674a90511@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 616,
+                    "online_time": 1488935489,
+                    "selled_cnt": 71,
+                    "name": "秒杀 希腊进口Twisties 翠丝迪威化棒咖啡味一罐400g",
+                    "today_discount": 49,
+                    "product_id": 10427,
+                    "created_at": 1488871037,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 128,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "3900",
+                "cates": "休闲零食_饼干糕点_饼干",
+                "merchant_id": "616",
+                "ugc_cnt": "0",
+                "selled_cnt": 71,
+                "categories": "1 6 18",
+                "today_discount": 49,
+                "name": "秒杀 希腊进口Twisties 翠丝迪威化棒400g/罐",
+                "lowest_price": "1550",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 72646,
+                "tags": [
+                    {
+                        "text": "4.9折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 10158,
+                "last_update_time": 1490748664,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "河南省",
+                "brand_id": "693",
+                "create_time": 1490748664,
+                "id": "10158",
+                "attr_ids": "[u'2']",
+                "title": "【包邮】卫龙辣条大礼包包小面筋儿时怀旧零食四款组合任意选",
+                "delivery_time_after_buy": "48",
+                "merchantId": "679",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170228/maeed6e1ba4ab76052b78b799a189253ef",
+                "_version_": 1563163333478055936,
+                "cateid": [
+                    "休闲零食_肉脯干卤味_豆腐干"
+                ],
+                "purchase_price": "2990",
+                "highest_price": "2890",
+                "main_sku": "11944",
+                "price": 2990,
+                "skuInfo": {
+                    "weight": 1130,
+                    "updated_at": 1489643847,
+                    "attrs": [
+                        {
+                            "规格": "亲嘴烧+小面筋+大面筋5"
+                        },
+                        {
+                            "批次": "1496246400"
+                        }
+                    ],
+                    "expired_date": 1496246400,
+                    "now_price": 2990,
+                    "audit_status": 2,
+                    "id": 11944,
+                    "manufactured_date": 1485878400,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 679,
+                    "liked_cnt": 0,
+                    "lowest_price": 2990,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170228/maeed6e1ba4ab76052b78b799a189253ef",
+                    "skuId": 11944,
+                    "seller_time": 1488362187,
+                    "audit_time": 1489642051,
+                    "price": 2990,
+                    "offline_before_expired": 2592000,
+                    "market_price": 4900,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170228/maeed6e1ba4ab76052b78b799a189253ef@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 679,
+                    "online_time": 1489642051,
+                    "selled_cnt": 990,
+                    "name": "【包邮】卫龙辣条大礼包1130g  亲嘴烧+小面筋+大面筋5",
+                    "today_discount": 62,
+                    "product_id": 10158,
+                    "created_at": 1488294763,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 6,
+                    "locked_stock": 2,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "7920",
+                "cates": "休闲零食_肉脯干卤味_豆腐干",
+                "merchant_id": "679",
+                "ugc_cnt": "0",
+                "selled_cnt": 990,
+                "categories": "1 10 58",
+                "today_discount": 62,
+                "name": "【包邮】卫龙辣条大礼包包小面筋儿时怀旧零食四款组合任意选",
+                "lowest_price": "2890",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 70995,
+                "tags": [
+                    {
+                        "text": "6.2折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 10924,
+                "last_update_time": 1490748659,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "北京市",
+                "brand_id": "1904",
+                "create_time": 1490748659,
+                "id": "10924",
+                "attr_ids": "[]",
+                "title": "【包邮】【四皓_甘栗仁】秦岭板栗零食特产栗子仁熟制香甜板栗仁35g*15",
+                "delivery_time_after_buy": "48",
+                "merchantId": "544",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170323/mafa6e51dfdac984ed5cdbec14e44dd274",
+                "_version_": 1563163330625929216,
+                "cateid": [
+                    "休闲零食_坚果炒货_坚果"
+                ],
+                "purchase_price": "3590",
+                "highest_price": "3590",
+                "main_sku": "12805",
+                "price": 3590,
+                "skuInfo": {
+                    "weight": 550,
+                    "updated_at": 1490324249,
+                    "attrs": [
+                        {
+                            "批次": "1513785600"
+                        }
+                    ],
+                    "expired_date": 1513785600,
+                    "now_price": 3590,
+                    "audit_status": 2,
+                    "id": 12805,
+                    "manufactured_date": 1482249600,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 544,
+                    "liked_cnt": 0,
+                    "lowest_price": 3590,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170323/mafa6e51dfdac984ed5cdbec14e44dd274",
+                    "skuId": 12805,
+                    "seller_time": 1490067352,
+                    "audit_time": 1490319151,
+                    "price": 3590,
+                    "offline_before_expired": 2592000,
+                    "market_price": 5500,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170323/mafa6e51dfdac984ed5cdbec14e44dd274@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 544,
+                    "online_time": 1490319151,
+                    "selled_cnt": 349,
+                    "name": "【包邮】【四皓_甘栗仁】秦岭板栗零食特产栗子仁熟制香甜板栗仁35g*15包",
+                    "today_discount": 66,
+                    "product_id": 10924,
+                    "created_at": 1490064340,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 4650,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "8000",
+                "cates": "休闲零食_坚果炒货_坚果",
+                "merchant_id": "544",
+                "ugc_cnt": "0",
+                "selled_cnt": 349,
+                "categories": "1 7 21",
+                "today_discount": 66,
+                "name": "【包邮】【四皓_甘栗仁】秦岭板栗零食特产栗子仁熟制香甜板栗仁35g*15",
+                "lowest_price": "3590",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 69344,
+                "tags": [
+                    {
+                        "text": "6.6折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 7751,
+                "last_update_time": 1490748661,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "福建省",
+                "brand_id": "1388",
+                "create_time": 1490748661,
+                "id": "7751",
+                "attr_ids": "[]",
+                "title": "【包邮】波沽屋夹心肉松饼麻糬闽南特产礼盒装800g",
+                "delivery_time_after_buy": "48",
+                "merchantId": "455",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170310/maf2a2a64fa0715b681d2b68957aa1fecb",
+                "_version_": 1563163331540287488,
+                "cateid": [
+                    "休闲零食_饼干糕点_糕点"
+                ],
+                "purchase_price": "2980",
+                "highest_price": "2990",
+                "main_sku": "12442",
+                "price": 2980,
+                "skuInfo": {
+                    "weight": 800,
+                    "updated_at": 1489119745,
+                    "attrs": [
+                        {
+                            "批次": "1504886400"
+                        }
+                    ],
+                    "expired_date": 1504886400,
+                    "now_price": 2980,
+                    "audit_status": 2,
+                    "id": 12442,
+                    "manufactured_date": 1488988800,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 455,
+                    "liked_cnt": 0,
+                    "lowest_price": 2980,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170310/maf2a2a64fa0715b681d2b68957aa1fecb",
+                    "skuId": 12442,
+                    "seller_time": 1489117335,
+                    "audit_time": 1489117335,
+                    "price": 2980,
+                    "offline_before_expired": 2592000,
+                    "market_price": 5000,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170310/maf2a2a64fa0715b681d2b68957aa1fecb@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 455,
+                    "online_time": 1489117335,
+                    "selled_cnt": 940,
+                    "name": "【包邮】波沽屋夹心肉松饼麻糬闽南特产礼盒装800g",
+                    "today_discount": 60,
+                    "product_id": 7751,
+                    "created_at": 1489115491,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 1056,
+                    "locked_stock": 3,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "6100",
+                "cates": "休闲零食_饼干糕点_糕点",
+                "merchant_id": "455",
+                "ugc_cnt": "0",
+                "selled_cnt": 940,
+                "categories": "1 6 19",
+                "today_discount": 60,
+                "name": "【包邮】波沽屋夹心肉松饼麻糬闽南特产礼盒装800g",
+                "lowest_price": "2990",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 69344,
+                "tags": [
+                    {
+                        "text": "6折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 10303,
+                "last_update_time": 1490748659,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "欧洲",
+                "brand_id": "1770",
+                "create_time": 1490748659,
+                "id": "10303",
+                "attr_ids": "[]",
+                "title": "【包邮】俄罗斯进口 康吉大牛大奶牛巧克力威化饼干1000g",
+                "delivery_time_after_buy": "48",
+                "merchantId": "688",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170303/ma8790f5d1e53c7490b8aa11423f182762",
+                "_version_": 1563163330212790272,
+                "cateid": [
+                    "休闲零食_糖果巧克力_巧克力"
+                ],
+                "purchase_price": "2600",
+                "highest_price": "1880",
+                "main_sku": "12113",
+                "price": 2600,
+                "skuInfo": {
+                    "weight": 1000,
+                    "updated_at": 1489042867,
+                    "attrs": [
+                        {
+                            "批次": "1497369600"
+                        }
+                    ],
+                    "expired_date": 1497369600,
+                    "now_price": 2600,
+                    "audit_status": 2,
+                    "id": 12113,
+                    "manufactured_date": 1471104000,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 688,
+                    "liked_cnt": 0,
+                    "lowest_price": 2600,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170303/ma8790f5d1e53c7490b8aa11423f182762",
+                    "skuId": 12113,
+                    "seller_time": 1488879626,
+                    "audit_time": 1488879626,
+                    "price": 2600,
+                    "offline_before_expired": 2592000,
+                    "market_price": 6000,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170303/ma8790f5d1e53c7490b8aa11423f182762@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 688,
+                    "online_time": 1488879626,
+                    "selled_cnt": 658,
+                    "name": "【包邮】俄罗斯进口 康吉大牛大奶牛巧克力威化饼干1000g",
+                    "today_discount": 44,
+                    "product_id": 10303,
+                    "created_at": 1488530476,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 538,
+                    "locked_stock": 4,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "9000",
+                "cates": "休闲零食_糖果巧克力_巧克力",
+                "merchant_id": "688",
+                "ugc_cnt": "0",
+                "selled_cnt": 658,
+                "categories": "1 8 24",
+                "today_discount": 44,
+                "name": "【包邮】俄罗斯进口 康吉大牛大奶牛巧克力威化饼干1000g",
+                "lowest_price": "1880",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 66043,
+                "tags": [
+                    {
+                        "text": "4.4折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 8290,
+                "last_update_time": 1490748661,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "亚洲其他国家",
+                "brand_id": "491",
+                "create_time": 1490748661,
+                "id": "8290",
+                "attr_ids": "[]",
+                "title": "【包邮】印尼进口Richeese丽芝士纳宝帝奶酪威化饼干58g*21包休闲零食品",
+                "delivery_time_after_buy": "72",
+                "merchantId": "635",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20161212/ma7816512465c30134c2f1b53d96019265",
+                "_version_": 1563163331882123264,
+                "cateid": [
+                    "休闲零食_饼干糕点_饼干"
+                ],
+                "purchase_price": "3990",
+                "highest_price": "3990",
+                "main_sku": "9810",
+                "price": 3990,
+                "skuInfo": {
+                    "weight": 1200,
+                    "updated_at": 1481613756,
+                    "attrs": [
+                        {
+                            "批次": "1507305600"
+                        }
+                    ],
+                    "expired_date": 1507305600,
+                    "now_price": 3990,
+                    "audit_status": 2,
+                    "id": 9810,
+                    "manufactured_date": 1475769600,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 635,
+                    "liked_cnt": 0,
+                    "lowest_price": 3990,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20161212/ma7816512465c30134c2f1b53d96019265",
+                    "skuId": 9810,
+                    "seller_time": 1481612743,
+                    "audit_time": 1481612743,
+                    "price": 3990,
+                    "offline_before_expired": 2592000,
+                    "market_price": 6800,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20161212/ma7816512465c30134c2f1b53d96019265@180w_180h_90Q.jpg",
+                    "merchant_item_code": "20161021A005",
+                    "merchant_id": 635,
+                    "online_time": 1481612743,
+                    "selled_cnt": 2686,
+                    "name": "【包邮】印尼进口Richeese丽芝士纳宝帝奶酪威化饼干58g*21包休闲零食品",
+                    "today_discount": 59,
+                    "product_id": 8290,
+                    "created_at": 1481535354,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 48316,
+                    "locked_stock": 2,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "6800",
+                "cates": "休闲零食_饼干糕点_饼干",
+                "merchant_id": "635",
+                "ugc_cnt": "0",
+                "selled_cnt": 2686,
+                "categories": "1 6 18",
+                "today_discount": 59,
+                "name": "【包邮】印尼进口Richeese丽芝士纳宝帝奶酪威化饼干58g*21包休闲零食品",
+                "lowest_price": "3990",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 62740,
+                "tags": [
+                    {
+                        "text": "5.9折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 7269,
+                "last_update_time": 1490748657,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "北京市",
+                "brand_id": "1206",
+                "create_time": 1490748657,
+                "id": "7269",
+                "attr_ids": "[]",
+                "title": "【包邮】中粮每日坚果零食大礼包孕妇儿童食品山萃原味混合干果礼盒成人款",
+                "delivery_time_after_buy": "48",
+                "merchantId": "476",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20161111/ma9fd90865cbfa8efa6676ea88acc8ed30",
+                "_version_": 1563163329639219200,
+                "cateid": [
+                    "休闲零食_坚果炒货_坚果"
+                ],
+                "purchase_price": "10300",
+                "highest_price": "11800",
+                "main_sku": "8702",
+                "price": 10300,
+                "skuInfo": {
+                    "weight": 750,
+                    "updated_at": 1479262929,
+                    "attrs": [
+                        {
+                            "批次": "1509465600"
+                        }
+                    ],
+                    "expired_date": 1509465600,
+                    "now_price": 10300,
+                    "audit_status": 2,
+                    "id": 8702,
+                    "manufactured_date": 1477929600,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 476,
+                    "liked_cnt": 0,
+                    "lowest_price": 10300,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20161111/ma9fd90865cbfa8efa6676ea88acc8ed30",
+                    "skuId": 8702,
+                    "seller_time": 1479094320,
+                    "audit_time": 1479261807,
+                    "price": 10300,
+                    "offline_before_expired": 2592000,
+                    "market_price": 19800,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20161111/ma9fd90865cbfa8efa6676ea88acc8ed30@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 476,
+                    "online_time": 1479261807,
+                    "selled_cnt": 1794,
+                    "name": "【包邮】中粮每日坚果零食大礼包孕妇儿童食品山萃原味混合干果礼盒成人款25g*30",
+                    "today_discount": 53,
+                    "product_id": 7269,
+                    "created_at": 1478855730,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 98397,
+                    "locked_stock": 4,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "19800",
+                "cates": "休闲零食_坚果炒货_坚果",
+                "merchant_id": "476",
+                "ugc_cnt": "0",
+                "selled_cnt": 1794,
+                "categories": "1 7 21",
+                "today_discount": 53,
+                "name": "【包邮】中粮每日坚果零食大礼包孕妇儿童食品山萃原味混合干果礼盒成人款",
+                "lowest_price": "11800",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 52834,
+                "tags": [
+                    {
+                        "text": "5.3折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 9178,
+                "last_update_time": 1490748659,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "亚洲其他国家",
+                "brand_id": "1661",
+                "create_time": 1490748659,
+                "id": "9178",
+                "attr_ids": "[]",
+                "title": "【包邮】印尼进口丽芝士纳宝帝芝士夹心奶酪威化饼干145g*6盒",
+                "delivery_time_after_buy": "48",
+                "merchantId": "521",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170110/ma026243450b47a67fd7160782e2fbf681",
+                "_version_": 1563163330805235712,
+                "cateid": [
+                    "休闲零食_饼干糕点_饼干"
+                ],
+                "purchase_price": "2960",
+                "highest_price": "2960",
+                "main_sku": "10809",
+                "price": 2960,
+                "skuInfo": {
+                    "weight": 870,
+                    "updated_at": 1484103804,
+                    "attrs": [
+                        {
+                            "批次": "1508428800"
+                        }
+                    ],
+                    "expired_date": 1508428800,
+                    "now_price": 2960,
+                    "audit_status": 2,
+                    "id": 10809,
+                    "manufactured_date": 1476892800,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 521,
+                    "liked_cnt": 0,
+                    "lowest_price": 2960,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170110/ma026243450b47a67fd7160782e2fbf681",
+                    "skuId": 10809,
+                    "seller_time": 1484025844,
+                    "audit_time": 1484025844,
+                    "price": 2960,
+                    "offline_before_expired": 2592000,
+                    "market_price": 7980,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170110/ma026243450b47a67fd7160782e2fbf681@180w_180h_90Q.jpg",
+                    "merchant_item_code": "ZH8355",
+                    "merchant_id": 521,
+                    "online_time": 1484025844,
+                    "selled_cnt": 688,
+                    "name": "【包邮】印尼进口丽芝士纳宝帝芝士夹心奶酪威化饼干145g*6盒",
+                    "today_discount": 38,
+                    "product_id": 9178,
+                    "created_at": 1484020129,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 311,
+                    "locked_stock": 1,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "7980",
+                "cates": "休闲零食_饼干糕点_饼干",
+                "merchant_id": "521",
+                "ugc_cnt": "0",
+                "selled_cnt": 688,
+                "categories": "1 6 18",
+                "today_discount": 38,
+                "name": "【包邮】印尼进口丽芝士纳宝帝芝士夹心奶酪威化饼干145g*6盒",
+                "lowest_price": "2960",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 52834,
+                "tags": [
+                    {
+                        "text": "3.8折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            },
+            {
+                "itemid": 10801,
+                "last_update_time": 1490748664,
+                "item_tags": [
+                    ""
+                ],
+                "producing_area": "北美洲",
+                "brand_id": "1570",
+                "create_time": 1490748664,
+                "id": "10801",
+                "attr_ids": "[]",
+                "title": "【包邮】美国原装进口 阳光少女SUN MAID加州葡萄干1kg休闲果干零食",
+                "delivery_time_after_buy": "48",
+                "merchantId": "616",
+                "priority": "0",
+                "liked_cnt": "0",
+                "main_sku_pic": "http://img.haoshiqi.net/merchantadmin/image20170316/mad8d7a5d682dbc9547bb49c47f8ee7419",
+                "_version_": 1563163333552504832,
+                "cateid": [
+                    "休闲零食_坚果炒货_干果"
+                ],
+                "purchase_price": "2990",
+                "highest_price": "2990",
+                "main_sku": "12667",
+                "price": 2990,
+                "skuInfo": {
+                    "weight": 1000,
+                    "updated_at": 1489748253,
+                    "attrs": [
+                        {
+                            "批次": "1504713600"
+                        }
+                    ],
+                    "expired_date": 1504713600,
+                    "now_price": 2990,
+                    "audit_status": 2,
+                    "id": 12667,
+                    "manufactured_date": 1457452800,
+                    "fpostage_amount": 1,
+                    "ugc_cnt": 0,
+                    "merchantId": 616,
+                    "liked_cnt": 0,
+                    "lowest_price": 2990,
+                    "thumbnail": "http://img.haoshiqi.net/merchantadmin/image20170316/mad8d7a5d682dbc9547bb49c47f8ee7419",
+                    "skuId": 12667,
+                    "seller_time": 1489745134,
+                    "audit_time": 1489745134,
+                    "price": 2990,
+                    "offline_before_expired": 2592000,
+                    "market_price": 6000,
+                    "skuPic": "http://img.haoshiqi.net/merchantadmin/image20170316/mad8d7a5d682dbc9547bb49c47f8ee7419@180w_180h_90Q.jpg",
+                    "merchant_item_code": "",
+                    "merchant_id": 616,
+                    "online_time": 1489745134,
+                    "selled_cnt": 570,
+                    "name": "【包邮】美国原装进口 阳光少女SUN MAID加州葡萄干1kg休闲果干零食",
+                    "today_discount": 50,
+                    "product_id": 10801,
+                    "created_at": 1489643127,
+                    "enabled": 1,
+                    "only_new_user": 0,
+                    "actived": 1,
+                    "restriction_amount": 0,
+                    "left_stock": 3140,
+                    "locked_stock": 0,
+                    "canDelivery": true
+                },
+                "offline_before_expired": "2592000",
+                "market_price": "8000",
+                "cates": "休闲零食_坚果炒货_干果",
+                "merchant_id": "616",
+                "ugc_cnt": "0",
+                "selled_cnt": 570,
+                "categories": "1 7 22",
+                "today_discount": 50,
+                "name": "【包邮】美国原装进口 阳光少女SUN MAID加州葡萄干1kg休闲果干零食",
+                "lowest_price": "2990",
+                "package_type": "1",
+                "enabled": "1",
+                "item_score": 52834,
+                "tags": [
+                    {
+                        "text": "5折",
+                        "background": "#FF5555"
+                    }
+                ],
+                "iconTags": [
+                    "http://img.haoshiqi.net/img/hottag.png"
+                ]
+            }
+        ]
+    },
+    "timestamp": 1490751724,
+    "serverlogid": "b843d1efb26f5caa560eb79c48c8069c"
+}

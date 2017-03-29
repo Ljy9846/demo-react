@@ -1,0 +1,40 @@
+.m-kind{
+    height: 2.24rem;
+    width: 100%;
+    >div{
+        h4{
+            font-weight: normal;
+            height: .31rem;
+            padding: .05rem .1rem .05rem .2rem;
+            background: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            i{
+                font-size: .08rem;
+                color: #b4b4b4;                
+            }
+        }
+        ul{
+            background: #fff;
+            border-top: 1px solid #e4e4e4;
+            margin-bottom: .1rem;
+            padding-top: .05rem;
+            padding-left: .05rem;
+            overflow: hidden;
+            li{
+                float: left;
+                border:1px solid #e4e4e4;
+                line-height: .14rem;
+                height: auto;
+                width: auto;
+                padding: .05rem;
+                font-size: .12rem;
+                margin-right: .05rem;
+                margin-bottom: .05rem;
+            }
+
+        }
+    }
+}
