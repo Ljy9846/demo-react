@@ -22,12 +22,15 @@
   url(/iconfont/iconfont2.ttf) format("truetype");
 }
 
+<<<<<<< HEAD
 @font-face {
   font-family: yofont;
   src: url(/iconfont/iconfont3.woff) format('woff'),
   url(/iconfont/iconfont3.ttf) format('truetype')
 }
 
+=======
+>>>>>>> zzb
 
 @include yo-header(
   $bgcolor: #ffee11,
