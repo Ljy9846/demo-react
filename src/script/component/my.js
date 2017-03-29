@@ -1,10 +1,49 @@
 import React from "react"
-import { Link } from 'react-router'
+import { Link, Router, Route ,hashHistory,IndexRoute } from 'react-router'
 import Kind from './kind.js'
-class My extends React.Component {
-  render() {
-    return (
-      <div className="m-my">
+
+class LoginUp extends React.Component{
+	render(){
+		return (
+			<div className="m-my-loginUp">
+				<ul>
+					<li><input className="phoNum" type="text" placeholder="请输入手机号"/></li>
+					<li className="authCode">
+						<input type="text" placeholder="请输入验证码"/>
+						<span className="active">获取验证码</span><span>验证码</span>
+					</li>
+				</ul>
+				<span className="submit">登录</span>
+				<p>已有密码，可使用<span>账号密码登录</span></p>
+			</div>
+
+		)
+	}
+}
+
+class LoginIn extends React.Component{
+	render(){
+		return (
+			<div className="m-my-loginIn">
+				<ul>
+					<li><input className="phoNum" type="text" placeholder="请输入手机号"/></li>
+					<li className="authCode">
+						<input type="text" placeholder="请输入验证码"/>
+						<span className="active">获取验证码</span><span>验证码</span>
+					</li>
+					<li className="pwd"><input className="password" type="text" placeholder="请输入密码（6-20位字母或数字）"/></li>
+
+				</ul>
+				<span className="submit">登录</span>
+				<p>已有密码，可使用<span>账号密码登录</span></p>
+			</div>
+		)
+	}
+}
+class MyIndex extends React.Component{
+	render(){
+		return(
+			<div className="m-my">
     	{/*<Link to="/loginIn">*/}
 	    	<div className="myIcon">
 				<div className="imgCtn">
@@ -52,12 +91,18 @@ class My extends React.Component {
 			<li><span className="yo-ico">&#xe612;</span>意见反馈<i>></i></li>
 			<li><span className="yo-ico">&#xe689;</span>关于好食期<i>></i></li>
 		</ul>
-		
-		{/*跳转页面*/}
-{/*		<div><input type="text" placeholder="请输入手机号"/><span>获取验证码</span></div>
-		<input type="text" placeholder="请输入验证码"/>*/}
-
       </div>
+		)
+	}
+}
+class My extends React.Component {
+  render() {
+    return (
+      	<Router history={hashHistory}>
+			<IndexRoute component={MyIndex}/>
+			<Router path="/loginup" component={LoginUp}/>
+			<Router path="/loginin" component={LoginIn}/>
+		</Router>
     )
   }
 }
