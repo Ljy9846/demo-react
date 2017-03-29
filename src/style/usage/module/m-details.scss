@@ -1,0 +1,137 @@
+.m-details{
+	height:100%;
+	width:100%;
+	@include flexbox();
+	@include flex-direction(column);
+	font-family:"微软雅黑";
+	.product{
+		flex:1;
+		overflow:auto;
+		.swiper{
+			height:3.2rem;
+			img{
+				height:100%;
+			}
+		}
+		.article{
+			padding:0.1rem;
+			@include border(0 0 1px 0,#ccc);
+			background:#fff;
+			p{
+				font-size:0.16rem;
+			}
+			.page{
+				color:#f66;
+				font-size:0.18rem;
+				line-height:0.3rem;
+			}
+			.s-del{
+				color:#999;
+				font-size:0.12rem;
+				margin-left:0.1rem;
+				span{
+					text-decoration:line-through;
+				}
+			}
+			.cun{
+				float:right;
+				line-height:0.3rem;
+				color:#999;
+				font-size:0.12rem;
+			}
+		}
+		.cuxiao{
+			height:0.5rem;
+			background:#fff;
+			margin-top:0.1rem;
+			padding:0.14rem;
+			img{
+				height:0.15rem;
+			}
+		}
+		.renzheng{
+			@include flexbox();
+			height:0.7rem;
+			width:100%;
+			overflow:hidden;
+			background:#f7f8fa;
+			li{
+				flex:1;
+				@include flexbox();
+        		@include flex-direction(column);
+				@include justify-content(center);
+        		@include align-items(center);
+        		img{
+        			height:0.3rem;
+        		}
+        		p{
+        			font-size:0.12rem;
+        		}
+			}
+		}
+
+		.evaluation{
+			padding:0.1rem;
+			height:0.36rem;
+			background:#fff;
+			margin-top:0.1rem;
+			font-size:0.12rem;
+			.too{
+				color:#999;
+				float:right;
+			}
+		}
+
+		.tu{
+			@include flexbox();
+			background:#fff;
+			margin-top:0.1rem;
+			p{
+				flex:1;
+				text-align:center;
+				line-height:0.45rem;
+				&.red{
+					@include border(0 0 2px 0,#f66);
+					color:#f66;
+				}
+			}
+		}
+
+		section{
+			height:2rem;
+		}
+	}
+	.fixed_footer{
+		@include flexbox();
+		height:0.4rem;
+		@include border(1px 0 0 0,#ccc);
+		background:#fff;
+		p{
+			flex:1;
+			@include border( 0 1px 0 0,#ccc);
+			@include flexbox();
+			@include flex-direction(column);
+			@include justify-content(center);
+        	@include align-items(center);
+        	color:#999;
+        	font-size:0.12rem;
+        	i{
+        		font-size:0.14rem;
+        	}
+        	i.one{
+        		color:#74c3e3;
+        	}
+        	b{
+        		font-weight:100;
+        	}
+		}
+		p.addCart{
+			flex:2;
+			line-height:0.4rem;
+			text-align:center;
+			background:#f55;
+			color:#fff;
+			font-size:0.16rem;
+		}
+	}
+}
