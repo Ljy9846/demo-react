@@ -17,6 +17,7 @@ class My extends React.Component {
 
     	<div className="myOrd">
 			<div className="header">
+				<i className="yo-ico">&#xe60f;</i>
 				<span className="hdLft">我的订单</span>
 				<span className="hdRit">查看全部订单<i>></i></span>
 			</div>

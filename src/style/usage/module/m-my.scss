@@ -40,14 +40,22 @@
 		background: #fff;
 
 		.header{
-			padding:0.1rem 0.15rem;
+			padding:0.04rem 0.15rem;
 			border-bottom: solid 1px #e6e6e6;
 			overflow:hidden;
-			.hdLft{
+			.yo-ico{
+				color:#ff8a47;
+				font-size:24px;
+				padding-right:.12rem;
 				float:left;
 			}
+			.hdLft{
+				float:left;
+				padding-top:.06rem;
+			}
 			.hdRit{
-				float:right
+				float:right;
+				padding-top:.06rem;
 			}
 		}
 		.list{
@@ -67,7 +75,7 @@
 				}
 				.yo-ico{
 					padding-top:0.20rem;
-					font-size: 0.18rem;
+					font-size:18px;
 				}
 			}
 		} 
