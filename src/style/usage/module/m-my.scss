@@ -1,0 +1,139 @@
+.m-my{
+	box-sizing:border-box;
+	height:100%;
+	width:100%;
+	color:#4d4d4d;
+
+	.myIcon{
+		padding:0.1rem 0.15rem;
+		position:relative;
+		height:0.76rem;
+		overflow:hidden;
+		background:#fff;
+		border-bottom: solid 1px #e6e6e6;
+		.imgCtn{
+			float:left;
+			height:0.6rem;
+			width:0.6rem;
+			@include border-radius(0.3rem)
+			img{
+				height:100%;
+				width:100%;
+			}
+		}
+		.loginStatus{
+			float:left;
+			line-height:0.6rem;
+			padding-left:0.12rem;
+		}
+		.useMsg{
+			position:absolute;
+			bottom:0.08rem;
+			right:0.05rem;
+		}
+	}
+
+	.myOrd{
+		height:1.1rem;
+		box-sizing:border-sizing;
+		margin-top:0.07rem;
+		background: #fff;
+
+		.header{
+			padding:0.04rem 0.15rem;
+			border-bottom: solid 1px #e6e6e6;
+			overflow:hidden;
+			.yo-ico{
+				color:#ff8a47;
+				font-size:24px;
+				padding-right:.12rem;
+				float:left;
+			}
+			.hdLft{
+				float:left;
+				padding-top:.06rem;
+			}
+			.hdRit{
+				float:right;
+				padding-top:.06rem;
+			}
+		}
+		.list{
+			padding:0 0.15rem;
+			@include flexbox();
+			@include flex-direction();
+			@include justify-content();
+			@include align-items();
+			li{
+				@include flex();
+				@include flexbox();
+				@include flex-direction(column);
+				span{
+					height:0.32rem;
+					@include align;
+					width:100%;
+				}
+				.yo-ico{
+					padding-top:0.20rem;
+					font-size:18px;
+				}
+			}
+		} 
+	}
+
+	.another,.pri{
+		border-top:solid 1px #e6e6e6;
+		margin-top: 0.1rem;
+		li{
+			i{
+				float:right;
+				line-height: 0.4rem;
+			}
+			background:#fff;
+			padding:0 0.15rem;
+			color:#4d4d4d;
+			height:0.4rem;
+			border-bottom:solid 1px #e6e6e6;
+			span{
+				font-size: 0.24rem;
+				padding:0 .12rem 0 0;
+				line-height: 0.4rem;
+			}
+
+		}
+	}
+	.pri{
+		li:nth-child(1){
+			.yo-ico{
+				color:#ff5555;
+			}
+		}
+		li:nth-child(2){
+			.yo-ico{
+				color:#fec28b;
+			}
+		}
+		li:nth-child(3){
+			.yo-ico{
+				color:#87befd;
+			}
+		}
+	}
+	.another{
+		li:nth-child(1){
+			.yo-ico{
+				color:#fda9ac;
+			}
+		}
+		li:nth-child(2){
+			.yo-ico{
+				color:#af69d3;
+			}
+		}
+		li:nth-child(3){
+			.yo-ico{
+				color:#f9eb0c;
+			}
+		}
+	}
+}
