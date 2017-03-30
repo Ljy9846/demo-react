@@ -1,5 +1,21 @@
 @import "../element/yo-checked";
+@import "../fragment/yo-number";
 
+@include yo-number(
+  
+){
+	height:0.3rem;
+	float:right;
+	margin-top:0.1rem;
+	span.plus{
+		height:0.3rem;
+		line-height:0.3rem;
+	}
+	span.minus{
+		height:0.3rem;
+		line-height:0.3rem;
+	}
+}
 
 .m-cart{
 	height:100%;
