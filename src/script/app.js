@@ -9,12 +9,12 @@ import Index from './component/index'
 import Board from './component/board'
 import Kind from './component/kind'
 import Cart from './component/cart'
-<<<<<<< HEAD
+
 import My from './component/my'
 import Search from './component/search'
-=======
+
 import { My, LoginUp, LoginIn } from './component/my'
->>>>>>> origin/zzb
+
 
 ReactDOM.render(
   <Router history={hashHistory}>

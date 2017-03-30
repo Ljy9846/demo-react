@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'react-router'
 import Kind from './kind.js'
-<<<<<<< HEAD
+
 class My extends React.Component {
   render() {
     return (
@@ -61,7 +61,7 @@ class My extends React.Component {
       </div>
     )
   }
-=======
+
 
 class LoginUp extends React.Component{
 	render(){
@@ -113,7 +113,7 @@ class LoginIn extends React.Component{
 			</div>
 		)
 	}
->>>>>>> origin/zzb
+
 }
 
 class My extends React.Component{
