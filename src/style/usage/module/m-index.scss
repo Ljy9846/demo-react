@@ -42,22 +42,22 @@
 	          		@include justify-content(center);
 	          		i, b {
 			        	color: rgba(0, 0, 0, 0.5)
-			        }
+			        } 
 			        i {
 			        	font-size: 0.25rem;
 			        	line-height: 0.25rem;
-						color: #914e07;
+						color: #999;
 			        }
 			        b {
 			        	font-weight: normal;
 			        	font-size: 0.12rem;
-						color: #914e07;
+						color: #999;
 			        	// @include transform(scale(0.5));
 			        }
 			        &.active i,
 			        &.active b {
 			        	font-weight: bold;
-			        	color: rgba(145, 78, 7, 1)
+			        	color: rgba(145, 78, 7, 1);
 			        }
           		}
 			}
