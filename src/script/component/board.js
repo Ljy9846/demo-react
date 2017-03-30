@@ -1,118 +1,58 @@
 import React from "react"
+import { Link } from 'react-router'
 import Carousel from '../../component_dev/carousel/src/'
 import fetchData from '../util/util.fetch.js'
 import Scroller from '../../component_dev/scroller/src/'
-
 class Board extends React.Component{
 	constructor (props) {
 	    super(props);
-	    this.top = this.top.bind(this);
-	    this.state = {
-	      scolist:[],//横向导航
-	      bannerlist: [<div/>],//轮播
-	      homenav:[],//分类
-	      newlist:[],//新产品
-	      productlist:[]//产品
-	    }
-	}
-	top(){
-		this.refs.bodyBox.scrollTop = 0
+	   
 	}
 	render(){
 		return(
 			<div className="m-board" ref="bodyBox">
 				<Scroller scrollX={true} scrollY={false}>
-					{this.state.scolist}
+					<Link to="/board/home" activeClassName="active">
+						首页
+					</Link>
+					<Link to="/board/group" activeClassName="active">
+						团购
+					</Link>
+					<Link to="/board/new" activeClassName="active">
+						今日新品
+					</Link>
+					<Link to="/board/cake" activeClassName="active">
+						饼干糕点
+					</Link>
+					<Link to="/board/snack" activeClassName="active">
+						休闲零食
+					</Link>
+					<Link to="/board/candy" activeClassName="active">
+						糖果巧克力
+					</Link>
+					<Link to="/board/pork" activeClassName="active">
+						肉脯干卤味
+					</Link>
+					<Link to="/board/drink" activeClassName="active">
+						饮料冲调
+					</Link>
+					<Link to="/board/milk" activeClassName="active">
+						含乳饮品
+					</Link>
+					<Link to="/board/fast" activeClassName="active">
+						罐头素食
+					</Link>
+					<Link to="/board/brand" activeClassName="active">
+						品牌特卖
+					</Link>
 				</Scroller>
-				<div className="swiper">
-					<Carousel>
-			            {this.state.bannerlist}
-			        </Carousel>
+				<div>
+					{this.props.children}
 				</div>
-				<div className="homenav">
-					<ul>
-						{this.state.homenav}
-					</ul>
-				</div>
-				<div className="new">
-					{this.state.newlist}
-				</div>
-				<div className="product">
-					{this.state.productlist}
-				</div>
-				<div onClick={this.top}>
-					<img src="./images/btn_top.png" className="go"/>
-					<img src="./image/btn_top.png" className="go"/>
-				</div>
+				
 			</div>
 		)
 	}
-	componentDidMount() {
-		
-			
-		//横向导航、轮播、五个分类
-		let ul='/api/common/index?device=iphone&channel=h5&swidth=375&sheight=667&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F'
-	    fetch(ul)
-	    .then(response=>response.json())
-	    .then(res=>{
-	    
-	    	let bannerlist = res.data.bannerList.map(val=>{
-				return(
-					<li className="item"><img className="img" src={val.image} /></li>
-				)
-			})
-	    	let homenav = res.data.subButtonList.map(val=>{
-				return(
-					<li key={val.id}>
-						<img src={val.icon}/>
-						<p>{val.label}</p>
-					</li>	
-				)
-			})
-	    	let newlist = res.data.marketingActivities.map(val=>{
-				return(
-					<a key={val.id} href={val.jump_url}>
-						<img src={val.icon}/>
-					</a>
-				)
-			})
-	    	console.log(res.data.topNavigateList.list)
-	    	let scolist = res.data.topNavigateList.list.map(val=>{
-				return(
-					<a href={val.jump_url}>
-						{val.label}
-					</a>
-				)
-			})
-	      	this.setState({
-		        bannerlist:bannerlist,
-		        homenav:homenav,
-			    newlist:newlist,
-			    scolist:scolist
-		       
-	        })
-	    })
-	    //商品列表
-	    let url2='/api/product/recommendproducts?device=iphone&channel=h5&swidth=375&sheight=667&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F&needPagination=1&pageNum=1&pageLimit=20'
-	    fetchData(url2, function (res) {
-		    let Lis = res.data.list.map(val=>{
-		        return(
-					<a href={val.skuInfo.skuThumbnail	}>
-						<img src={val.skuInfo.skuThumbnail} />
-						<div className="product-right">
-							<h3>{val.skuInfo.name}</h3>
-							<p><i>￥</i>{val.skuInfo.price/100}<s>{val.skuInfo.market_price/100}</s></p>
-							<img src="./images/button_shopCart.png"/>
-							<img src="./image/button_shopCart.png"/>
-						</div>
-					</a>
-				)
-		    })
-		    this.setState({
-	        productlist: Lis
-	      })
-	    }.bind(this))
-	}
-  	
+	
 }
 export default Board

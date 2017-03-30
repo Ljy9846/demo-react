@@ -1,13 +1,31 @@
 import React from "react"
 
 
+
 class Cart extends React.Component {
 	constructor (props) {
 	    super(props);
+	    this.minus = this.minus.bind(this);
+	    this.plus = this.plus.bind(this);
 	    this.state = {
-	      shopping:[]
+	      shopping:[],
+	      number:1
 	    }
 	}
+
+	minus(){
+		if(this.state.number>1){
+			this.setState({
+				number:this.state.number-1
+			})
+		}
+	}
+	plus(){
+		this.setState({
+			number:this.state.number+1
+		})
+	}
+
 	render() {
 	    return (
 		    <div className="m-cart">
@@ -39,11 +57,17 @@ class Cart extends React.Component {
 					        		<p>
 					        			<i>￥<span>32.90</span></i>
 					        			<span className="s">40.00</span>
+					        			<div className="yo-number">
+						        			<span className="minus" onClick={this.minus}>-</span>
+						        			<input type="text" className="input" value={this.state.number} disabled=""/>
+						        			<span className="plus" onClick={this.plus}>+</span>
+					        			</div>
 					        		</p>
 					        		<p className="shopping-surplus">
 			            				仅剩1320件
 					        		</p>
 					        	</div>
+
 					        </dd>
 				        </dl>
 		        	</div>
