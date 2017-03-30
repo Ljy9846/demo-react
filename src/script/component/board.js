@@ -41,11 +41,8 @@ class Board extends React.Component{
 					{this.state.productlist}
 				</div>
 				<div onClick={this.top}>
-<<<<<<< HEAD
 					<img src="./images/btn_top.png" className="go"/>
-=======
 					<img src="./image/btn_top.png" className="go"/>
->>>>>>> origin/wangbei
 				</div>
 			</div>
 		)
@@ -105,11 +102,8 @@ class Board extends React.Component{
 						<div className="product-right">
 							<h3>{val.skuInfo.name}</h3>
 							<p><i>￥</i>{val.skuInfo.price/100}<s>{val.skuInfo.market_price/100}</s></p>
-<<<<<<< HEAD
 							<img src="./images/button_shopCart.png"/>
-=======
 							<img src="./image/button_shopCart.png"/>
->>>>>>> origin/wangbei
 						</div>
 					</a>
 				)
