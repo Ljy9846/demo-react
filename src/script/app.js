@@ -10,7 +10,7 @@ import Board from './component/board'
 import Kind from './component/kind'
 import Cart from './component/cart'
 
-import My from './component/my'
+
 import Search from './component/search'
 
 import { My, LoginUp, LoginIn } from './component/my'
