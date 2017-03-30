@@ -26,7 +26,7 @@ class Index extends React.Component {
           <ul>
             <li className="active">
               <Link to="/board" activeClassName="active">
-                <i className="yo-ico">&#xe64a;</i>
+                <i className="yo-ico">&#xe64b;</i>
                 <b>首页</b>
               </Link>
             </li>
@@ -38,7 +38,7 @@ class Index extends React.Component {
             </li>
             <li>
               <Link to="/cart" activeClassName="active">
-                <i className="yo-ico">&#xe607;</i>
+                <i className="yo-ico">&#xe6ff;</i>
                 <b>购物车</b>
               </Link>
             </li>

@@ -1,9 +1,11 @@
-.m-my{
+ .m-my{
 	box-sizing:border-box;
 	height:100%;
 	width:100%;
 	color:#4d4d4d;
-
+	a{
+		color:#4d4d4d;
+	}
 	.myIcon{
 		padding:0.1rem 0.15rem;
 		position:relative;
@@ -137,3 +139,115 @@
 		}
 	}
 }
+
+/* 登录页面 */
+
+.m-my-loginUp{
+	color:#7c7c7c;
+	ul{	
+		margin-top:15px;
+		background:#fff;
+		li{
+			height:44px;
+			padding:0 5px;
+			input{
+				border:none;
+				outline: none;
+				line-height: 44px;
+			}
+		}
+		.phoNum{
+			width:100%;
+			@include border(1px,#aaa,solid );
+		}
+		.authCode{
+			@include flexbox();
+			input{
+				@include flex(2);
+			}
+			span{
+				box-sizing: border-box;
+				@include flex(1);
+				@include align();
+				background: #eee;
+				margin:5px 0;
+				padding:0 7px;
+			}
+		}
+	}
+	.submit{
+		text-align: center;
+		display:block;
+		height:40px;
+		line-height: 40px;
+		margin:10px .15rem;
+		color:#914e07;
+		background: yellow;
+		@include border-radius(3px); 
+	}
+	p{
+		padding:0 0.15rem;
+		a{
+			color:#914e07;
+		}
+	}
+
+}
+
+/* 注册页面 */
+.m-my-loginIn{
+	color:#7c7c7c;
+	ul{	
+		margin-top:15px;
+		background:#fff;
+		li{
+			height:44px;
+			padding:0 5px;
+			input{
+				border:none;
+				outline: none;
+				line-height: 44px;
+			}
+		}
+		.phoNum{
+			width:100%;
+			@include border(1px,#aaa,solid );
+		}
+		.authCode{
+			@include flexbox();
+			input{
+				@include flex(2);
+			}
+			span{
+				box-sizing: border-box;
+				@include flex(1);
+				@include align();
+				background: #eee;
+				margin:5px 0;
+				padding:0 7px;
+			}
+		}
+		.pwd{
+			input{
+				width:100%;
+			}
+		}
+	}
+	.submit{
+		text-align: center;
+		display:block;
+		height:40px;
+		line-height: 40px;
+		margin:10px .15rem;
+		color:#914e07;
+		background: yellow;
+		@include border-radius(3px); 
+	}
+	p{
+		padding:0 0.15rem;
+		a{
+			color:#914e07;
+		}
+	}
+
+} 

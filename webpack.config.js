@@ -9,7 +9,6 @@ module.exports = {
 
   output: {
     path: __dirname + '/build',
-    // filename: 'app_[hash].js'
     filename: 'app.js'
   },
 
@@ -29,10 +28,6 @@ module.exports = {
 
   module: {
     loaders: [
-      // {
-      //   test: /\.css$/,
-      //   loader: 'style-loader!css-loader'
-      // },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
@@ -40,10 +35,6 @@ module.exports = {
           use: 'css-loader'
         })
       },
-      // {
-      //   test: /\.scss$/,
-      //   loader: 'style-loader!css-loader!sass-loader'
-      // }
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
@@ -60,14 +51,6 @@ module.exports = {
   },
 
   plugins: [
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compress: {
-    //     warnings: false
-    //   },
-    //   output: {
-    //     comments: false
-    //   }
-    // }),
     new HtmlWebpackPlugin({
       template: './src/index.ejs',
       filename: 'index.html',
@@ -79,11 +62,7 @@ module.exports = {
       disable: false,
       allChunks: true
     }),
-/*    new OpenBrowserPlugin({
-    	url:"http://localhost:8000"
-    })*/
   ],
-
   externals: {
     'react': 'window.React',
     'react-dom': 'window.ReactDOM',
