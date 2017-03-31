@@ -13,7 +13,7 @@ class New extends React.Component{
 	}
 	render(){
 		return(
-			<div className="product">
+			<div className="prolist">
 				{this.state.productlist}
 			</div>
 		)
@@ -26,14 +26,14 @@ class New extends React.Component{
 		    	let price =val.price/100;
 		    	let market_price=val.market_price/100;
 		        return(
-					<a>
+					<div>
 						<img src={val.sku_pic} />
 						<div className="product-right">
 							<h3>{val.sku_name}</h3>
 							<p><i>￥</i>{ price }<s>{ market_price }</s></p>
 						
 						</div>
-					</a>
+					</div>
 				)
 		    })
 		    this.setState({
