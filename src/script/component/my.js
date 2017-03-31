@@ -2,7 +2,21 @@ import React from "react"
 import { Link , hashHistory } from 'react-router'
 import Kind from './kind.js'
 
+import Alert from '../../component_dev/alert/src';
+import {loading} from '../../component_dev/loading/src';
+
 import MyAjax from '../util/util.myAjax.js'
+
+/*class userCenter extends React.Component{
+	render(){
+		<div className="center">
+			<div className="center_header">
+				<div></div>
+			</div>
+
+		</div>
+	}
+}*/
 
 class LoginUp extends React.Component{
 	handleLoginUp(){
@@ -10,26 +24,30 @@ class LoginUp extends React.Component{
 		var password = this.refs.pw.value
 		console.log("pwd",password)
 		console.log("un",userName)
-		/*this.setState({value:})*/
-		var url = "http://datainfo.duapp.com/shopdata/userinfo.php"
-		var info = {status:"login",userID:userName,password:password}
-		MyAjax("post",url,false,info,function(res){
-		// console.log("res",res)
-			if(res==0){
-				console.log(0) //
-			}else if(res==2){
-				console.log("您输入的密码或账号有误") 
-			}else if(res){
-				var id="zzbzzbzzb"
-				// window.location.hash = '#my?id='+id
-				var userID={
-					"id" : userName
+		if(userName && password){
+			var url = "http://datainfo.duapp.com/shopdata/userinfo.php"
+			var info = {status:"login",userID:userName,password:password}
+			loading.show()
+			MyAjax("post",url,false,info,function(res){
+				if(res==0){
+					loading.hide()
+					Alert("用户名不存在") 
+				}else if(res==2){
+					loading.hide()
+					Alert("您输入的密码或账号有误") 
+				}else if(res){
+					var userID={
+						"id" : userName
+					}
+					window.localStorage.setItem("user",JSON.stringify(userID))
+					console.log(window.localStorage.getItem("user"))
+					loading.hide()
+					window.location.hash = '#my'
 				}
-				window.localStorage.setItem("user",JSON.stringify(userID))
-				console.log(window.localStorage.getItem("user"))
-				window.location.hash = '#my'
-			}
-		})
+			})
+		}else{
+			Alert('请输入登录信息');
+		}	
 	}
 
 	render(){		
@@ -42,7 +60,7 @@ class LoginUp extends React.Component{
 					</li>
 				</ul>
 				<span className="submit" onClick={this.handleLoginUp.bind(this)}>登录</span>
-				<p>已有密码，可使用<Link to="/my/loginin">账号密码登录</Link></p>
+				<p>没有账号，我要去<Link to="/my/loginin">注册</Link></p>
 			</div>
 		)
 	}
@@ -61,47 +79,54 @@ class LoginIn extends React.Component{
 		var password1 = this.refs.pwd1.value
 		var password2 = this.refs.pwd2.value
 		
-		var phonReg = /^1(3|4|5|7|8)\d{9}$/ 
+		var phonReg = /[A-Za-z0-9]{4,10}/ 
 		var pwdReg = /[A-Za-z0-9]{6,20}/
 
 		if(!phonReg.test(userName)){
-			console.log("手机格式不正确")
-		}
-
-		if(!pwdReg.test(password1)){
-			console.log("密码不符合要求")
-		}
-		
-		if( phonReg.test(userName) && pwdReg.test(password1)){
-			if(password1==password2){
-				var url = "http://datainfo.duapp.com/shopdata/userinfo.php"
-				var info = {status:"register",userID:userName,password:password1}
-				MyAjax("post",url,false,info,function(res){
-				// console.log("res",res)
-					if(res==0){
-						console.log(0) //用户名重名
-					}else if(res==1){
-						var id=userName
-						// window.location.hash = '#my?id='+id
-						var userID={
-							"id" : userName
+			Alert("用户名格式不正确")
+		}else{
+			if(!pwdReg.test(password1)){
+				Alert("密码不符合要求")
+			}else{
+				if(!this.refs.check.checked){
+					Alert("请选择同意")
+				}else{
+					loading.show()
+					if( phonReg.test(userName) && pwdReg.test(password1)){
+						if(password1==password2){
+							var url = "http://datainfo.duapp.com/shopdata/userinfo.php"
+							var info = {status:"register",userID:userName,password:password1}
+							MyAjax("post",url,false,info,function(res){
+							// console.log("res",res)
+								if(res==0){
+									Alert("用户名重名")
+									loading.hide()
+								}else if(res==1){
+									var id=userName
+									// window.location.hash = '#my?id='+id
+									var userID={
+										"id" : userName
+									}
+									window.localStorage.setItem("user",JSON.stringify(userID))
+									// console.log(window.localStorage.getItem("user"))
+									loading.hide()
+									window.location.hash = '#my'
+								}else{
+									loading.hide()
+									Alert("系统异常请重试一次")
+								}
+							})
+						}else {
+							Alert("密码输入不一致")
 						}
-						window.localStorage.setItem("user",JSON.stringify(userID))
-						// console.log(window.localStorage.getItem("user"))
-						window.location.hash = '#my'
-					}else{
-						console.log("不成功")
 					}
-				})
-			}else {
-				alert("密码输入不一致")
+				}
 			}
 		}
-		
+			
 	}
 
 	shouldComponentUpdate(){
-		console.log("smzq",this.state.value)
 	}
 
 	componentWillUpdate(){
@@ -112,7 +137,7 @@ class LoginIn extends React.Component{
 		return (
 			<div className="m-my-loginIn">
 				<ul>
-					<li><input className="phoNum" ref="phNum" type="text" placeholder="请输入手机号"/></li>
+					<li><input className="phoNum" ref="phNum" type="text" placeholder="请输入用户名"/></li>
 					<li className="authCode">
 						<input type="pwd" ref="pwd1" placeholder="请输入密码（6-20位字母或数字）"/>
 					</li>
@@ -121,7 +146,13 @@ class LoginIn extends React.Component{
 					</li>
 				</ul>
 				<span className="submit" onClick={this.handleLoginIn.bind(this)}>注册</span>
-				<p>我接受用户协议</p>
+				<p>	
+					<label >
+						<input type="checkbox" ref="check"/>我接受用户协议
+					</label>
+					，已有账号
+					<Link to="my/loginup">登录</Link>
+				</p>
 			</div>
 		)
 	}
@@ -148,11 +179,7 @@ class My extends React.Component{
 		if(localStorage.getItem("user") && JSON.parse(localStorage.getItem("user")).id){
 			var user = JSON.parse(localStorage.getItem("user"))
 			 // console.log("use.id",user.id)
-			var  info = {
-				usename:"zzb",
-				cart:[1,2,3]
-			}
-			this.setState({name:info.usename,none:true})
+			this.setState({name:user.id,none:true})
 		}else{
 			
 		}
@@ -170,6 +197,8 @@ class My extends React.Component{
 							<span className="useMsg">账户、收货地址管理 ></span>
 				    	</div>
 			    	</Link>
+
+			    	<Link to="/my/loginup">
 				    	<div className="myOrd">
 							<div className="header">
 								<i className="yo-ico">&#xe60f;</i>
@@ -195,19 +224,24 @@ class My extends React.Component{
 									<span>售后</span>
 								</li>
 							</ul>
-		    		</div>
+		    			</div>
+					</Link>
 
-					<ul className="pri">
-						<li><span className="yo-ico">&#xe642;</span>我的优惠券<i>></i></li>
-						<li><span className="yo-ico">&#xe8e8;</span>我的拼团<i>></i></li>
-						<li><span className="yo-ico">&#xe632;</span>我的抽奖<i>></i></li>
-					</ul>
-				
-					<ul className="another">
-						<li><span className="yo-ico">&#xe607;</span>我的收藏<i>></i></li>
-						<li><span className="yo-ico">&#xe612;</span>意见反馈<i>></i></li>
-						<li><span className="yo-ico">&#xe689;</span>关于好食期<i>></i></li>
-					</ul>
+					<Link to="/my/loginup">
+						<ul className="pri">
+							<li><span className="yo-ico">&#xe642;</span>我的优惠券<i>></i></li>
+							<li><span className="yo-ico">&#xe8e8;</span>我的拼团<i>></i></li>
+							<li><span className="yo-ico">&#xe632;</span>我的抽奖<i>></i></li>
+						</ul>
+					</Link>
+
+					<Link to="/my/loginup">
+						<ul className="another">
+							<li><span className="yo-ico">&#xe607;</span>我的收藏<i>></i></li>
+							<li><span className="yo-ico">&#xe612;</span>意见反馈<i>></i></li>
+							<li><span className="yo-ico">&#xe689;</span>关于好食期<i>></i></li>
+						</ul>
+					</Link>
 				</div>
 				
 				<div className={this.state.none ? "yes" : "none"}>

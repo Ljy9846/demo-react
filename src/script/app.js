@@ -8,6 +8,7 @@ import {Router, Route, IndexRedirect, IndexRoute, hashHistory} from 'react-route
 import Index from './component/index'
 import Board from './component/board'
 import Kind from './component/kind'
+import List from './component/list'
 import Cart from './component/cart'
 import Search from './component/search'
 import { My, LoginUp, LoginIn } from './component/my'
@@ -45,11 +46,12 @@ ReactDOM.render(
   			<Route path="brand" component={Brand}></Route>
   		</Route>
   		<Route path="kind" component={Kind}></Route>
-  		<Route path="cart" component={Cart}></Route>
+      <Route path="cart" component={Cart}></Route>
+  		<Route path="list/:id" component={List}></Route>
   		<Route path="my" component={My}></Route>
       <Router path="my/loginup" component={LoginUp}/>
       <Router path="my/loginin" component={LoginIn}/>
-      <Router path="details" component={Details}/>
+      <Router path="details/:id" component={Details}/>
   	</Route>
 	<Route path="search" component={Search}></Route>
   </Router>,

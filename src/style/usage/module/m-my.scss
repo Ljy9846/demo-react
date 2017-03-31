@@ -150,7 +150,7 @@
 		height:38px;
 		padding:0 .85rem;
 		span{
-			background:yellow;
+			background:#f55;
 			color:#eee;
 			display:block;
 			line-height: 38px;
@@ -171,6 +171,7 @@
 		li{
 			height:44px;
 			padding:0 5px;
+			@include border(1px,#ccc,solid);
 			input{
 				border:none;
 				outline: none;
@@ -222,6 +223,7 @@
 		margin-top:15px;
 		background:#fff;
 		li{
+			@include border(1px,#ccc,solid);
 			height:44px;
 			padding:0 5px;
 			input{
