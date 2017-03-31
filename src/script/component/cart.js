@@ -26,6 +26,14 @@ class Cart extends React.Component {
 		})
 	}
 
+	componentWillMount() {
+		var data = localStorage.getItem("user");
+		if(!data){
+			window.location.href="/#/my/loginup"
+		}
+	}
+
+
 	render() {
 	    return (
 		    <div className="m-cart">

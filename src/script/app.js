@@ -10,11 +10,18 @@ import { store } from './redux/store'
 import Index from './component/index'
 import Board from './component/board'
 import Kind from './component/kind'
+import List from './component/list'
 import Cart from './component/cart'
 import Search from './component/search'
 import { My, LoginUp, LoginIn } from './component/my'
 
+<<<<<<< HEAD
 // board中 二级路由
+=======
+import Details from './component/details'
+
+//board中 二级路由
+>>>>>>> master
 import Home from './component/Board/home'
 import Group from './component/Board/group'
 import New from './component/Board/new'
@@ -27,6 +34,7 @@ import Milk from './component/Board/milk'
 import Fast from './component/Board/fast'
 import Brand from './component/Board/brand'
 ReactDOM.render(
+<<<<<<< HEAD
   <Provider store={store}>
     <Router history={hashHistory}>
       <Route path='/' component={Index}>

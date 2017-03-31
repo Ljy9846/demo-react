@@ -2,7 +2,7 @@ import React from "react"
 import Carousel from '../../../component_dev/carousel/src/'
 import fetchData from '../../util/util.fetch.js'
 import Scroller from '../../../component_dev/scroller/src/'
-
+import { Link } from 'react-router'
 class New extends React.Component{
 	constructor (props) {
 	    super(props);
@@ -13,7 +13,7 @@ class New extends React.Component{
 	}
 	render(){
 		return(
-			<div className="product">
+			<div className="prolist">
 				{this.state.productlist}
 			</div>
 		)
@@ -25,15 +25,18 @@ class New extends React.Component{
 		    let Lis = res.data.list.map(val=>{
 		    	let price =val.price/100;
 		    	let market_price=val.market_price/100;
+		    	let skuId = val.sku_id;
 		        return(
-					<a>
-						<img src={val.sku_pic} />
-						<div className="product-right">
-							<h3>{val.sku_name}</h3>
-							<p><i>￥</i>{ price }<s>{ market_price }</s></p>
-						
+		        	<Link to={"/details/"+skuId}>
+						<div>
+							<img src={val.sku_pic} />
+							<div className="product-right">
+								<h3>{val.sku_name}</h3>
+								<p><i>￥</i>{ price }<s>{ market_price }</s></p>
+							
+							</div>
 						</div>
-					</a>
+					</Link>
 				)
 		    })
 		    this.setState({

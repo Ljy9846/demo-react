@@ -2,7 +2,7 @@ import React from "react"
 import Carousel from '../../../component_dev/carousel/src/'
 import fetchData from '../../util/util.fetch.js'
 import Scroller from '../../../component_dev/scroller/src/'
-
+import { Link } from 'react-router'
 class Milk extends React.Component{
 	constructor (props) {
 	    super(props);
@@ -14,7 +14,7 @@ class Milk extends React.Component{
 	}
 	render(){
 		return(
-			<div className="product">
+			<div className="prolist">
 				{this.state.productlist}
 			</div>
 		)
@@ -25,15 +25,19 @@ class Milk extends React.Component{
 		    let Lis = res.data.list.map(val=>{
 		    	let price =val.skuInfo.price/100;
 		    	let market_price=val.skuInfo.market_price/100;
+		    	let skuId = val.skuInfo.skuId;
+		    	let product_id = val.skuInfo.product_id;
 		        return(
-					<a>
-						<img src={val.skuInfo.skuThumbnail} />
-						<div className="product-right">
-							<h3>{val.skuInfo.name}</h3>
-							<p><i>￥</i>{ price }<s>{ market_price }</s></p>
-						
+		        	<Link to={"/details/"+skuId+"&&"+product_id}>
+						<div>
+							<img src={val.skuInfo.skuThumbnail} />
+							<div className="product-right">
+								<h3>{val.skuInfo.name}</h3>
+								<p><i>￥</i>{ price }<s>{ market_price }</s></p>
+							
+							</div>
 						</div>
-					</a>
+					</Link>
 				)
 		    })
 		    this.setState({
