@@ -6,7 +6,7 @@
 
 .clearfix::after{content:'';display: block;height: 0;clear: both;visibility: hidden;}
 li{
-  list-style: none;
+list-style: none;}
 .list{
     touch-action: none;
 }
@@ -34,7 +34,6 @@ li{
   src: url(/iconfont/iconfont3.woff) format('woff'),
   url(/iconfont/iconfont3.ttf) format('truetype')
 }
-
 
 
 
