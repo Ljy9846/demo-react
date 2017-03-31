@@ -26,8 +26,10 @@ class Details extends React.Component{
 	        currentIndex:1,
 	        goodsList:[<h1>正在加载,请稍等。。。。</h1>]
         })
-		let url2='/api/product/productdetail?device=pc&channel=h5&swidth=1440&sheight=900&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23detail%3Fsid%3D13047%26channel_id%3Dh5&productId=11212'
-
+		let num = this.props.params.type;
+		let num2 = num.replace(/^[0-9]{1,}&&/g,"");
+		let url2='/api/product/productdetail?device=pc&channel=h5&swidth=1440&sheight=900&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23detail%3Fsid%3D13047%26channel_id%3Dh5&productId='+num2
+		
 		fetchData(url2, function (res) {
 			let reg=/\" style=\"width:100%;display:block;\"\/>$/;
 			let re = ""+res.data.graphicDetail
@@ -128,7 +130,14 @@ class Details extends React.Component{
 		)
 	}
 	componentDidMount() {
-		let url='/api/product/iteminfo?device=pc&channel=h5&swidth=1440&sheight=900&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23detail%3Fsid%3D13047%26channel_id%3Dh5&skuId=13129'
+		
+		let num = this.props.params.type;
+		let num1 = num.replace(/^&&[0-9]{1,}$/g,"");
+		let num2 = num.replace(/^[0-9]{1,}&&/g,"");
+		console.log(num1)
+		
+		
+		let url='/api/product/iteminfo?device=pc&channel=h5&swidth=1440&sheight=900&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23detail%3Fsid%3D13047%26channel_id%3Dh5&skuId='+num1
 	    fetchData(url, function (res) {
 		    let bannerlist = res.data.pics.map(val=>{
 		        return(
@@ -143,7 +152,7 @@ class Details extends React.Component{
 	      	})
 	    }.bind(this))
 
-	    let url2='/api/product/productdetail?device=pc&channel=h5&swidth=1440&sheight=900&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23detail%3Fsid%3D13047%26channel_id%3Dh5&productId=11212'
+	    let url2='/api/product/productdetail?device=pc&channel=h5&swidth=1440&sheight=900&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23detail%3Fsid%3D13047%26channel_id%3Dh5&productId='+num2
 	    
 	    fetchData(url2, function (res) {
 			let reg=/\" style=\"width:100%;display:block;\"\/>$/;
@@ -151,12 +160,10 @@ class Details extends React.Component{
 			let rr = re.substring(re.indexOf("<img"),re.indexOf("</div><ul"));
 		    let list = rr.replace(reg,"").replace("<img src=\"","").split("\" style=\"width:100%;display:block;\"/><img src=\"")
 	   		
-	        console.log(list)
 	        let Lis = list.map(val=>{
 	        	return( <img src={val} />)
 
 	         })
-			console.log(Lis)
 		    this.setState({
 	        	goodsList: Lis
 	      	})
