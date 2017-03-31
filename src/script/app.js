@@ -12,6 +12,8 @@ import Cart from './component/cart'
 import Search from './component/search'
 import { My, LoginUp, LoginIn } from './component/my'
 
+import Details from './component/details'
+
 //board中 二级路由
 import Home from './component/Board/home'
 import Group from './component/Board/group'
@@ -47,6 +49,7 @@ ReactDOM.render(
   		<Route path="my" component={My}></Route>
       <Router path="my/loginup" component={LoginUp}/>
       <Router path="my/loginin" component={LoginIn}/>
+      <Router path="details" component={Details}/>
   	</Route>
 	<Route path="search" component={Search}></Route>
   </Router>,
