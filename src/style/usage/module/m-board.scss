@@ -3,95 +3,227 @@
     position: relative;
     overflow-y: auto;
     height: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    
     .go{
         position:fixed;
+        z-index: 100000;
         width: .4rem;
         height: .4rem;
         bottom: .52rem;
         right: .2rem;   
     }
-    .scroller{
-        height: .4rem;
-        width: 7.5rem;
-        background: white;
-        @include flexbox();
-         touch-action: none;
-        @include justify-content(space-between);
-        @include align-items(center);
-        a{
-            height:.4rem;
-            text-align: center;
-            line-height:.4rem;
-            color: black;
-            width: 1rem;
-            background:white;
-        }
-        a.active{
-            border-bottom: 2px solid red;
-            color: red;
-        }
-
-    }
-    .swiper{
-    width: 100%;
-    height: auto;
-    height: 2.1033rem;
-    touch-action: none;
-        ul{
-             li.item{height: 100%;
-                img{
-                    width: 100%;
-                    height: 2.1033rem;
-                    border: none;
-                }
-            }
-        }
-    }
-    .homenav{
-         height:.83rem;
-         width: 100%;
-         background: white;
-        ul{
-            height:100%;
-            @include flexbox();
-            li{
-                flex: 1;
+    .hang{
+        height: 0.4rem;
+        .yo-scroller{
+            height: 100%;
+            .scroller{
+                height: 0.4rem;
+                width: 7.5rem;
+                background: white;
                 @include flexbox();
-                @include flex-direction(column);
-                @include justify-content(center);
+                touch-action: none;
+                @include justify-content(space-between);
                 @include align-items(center);
-                img{
-                    width: .4rem;
+                a{
+                    height:0.4rem;
                     text-align: center;
+                    line-height:0.4rem;
+                    color: black;
+                    width: 1rem;
+                    background:white;
                 }
-                p{
-                    font-size:.12rem;
-                    color: #959595;
-                }
-                         
+                a.active{
+                    border-bottom: 2px solid red;
+                    color: red;
+                } 
             }
+            
+    
         }
-    }
-    .new{
+    }           
+    
+    .bo{
+        flex: 1;
+        overflow-y:auto;
+        .home{
+            
+            .yo-scroller{
+                width: 100%;
+                height: 100%;
+                div.scroller{
+                    width:100%;
+                    height:auto;
+                    display: block;
+                    .swiper{
+                        width: 100%;
+                        height: auto;
+                        height: 2.1033rem;
+                        touch-action: none;
+                            ul{
+                                 li.item{height: 100%;
+                                    img{
+                                        width: 100%;
+                                        height: 2.1033rem;
+                                        border: none;
+                                    }
+                                }
+                            }
+                    }
+                    .homenav{
+                         height:.83rem;
+                         width: 100%;
+                         background: white;
+                        ul{
+                            height:100%;
+                            @include flexbox();
+                            li{
+                                flex: 1;
+                                @include flexbox();
+                                @include flex-direction(column);
+                                @include justify-content(center);
+                                @include align-items(center);
+                                img{
+                                    width: .4rem;
+                                    text-align: center;
+                                }
+                                p{
+                                    font-size:.12rem;
+                                    color: #959595;
+                                }
+                                         
+                            }
+                        }
+                    }
+                    .new{
+                        width: 100%;
+                        height: auto;
+                        a{
+                            width: 100%;
+                            height: 1.7878rem;
+                            display: block;
+                            margin-bottom:.08rem ;
+                            img{
+                              width: 100%;
+                              height: 1.7878rem;
+                              display: block;
+                               
+                            }
+                        }
+                    }
+                    .product{
+                       width: 100%;
+                       div{
+                           margin-bottom:.06rem ;
+                           background: white;
+                           @include flexbox();
+                           @include justify-content(center);
+                           @include align-items(top);
+                           padding: .1rem;
+                           padding-right: .02rem;
+                          
+                           img{
+                               height: 1rem;
+                               width: 1rem;
+                           }
+                           div.product-right{
+                             flex: 1; 
+                             @include flexbox();
+                             @include flex-direction(column);
+                             @include justify-content(first);
+                             @include align-items(top);
+                             padding-left: .08rem;
+                             position: relative;
+                            
+                             h3{
+                                
+                                 line-height: .14rem;
+                                 color:#252525;
+                                 font-weight: normal;
+                                 margin-bottom:.2rem ;
+                                
+                             }
+                             p{
+                                 color: #f55;
+                                 font-size: .18rem;
+                                 font-weight: bold;
+                                s{
+                                     font-size: .12rem;
+                                     color: #b4b4b4;
+                                     margin-left: .07rem;
+                                     text-decoration: line-through;
+                                 }
+                             }
+                             img{
+                                 position: absolute;
+                                 width:.3rem;
+                                 height: .3rem;
+                                 bottom: .05rem;
+                                 right: .05rem;
+                             }
+                              
+                           }
+                           
+                       }
+                       
+                    }
+                
+                    
+                }
+            }
+           
+            
+            
+            
+            
+        }
+    }   
+    
+    .brand{
+        height:auto;
         width: 100%;
-        height: auto;
-        a{
-            width: 100%;
-            height: 1.7878rem;
-            display: block;
-            margin-bottom:.08rem ;
+       
+        div{
+            background: white;
+            float:left;
+            width: 46.5%;
+            padding: .05rem;
+            margin:.05rem;
+            height: 2.63rem;
             img{
-              width: 100%;
-              height: 1.7878rem;
-              display: block;
-               
+                display: block;
+                width: 100%;
             }
+            h3{
+               line-height: .14rem;
+                 color:#252525;
+                 font-weight: normal;
+                 margin-top:.1rem ; 
+            }
+            p{
+                 color: #f55;
+                 font-size: .18rem;
+                 font-weight: bold;
+                s{
+                     font-size: .12rem;
+                     color: #b4b4b4;
+                     margin-left: .07rem;
+                     text-decoration: line-through;
+                 }
+             }
+            
+            
+            
         }
+        
     }
-    .product{
-       height: 1.24rem;
-       touch-action: none;
-       a{
+    .prolist{
+        width: 100%;
+       
+        flex: 1;
+        overflow-y: auto; 
+       div{
            margin-bottom:.06rem ;
            background: white;
            @include flexbox();
@@ -104,7 +236,7 @@
                height: 1rem;
                width: 1rem;
            }
-           div.product-right{
+           .product-right{
              flex: 1; 
              @include flexbox();
              @include flex-direction(column);
@@ -145,43 +277,8 @@
        }
        
     }
-    .brand{
-        height:auto;
-        width: 100%;
-       
-        div{
-            background: white;
-            float:left;
-            width: 46.5%;
-            padding: .05rem;
-            margin:.05rem;
-            height: 2.63rem;
-            img{
-                display: block;
-                width: 100%;
-            }
-            h3{
-               line-height: .14rem;
-                 color:#252525;
-                 font-weight: normal;
-                 margin-top:.1rem ; 
-            }
-            p{
-                 color: #f55;
-                 font-size: .18rem;
-                 font-weight: bold;
-                s{
-                     font-size: .12rem;
-                     color: #b4b4b4;
-                     margin-left: .07rem;
-                     text-decoration: line-through;
-                 }
-             }
-            
-            
-            
-        }
-        
-    }
+    
+    
+    
     
 }
