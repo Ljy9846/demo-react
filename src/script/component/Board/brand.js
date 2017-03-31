@@ -2,7 +2,7 @@ import React from "react"
 import Carousel from '../../../component_dev/carousel/src/'
 import fetchData from '../../util/util.fetch.js'
 import Scroller from '../../../component_dev/scroller/src/'
-
+import { Link } from 'react-router'
 class Brand extends React.Component{
 	constructor (props) {
 	    super(props);
@@ -21,12 +21,16 @@ class Brand extends React.Component{
 		    let Lis = res.data.list.map(val=>{
 		    	let price =val.price/100;
 		    	let market_price=val.market_price/100;
+		    	let skuId = val.sku_id;
 		        return(
-					<div>
-						<img src={val.sku_pic} />
+		        	<Link to={"/details/"+skuId}>
+						<div>
+							<img src={val.sku_pic} />
+						
 						<h3>{val.sku_name}</h3>
-						<p><i>￥</i>{ price }<s>{ market_price }</s></p>
-					</div>
+							<p><i>￥</i>{ price }<s>{ market_price }</s></p>
+						</div>
+					</Link>
 				)
 		    
 			})
