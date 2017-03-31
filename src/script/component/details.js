@@ -6,7 +6,7 @@ import Carousel from '../../component_dev/carousel/src/'
 import Scroller from '../../component_dev/scroller/src/'
 
 
-class Details extends React.Component{
+class Cart extends React.Component{
 	constructor (props) {
 	    super(props);
 	    this.one = this.one.bind(this);
