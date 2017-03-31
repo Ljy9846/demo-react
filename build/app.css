@@ -2500,6 +2500,13 @@ a {
 #root {
   height: 100%; }
 
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
 @font-face {
   font-family: yofont;
   src: url(/iconfont/iconfont.woff) format("woff"), url(/iconfont/iconfont.ttf) format("truetype"); }
@@ -2512,6 +2519,10 @@ a {
 @font-face {
   font-family: yofont;
   src: url(/iconfont/iconfont2.woff) format("woff"), url(/iconfont/iconfont2.ttf) format("truetype"); }
+
+@font-face {
+  font-family: yofont;
+  src: url(/iconfont/iconfont3.woff) format("woff"), url(/iconfont/iconfont3.ttf) format("truetype"); }
 
 .yo-header {
   background-color: #ffee11;
@@ -2625,7 +2636,8 @@ a {
 
 .m-board {
   position: relative;
-  overflow-y: auto; }
+  overflow-y: auto;
+  height: 100%; }
   .m-board .go {
     position: fixed;
     width: .4rem;
@@ -2639,6 +2651,7 @@ a {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
+    touch-action: none;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
@@ -2652,13 +2665,14 @@ a {
       color: black;
       width: 1rem;
       background: white; }
-      .m-board .scroller a:active {
-        border-bottom: 2px solid red;
-        color: red; }
+    .m-board .scroller a.active {
+      border-bottom: 2px solid red;
+      color: red; }
   .m-board .swiper {
     width: 100%;
     height: auto;
-    height: 2.1033rem; }
+    height: 2.1033rem;
+    touch-action: none; }
     .m-board .swiper ul li.item {
       height: 100%; }
       .m-board .swiper ul li.item img {
@@ -2702,15 +2716,16 @@ a {
       width: 100%;
       height: 1.7878rem;
       display: block;
-      margin-top: .08rem; }
+      margin-bottom: .08rem; }
       .m-board .new a img {
         width: 100%;
         height: 1.7878rem;
         display: block; }
   .m-board .product {
-    height: 1.24rem; }
+    height: 1.24rem;
+    touch-action: none; }
     .m-board .product a {
-      margin-top: .06rem;
+      margin-bottom: .06rem;
       background: white;
       display: -webkit-box;
       display: -webkit-flex;
@@ -2761,6 +2776,66 @@ a {
           height: .3rem;
           bottom: .05rem;
           right: .05rem; }
+  .m-board .brand {
+    height: auto;
+    width: 100%; }
+    .m-board .brand div {
+      background: white;
+      float: left;
+      width: 46.5%;
+      padding: .05rem;
+      margin: .05rem;
+      height: 2.63rem; }
+      .m-board .brand div img {
+        display: block;
+        width: 100%; }
+      .m-board .brand div h3 {
+        line-height: .14rem;
+        color: #252525;
+        font-weight: normal;
+        margin-top: .1rem; }
+      .m-board .brand div p {
+        color: #f55;
+        font-size: .18rem;
+        font-weight: bold; }
+        .m-board .brand div p s {
+          font-size: .12rem;
+          color: #b4b4b4;
+          margin-left: .07rem;
+          text-decoration: line-through; }
+
+.m-kind {
+  height: 2.24rem;
+  width: 100%; }
+  .m-kind > div h4 {
+    font-weight: normal;
+    height: .31rem;
+    padding: .05rem .1rem .05rem .2rem;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center; }
+    .m-kind > div h4 i {
+      font-size: .08rem;
+      color: #b4b4b4; }
+  .m-kind > div ul {
+    background: #fff;
+    border-top: 1px solid #e4e4e4;
+    margin-bottom: .1rem;
+    padding-top: .05rem;
+    padding-left: .05rem;
+    overflow: hidden; }
+    .m-kind > div ul li {
+      float: left;
+      border: 1px solid #e4e4e4;
+      line-height: .14rem;
+      height: auto;
+      width: auto;
+      padding: .05rem;
+      font-size: .12rem;
+      margin-right: .05rem;
+      margin-bottom: .05rem; }
 
 /**
  * @module element
@@ -2852,6 +2927,153 @@ a {
 /**
  * yo-checked通用或全局扩展
  */
+/**
+ * @module fragment
+ * @method yo-number
+ * @version 3.0.0
+ * @description 构造列表的自定义使用方法
+ * @demp http://ued.qunar.com/hy2/yo/demo/src/html/fragment/yo-number.html
+ * @param {String} $name 定义扩展名称 <3.0.0>
+ * @param {Length} $width 宽度 <3.0.0>
+ * @param {Length} $height 高度 <3.0.0>
+ * @param {Length} $radius 外边框圆角半径 <3.0.0>
+ * @param {Length} $border-width 外边框厚度 <3.0.0>
+ * @param {Color} $border-color 外边框色 <3.0.0>
+ * @param {Color} $color 输入框文本色 <3.0.0>
+ * @param {Length} $sign-radius 加减号区域边框圆角半径 <3.0.0>
+ * @param {Length} $sign-border-width 加减号区域边框厚度 <3.0.0>
+ * @param {Color} $sign-bgcolor 加减号区域背景色 <3.0.0>
+ * @param {Color} $sign-color 加减号区域文本色 <3.0.0>
+ * @param {Length} $font-size 输入框字号 <3.0.0>
+ */
+.yo-number {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  overflow: hidden;
+  width: 1.2rem;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  position: relative;
+  border-radius: 0.03rem;
+  background-color: #fff;
+  text-align: center; }
+  .yo-number::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: " ";
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      .yo-number::after {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.03rem; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      .yo-number::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        border-radius: 0.06rem; } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      .yo-number::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333);
+        border-radius: 0.09rem; } }
+  .yo-number > .minus,
+  .yo-number > .plus {
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    position: relative;
+    background-color: #fafafa;
+    color: #999;
+    font-size: 0.31rem;
+    font-family: arial;
+    cursor: pointer; }
+    .yo-number > .minus::after,
+    .yo-number > .plus::after {
+      pointer-events: none;
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      content: " ";
+      border-color: #ccc;
+      border-style: solid;
+      border-width: 1px;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
+      @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+        .yo-number > .minus::after,
+        .yo-number > .plus::after {
+          width: 100%;
+          height: 100%; } }
+      @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+        .yo-number > .minus::after,
+        .yo-number > .plus::after {
+          width: 200%;
+          height: 200%;
+          -webkit-transform: scale(0.5);
+          transform: scale(0.5); } }
+      @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+        .yo-number > .minus::after,
+        .yo-number > .plus::after {
+          width: 300%;
+          height: 300%;
+          -webkit-transform: scale(0.33333);
+          transform: scale(0.33333); } }
+    .yo-number > .minus.disabled,
+    .yo-number > .plus.disabled {
+      cursor: not-allowed;
+      background-color: white;
+      color: #e6e6e6; }
+      .yo-number > .minus.disabled::after,
+      .yo-number > .plus.disabled::after {
+        border-color: #ebebeb; }
+  .yo-number > .action-touch {
+    opacity: .5; }
+  .yo-number > .input {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    border: 0 none;
+    color: #212121;
+    font-size: 0.16rem;
+    text-align: inherit; }
+    .yo-number > .input, .yo-number > .input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      appearance: none; }
+
+/**
+ * yo-number通用或全局扩展
+ */
+.yo-number {
+  height: 0.3rem;
+  float: right;
+  margin-top: 0.1rem; }
+  .yo-number span.plus {
+    height: 0.3rem;
+    line-height: 0.3rem; }
+  .yo-number span.minus {
+    height: 0.3rem;
+    line-height: 0.3rem; }
+
 .m-cart {
   height: 100%;
   background: #f8f8f8;
@@ -3076,6 +3298,8 @@ a {
   height: 100%;
   width: 100%;
   color: #4d4d4d; }
+  .m-my a {
+    color: #4d4d4d; }
   .m-my .myIcon {
     padding: 0.1rem 0.15rem;
     position: relative;
@@ -3277,7 +3501,7 @@ a {
     background-clip: padding-box !important; }
   .m-my-loginUp p {
     padding: 0 0.15rem; }
-    .m-my-loginUp p span {
+    .m-my-loginUp p a {
       color: #914e07; }
 
 /* 注册页面 */
@@ -3367,5 +3591,5 @@ a {
     background-clip: padding-box !important; }
   .m-my-loginIn p {
     padding: 0 0.15rem; }
-    .m-my-loginIn p span {
+    .m-my-loginIn p a {
       color: #914e07; }
