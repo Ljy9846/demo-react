@@ -5,7 +5,7 @@ import fetchData from '../util/util.fetch.js'
 
 
 
-class Cart extends React.Component{
+class Details extends React.Component{
 	constructor (props) {
 	    super(props);
 	    this.one = this.one.bind(this);
@@ -105,4 +105,4 @@ class Cart extends React.Component{
 	}
   	
 }
-export default Cart
+export default Details
