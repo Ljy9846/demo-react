@@ -21,6 +21,9 @@
 	height:100%;
 	background:#f8f8f8;
 	font-size:0.12rem;
+	.display{
+		display:none;
+	}
 	.shopping-cart-none{
 		background:#fff;
 		text-align:center;
@@ -50,6 +53,7 @@
 					height:0.4rem;
 					@include border(0 0 1px 0,#ccc);
 					line-height:0.4rem;
+					padding-right:0.2rem;
 					.yo-checked{
 						width:0.3rem;
 						padding: 0.015rem 0.06rem;
@@ -71,6 +75,18 @@
 							margin-left:0.06rem;
 							color:#666;
 						}
+					}
+					.del{
+						float:right;
+						height:0.3rem;
+						width:0.5rem;
+						background:#f55;
+						text-align:center;
+						font-family:"微软雅黑";
+						color:#fff;
+						margin-top:0.05rem;
+						line-height:0.3rem;
+						border-radius:0.05rem;
 					}
 				}
 				dd.item{

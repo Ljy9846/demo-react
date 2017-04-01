@@ -2,6 +2,7 @@ import React from "react"
 
 import fetchData from '../util/util.fetch.js'
 import { Link } from 'react-router'
+import Alert from '../../component_dev/alert/src'
 import Carousel from '../../component_dev/carousel/src/'
 import Scroller from '../../component_dev/scroller/src/'
 
@@ -13,7 +14,7 @@ class Details extends React.Component{
 	    this.two = this.two.bind(this);
 	    this.addGoods = this.addGoods.bind(this);
 	    this.state = {
-	      goodsList:[<h1>正在加载。。请稍等。。。。</h1>],
+	      goodsList:[],
 	      currentIndex:1,
 	      name:"",
 	      price:"",
@@ -25,7 +26,7 @@ class Details extends React.Component{
 	one(){
 		this.setState({
 	        currentIndex:1,
-	        goodsList:[<h1>正在加载,请稍等。。。。</h1>]
+	        goodsList:[]
         })
 		let num = this.props.params.id;
 		let num2 = num.replace(/^[0-9]{1,}&&/g,"");
@@ -51,7 +52,7 @@ class Details extends React.Component{
 	two(){
 		this.setState({
 	        goodsList:[
-	        	<h1><b>请放心购买</b></h1>
+	        	<img src="./images/usericon_normal.png"/>
 	        ],
 	        currentIndex:2
         })
@@ -60,7 +61,16 @@ class Details extends React.Component{
 	addGoods(){
 		var data = localStorage.getItem("user");
 		if(!data){
-			alert("请先登录！")
+			Alert("请先登录！")
+		}else{
+			var goodIfo={
+				"name" : this.state.name,
+			    "price" : this.state.price,
+			    "market_price" : this.state.market_price,
+			    imgSrc : this.state.bannerlist[0].props.children.props.src
+			}
+			var goods = JSON.parse(localStorage.getItem("user")).id;
+			window.localStorage.setItem(goods,JSON.stringify(goodIfo));
 		}
 	}
 
@@ -109,9 +119,9 @@ class Details extends React.Component{
 							<p onClick={this.one} className={this.state.currentIndex==1?'red':''}>图文详情</p>
 							<p onClick={this.two} className={this.state.currentIndex==2?'red':''}>服务保障</p>
 						</div>
-						<section>
+						<div className="sumimg">
 							{this.state.goodsList}
-						</section>
+						</div>
 					</div>
 				</Scroller>
 				<div className="fixed_footer">
