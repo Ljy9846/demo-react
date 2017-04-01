@@ -26,7 +26,7 @@ class Details extends React.Component{
 	        currentIndex:1,
 	        goodsList:[<h1>正在加载,请稍等。。。。</h1>]
         })
-		let num = this.props.params.type;
+		let num = this.props.params.id;
 		let num2 = num.replace(/^[0-9]{1,}&&/g,"");
 		let url2='/api/product/productdetail?device=pc&channel=h5&swidth=1440&sheight=900&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23detail%3Fsid%3D13047%26channel_id%3Dh5&productId='+num2
 		
@@ -131,7 +131,7 @@ class Details extends React.Component{
 	}
 	componentDidMount() {
 		
-		let num = this.props.params.type;
+		let num = this.props.params.id;
 		let num1 = num.replace(/^&&[0-9]{1,}$/g,"");
 		let num2 = num.replace(/^[0-9]{1,}&&/g,"");
 		console.log(num1)
