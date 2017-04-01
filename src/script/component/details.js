@@ -11,6 +11,7 @@ class Details extends React.Component{
 	    super(props);
 	    this.one = this.one.bind(this);
 	    this.two = this.two.bind(this);
+	    this.addGoods = this.addGoods.bind(this);
 	    this.state = {
 	      goodsList:[<h1>正在加载。。请稍等。。。。</h1>],
 	      currentIndex:1,
@@ -36,12 +37,10 @@ class Details extends React.Component{
 			let rr = re.substring(re.indexOf("<img"),re.indexOf("</div><ul"));
 		    let list = rr.replace(reg,"").replace("<img src=\"","").split("\" style=\"width:100%;display:block;\"/><img src=\"")
 	   		
-	        console.log(list)
 	        let Lis = list.map(val=>{
 	        	return( <img src={val} />)
 
 	         })
-			console.log(Lis)
 		    this.setState({
 		        goodsList:Lis,
 		        currentIndex:1
@@ -57,13 +56,19 @@ class Details extends React.Component{
 	        currentIndex:2
         })
 	}
-
+	
+	addGoods(){
+		var data = localStorage.getItem("user");
+		if(!data){
+			alert("请先登录！")
+		}
+	}
 
 	render(){
 		return(
 			<div className="m-details">
 				<Scroller scrollY={true}>
-					<div className="product">
+					<div className="products">
 						<div className="swiper">
 							<Carousel autoplay={false}>
 					            {this.state.bannerlist}
@@ -124,7 +129,7 @@ class Details extends React.Component{
 							<b>购物车</b>
 						</Link>
 					</p>
-					<p className="addCart">加入购物车</p>
+					<p className="addCart" onClick={this.addGoods}>加入购物车</p>
 				</div>
 			</div>
 		)
@@ -134,7 +139,6 @@ class Details extends React.Component{
 		let num = this.props.params.id;
 		let num1 = num.replace(/^&&[0-9]{1,}$/g,"");
 		let num2 = num.replace(/^[0-9]{1,}&&/g,"");
-		console.log(num1)
 		
 		
 		let url='/api/product/iteminfo?device=pc&channel=h5&swidth=1440&sheight=900&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23detail%3Fsid%3D13047%26channel_id%3Dh5&skuId='+num1

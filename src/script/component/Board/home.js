@@ -81,7 +81,7 @@ class Home extends React.Component{
 						<div className="new">
 							{this.state.newlist}
 						</div>
-						<div className="product">
+						<div className="product1">
 							{this.state.productlist}
 						</div>
 				</Scroller>
