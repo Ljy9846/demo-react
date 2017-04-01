@@ -17,6 +17,7 @@
     .hang{
         height: 0.4rem;
         .yo-scroller{
+            touch-action: none;
             height: 100%;
             .scroller{
                 height: 0.4rem;
@@ -48,7 +49,6 @@
         flex: 1;
         overflow-y:auto;
         .home{
-            
             .yo-scroller{
                 width: 100%;
                 height: 100%;
@@ -183,7 +183,7 @@
     .brand{
         height:auto;
         width: 100%;
-       
+        overflow: auto;
         div{
             background: white;
             float:left;
