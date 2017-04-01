@@ -13,8 +13,8 @@ class List extends React.Component{
 	    }
 	}
 	
-	handleCart(){
-		//this.
+	handleCart(id){
+		localStorage.setItem(id,"")
 	}
 
 	render(){
@@ -31,7 +31,7 @@ class List extends React.Component{
 	}
 
 	componentWillMount(){
-
+		
 	}
 
 	componentDidMount(){
@@ -55,7 +55,7 @@ class List extends React.Component{
 						<div className="product-right">
 							<h3>{val.skuInfo.name}</h3>
 							<p><i>￥</i>{ price }<s>{ market_price }</s></p>
-							<img onClick={this.handleCart(val.id)} src="image/button_shopCart.png" alt=""/>
+							<img onClick={this.handleCart(val.id)} src="images/button_shopCart.png" alt=""/>
 						</div>
 					</Link>
 					</a>
