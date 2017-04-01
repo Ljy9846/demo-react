@@ -1,5 +1,5 @@
 import React from 'react'
-
+import fetchData from '../util/util.fetch.js'
 import { Link, browserHistory } from 'react-router'
 
 import { connect } from 'react-redux'
@@ -10,6 +10,10 @@ import Switch from '../../component_dev/switch/src/index'
 class Index extends React.Component {
   constructor (props) {
     super(props)
+    this.state={
+    	city:'北京市'
+    }
+    
   }
 
   render () {
@@ -33,7 +37,7 @@ class Index extends React.Component {
                                               </Link>) : this.props.three}
             </div>
             <div className='affirm'>
-              {this.props.right == 'place' ? ([<Link to=''> 上海丷
+              {this.props.right == 'place' ? ([<Link to='/city'>{this.state.city}
                                                </Link>]) : ''}
               {this.props.search == '搜索' ? ([<Link to=''>
                                              <span>搜索</span>
@@ -89,6 +93,23 @@ class Index extends React.Component {
 
   componentDidMount () {
     let type = this.props.routes[1].type
+    let num = this.props.params.id;
+    
+    let url4='/api/nation/provincelist?device=pc&channel=h5&swidth=1440&sheight=900&zoneId=625&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23city%3Fchannel_id%3Dh5'
+	    fetchData(url4, function (res) {
+			    let Lis = res.data.list.map(val=>{
+				  	let id=val.id;
+				    if(id==num){
+				    	return val.province;
+				    	
+				    }
+				  })
+		    	this.setState({
+	        		city:Lis
+	  			})
+			    
+			}.bind(this))
+	 	
     this.props.onChange({
       type: type
     })

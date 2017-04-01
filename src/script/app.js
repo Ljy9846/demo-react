@@ -16,7 +16,7 @@ import Search from './component/search'
 import { My, LoginUp, LoginIn } from './component/my'
 
 import Details from './component/details'
-
+import City from './component/city'
 //board中 二级路由
 import Home from './component/Board/home'
 import Group from './component/Board/group'
@@ -35,8 +35,8 @@ ReactDOM.render(
       <Route path='/' component={Index}>
         <IndexRedirect to='/board' component={Board}></IndexRedirect>
         <Route path='board' type='board' component={Board}>
-          <IndexRedirect to='/board/home' component={Home}></IndexRedirect>
-          <Route path='home' component={Home}></Route>
+          <IndexRedirect to='/board/home/2' component={Home}></IndexRedirect>
+          <Route path='home/:id' component={Home}></Route>
           <Route path='group' component={Group}></Route>
           <Route path='new' component={New}></Route>
           <Route path='cake' component={Cake}></Route>
@@ -56,7 +56,9 @@ ReactDOM.render(
         <Router path='my/loginin' type='loginin' component={LoginIn} />
         <Route path='details/:id' type='search' component={Details}></Route>
         <Route path='list/:id' type='search' component={List}></Route>
+       
       </Route>
+       <Route path='city' type='city' component={City}></Route>
     </Router>
   </Provider>,
   document.getElementById('root')

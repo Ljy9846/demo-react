@@ -1,0 +1,37 @@
+
+.citylist{
+    width: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    height: 100%;
+    h2{
+       text-align: center; 
+       background: rgba(255,238,17,.9);;
+       height: .44rem;
+       color: #914e07;
+       line-height: .44rem;
+       font-weight: normal;
+       
+    }
+    ul{
+        flex: 1;
+        overflow-y: auto;
+       
+        li{   
+            background: white;
+            text-indent: .15rem;
+            color:#252525;
+            height: .4rem;
+            line-height: .4rem;
+            border-bottom:#e4e4e4 1px solid;
+        }
+        .li{
+            background: #e4e4e4;
+            color: #959595;
+        }  
+        
+        
+    }
+    
+}
+

@@ -19,7 +19,7 @@ class Board extends React.Component{
 			<div className="m-board" ref="bodyBox">
 			  <div className="hang">
 					<Scroller scrollX={true} scrollY={false}>
-						<Link to="/board/home" activeClassName="active">
+						<Link to="/board/home/2" activeClassName="active">
 							首页
 						</Link>
 						<Link to="/board/group" activeClassName="active">

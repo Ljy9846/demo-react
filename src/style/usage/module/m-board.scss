@@ -12,10 +12,12 @@
         width: .4rem;
         height: .4rem;
         bottom: .52rem;
-        right: .2rem;   
+        right: .2rem; 
     }
     .hang{
         height: 0.4rem;
+        @include border(0 0 1px 0,#ccc);
+        
         .yo-scroller{
             touch-action: none;
             height: 100%;
@@ -34,6 +36,8 @@
                     color: black;
                     width: 1rem;
                     background:white;
+                    font-family:"microsoft yahei";
+                    font-size: .14rem;
                 }
                 a.active{
                     border-bottom: 2px solid red;
@@ -50,12 +54,9 @@
         overflow-y:auto;
         .home{
             .yo-scroller{
-                width: 100%;
-                height: 100%;
                 div.scroller{
-                    width:100%;
-                    height:auto;
-                    display: block;
+                    width: 100%;
+                    height: 100%;
                     .swiper{
                         width: 100%;
                         height: auto;
@@ -138,7 +139,7 @@
                             
                              h3{
                                 
-                                 line-height: .14rem;
+                                 line-height: 1.2;
                                  color:#252525;
                                  font-weight: normal;
                                  margin-bottom:.2rem ;
