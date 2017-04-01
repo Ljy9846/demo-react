@@ -51,7 +51,7 @@ class List extends React.Component{
 		        return(
 		        	<a >
 					<Link to={"/details/"+id}>
-						<img src={val.skuInfo.skuThumbnail} />
+						<img src={val.main_sku_pic} />
 						<div className="product-right">
 							<h3>{val.skuInfo.name}</h3>
 							<p><i>￥</i>{ price }<s>{ market_price }</s></p>

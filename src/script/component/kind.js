@@ -37,7 +37,9 @@ class Kind extends React.Component {
       // })
       let lis3 = res.data.list.map(val => {
         return (<div className='clearfix'>
+                <Link to={ "/list/:"+ val.id }>
                   <h4>{val.name}<i className='yo-ico'></i></h4>
+                </Link>
                   <ul>
                     {val.subCategories.map(sol => {
                        return (<li>
