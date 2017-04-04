@@ -1,22 +1,20 @@
 import React from 'react'
 import fetchData from '../util/util.fetch.js'
 import { Link, browserHistory } from 'react-router'
+import Alert from '../../component_dev/alert/src'
 
 import { connect } from 'react-redux'
 
 import { mapStateToProps, mapDispatchToProps } from '../redux/store'
 import Switch from '../../component_dev/switch/src/index'
-import Board from '../../../../../../../workspace/goodsnack/demo-react/src/script/component/board';
 
 class Index extends React.Component {
   constructor (props) {
     super(props)
-<<<<<<< HEAD
     this.state={
     	city:'北京市'
     }
     
-=======
     this.setLocal = this.setLocal.bind(this)
     this.back = this.back.bind(this)
   }
@@ -44,9 +42,8 @@ class Index extends React.Component {
     // console.log(window.localStorage.getItem('searchHistory'))
     }else {
       // 弹出模态框“关键字不能为空”
-      alert('bunengweikong')
+      Alert('不能为空！')
     }
->>>>>>> origin/zhk
   }
 
   render () {
@@ -75,16 +72,17 @@ class Index extends React.Component {
                                               </Link>) : this.props.three}
             </div>
             <div className='affirm'>
-              {this.props.right == 'place' ? ([<Link to='/city' className='affirm'>{this.state.city}
-                                               </Link>]) : ''}
-            {this.props.search == '搜索' ? ([<Link to='' className='affirm'>
-                                           <span onClick={this.setLocal}>搜索</span>
-                                           </Link>]) : ''}
-            {this.props.cart == '编辑' ? (<span className='affirm'>bianji</span>) : ''}
-            {this.props.loginup == '注册' ? ([<Link to='/my/loginin' className='affirm'> 注册
+				{this.props.right == 'place' ? ([<Link to='/city' className='affirm'>{this.state.city}
+												   </Link>]) : ''}
+				{this.props.search == '搜索' ? ([<Link to='' className='affirm'>
+											   <span onClick={this.setLocal}>搜索</span>
+											   </Link>]) : ''}
+				{this.props.cart == '编辑' ? (<span className='affirm'>bianji</span>) : ''}
+				{this.props.loginup == '注册' ? ([<Link to='/my/loginin' className='affirm'> 注册
+												</Link>]) : ''}
+				{this.props.loginin == '登录' ? ([<Link to='/my/loginup' className='affirm'> 登录
                                             </Link>]) : ''}
-            {this.props.loginin == '登录' ? ([<Link to='/my/loginup' className='affirm'> 登录
-                                            </Link>]) : ''}
+			</div>
           </div>
         </header>
         <section>
