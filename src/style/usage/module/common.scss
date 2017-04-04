@@ -1,5 +1,10 @@
 @import "../fragment/yo-header";
 
+body{
+  font-family: "Helvetica Neue",Helvetica,"Segoe UI",Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei",sans-serif;
+}
+
+
 #root{
 	height: 100%;
 }
@@ -35,7 +40,11 @@ list-style: none;}
   url(/iconfont/iconfont3.ttf) format('truetype')
 }
 
-
+@font-face {
+  font-family: yofont;
+  src: url(/iconfont/iconfont4.woff) format('woff'),
+  url(/iconfont/iconfont4.ttf) format('truetype')
+}
 
 @include yo-header(
   $bgcolor: #ffee11,

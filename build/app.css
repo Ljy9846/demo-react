@@ -7878,6 +7878,9 @@ a {
 /**
  * yo-header通用或全局扩展
  */
+body {
+  font-family: "Helvetica Neue",Helvetica,"Segoe UI",Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei",sans-serif; }
+
 #root {
   height: 100%; }
 
@@ -7911,6 +7914,10 @@ li {
   font-family: yofont;
   src: url(/iconfont/iconfont3.woff) format("woff"), url(/iconfont/iconfont3.ttf) format("truetype"); }
 
+@font-face {
+  font-family: yofont;
+  src: url(/iconfont/iconfont4.woff) format("woff"), url(/iconfont/iconfont4.ttf) format("truetype"); }
+
 .yo-header {
   background-color: #ffee11;
   font-size: 0.16rem; }
@@ -7936,9 +7943,13 @@ li {
     .m-index header .regret, .m-index header .affirm {
       color: #914e07; }
     .m-index header .regret {
-      padding-left: .1rem; }
+      padding-left: .1rem;
+      color: #914e07; }
       .m-index header .regret a {
-        color: #914e07; }
+        display: block;
+        color: #914e07;
+        width: 100%;
+        height: 100%; }
     .m-index header .affirm a {
       color: #914e07;
       text-align: center; }
@@ -8148,6 +8159,7 @@ li {
           .m-board .bo .home .yo-scroller div.scroller .new a img {
             width: 100%;
             height: 1.7878rem;
+<<<<<<< HEAD
             display: block; }
       .m-board .bo .home .yo-scroller div.scroller .product1 {
         width: 100%; }
@@ -8170,6 +8182,19 @@ li {
             width: 1rem; }
           .m-board .bo .home .yo-scroller div.scroller .product1 div div.product-right {
             flex: 1;
+=======
+            display: block;
+            margin-bottom: .08rem; }
+            .m-board .bo .home .yo-scroller div.scroller .new a img {
+              width: 100%;
+              height: 1.7878rem;
+              display: block; }
+        .m-board .bo .home .yo-scroller div.scroller .product1 {
+          width: 100%; }
+          .m-board .bo .home .yo-scroller div.scroller .product1 div {
+            margin-bottom: .06rem;
+            background: white;
+>>>>>>> origin/zhk
             display: -webkit-box;
             display: -webkit-flex;
             display: flex;
@@ -8181,6 +8206,7 @@ li {
             -webkit-box-align: top;
             -webkit-align-items: top;
             align-items: top;
+<<<<<<< HEAD
             padding-left: .08rem;
             position: relative; }
             .m-board .bo .home .yo-scroller div.scroller .product1 div div.product-right h3 {
@@ -8203,6 +8229,48 @@ li {
               height: .3rem;
               bottom: .05rem;
               right: .05rem; }
+=======
+            padding: .1rem;
+            padding-right: .02rem; }
+            .m-board .bo .home .yo-scroller div.scroller .product1 div img {
+              height: 1rem;
+              width: 1rem; }
+            .m-board .bo .home .yo-scroller div.scroller .product1 div div.product-right {
+              flex: 1;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -webkit-flex-direction: column;
+              flex-direction: column;
+              justify-content: first;
+              -webkit-box-align: top;
+              -webkit-align-items: top;
+              align-items: top;
+              padding-left: .08rem;
+              position: relative; }
+              .m-board .bo .home .yo-scroller div.scroller .product1 div div.product-right h3 {
+                line-height: .14rem;
+                color: #252525;
+                font-weight: normal;
+                margin-bottom: .2rem; }
+              .m-board .bo .home .yo-scroller div.scroller .product1 div div.product-right p {
+                color: #f55;
+                font-size: .18rem;
+                font-weight: bold; }
+                .m-board .bo .home .yo-scroller div.scroller .product1 div div.product-right p s {
+                  font-size: .12rem;
+                  color: #b4b4b4;
+                  margin-left: .07rem;
+                  text-decoration: line-through; }
+              .m-board .bo .home .yo-scroller div.scroller .product1 div div.product-right img {
+                position: absolute;
+                width: .3rem;
+                height: .3rem;
+                bottom: .05rem;
+                right: .05rem; }
+>>>>>>> origin/zhk
   .m-board .brand {
     height: auto;
     width: 100%;
@@ -9512,6 +9580,7 @@ li {
         bottom: .05rem;
         right: .05rem; }
 
+<<<<<<< HEAD
 .citylist {
   width: 100%;
   height: auto; }
@@ -9520,3 +9589,51 @@ li {
     background: yellow;
     color: white;
     height: .44rem; }
+=======
+.m-search > div h4 {
+  padding: .1rem;
+  font-weight: normal;
+  color: #b1b1b1;
+  height: .41rem;
+  font-size: .14rem; }
+
+.m-search > div ul {
+  background: #fff;
+  border-top: 1px solid #e4e4e4;
+  width: 100%;
+  overflow: hidden; }
+  .m-search > div ul .kind {
+    float: left;
+    text-align: center;
+    line-height: .4rem;
+    height: .4rem;
+    border-bottom: 1px solid #e4e4e4;
+    width: 33%;
+    position: relative; }
+    .m-search > div ul .kind i {
+      font-size: .2rem;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -.2rem;
+      margin-right: -.1rem;
+      color: #e4e4e4; }
+    .m-search > div ul .kind:nth-child(3) i {
+      display: none; }
+    .m-search > div ul .kind:nth-child(6) i {
+      display: none; }
+  .m-search > div ul .history {
+    margin-left: .1rem;
+    color: #b4b4b4;
+    line-height: .4rem;
+    height: .4rem;
+    border-bottom: 1px solid #e4e4e4; }
+    .m-search > div ul .history i {
+      font-size: .14rem;
+      color: #e4e4e4;
+      margin-right: .05rem; }
+  .m-search > div ul .normal {
+    text-align: center;
+    line-height: .4rem;
+    height: .4rem; }
+>>>>>>> origin/zhk

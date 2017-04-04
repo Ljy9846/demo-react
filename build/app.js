@@ -135,7 +135,11 @@ var _classnames = __webpack_require__(7);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+<<<<<<< HEAD
 var _lazyimage = __webpack_require__(18);
+=======
+var _lazyimage = __webpack_require__(26);
+>>>>>>> origin/zhk
 
 var _lazyimage2 = _interopRequireDefault(_lazyimage);
 
@@ -1864,7 +1868,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+<<<<<<< HEAD
 __webpack_require__(27);
+=======
+__webpack_require__(18);
+>>>>>>> origin/zhk
 
 var _react = __webpack_require__(0);
 
@@ -2886,7 +2894,11 @@ if (!window.___yoTapEventInjected) {
 
 
 
+<<<<<<< HEAD
 var emptyFunction = __webpack_require__(17);
+=======
+var emptyFunction = __webpack_require__(21);
+>>>>>>> origin/zhk
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -3183,6 +3195,157 @@ module.exports = EventPluginUtils;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(1);
+
+var _src = __webpack_require__(4);
+
+var _src2 = _interopRequireDefault(_src);
+
+var _utilFetch = __webpack_require__(2);
+
+var _utilFetch2 = _interopRequireDefault(_utilFetch);
+
+var _src3 = __webpack_require__(3);
+
+var _src4 = _interopRequireDefault(_src3);
+
+var _src5 = __webpack_require__(77);
+
+var _src6 = _interopRequireDefault(_src5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Board = function (_React$Component) {
+	_inherits(Board, _React$Component);
+
+	function Board(props) {
+		_classCallCheck(this, Board);
+
+		var _this = _possibleConstructorReturn(this, (Board.__proto__ || Object.getPrototypeOf(Board)).call(this, props));
+
+		_this.top = _this.top.bind(_this);
+		return _this;
+	}
+
+	_createClass(Board, [{
+		key: 'top',
+		value: function top() {
+			this.refs.bo.scrollTop = 0;
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'm-board', ref: 'bodyBox' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'hang' },
+					_react2.default.createElement(
+						_src4.default,
+						{ scrollX: true, scrollY: false },
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/home', activeClassName: 'active' },
+							'\u9996\u9875'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/group', activeClassName: 'active' },
+							'\u56E2\u8D2D'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/new', activeClassName: 'active' },
+							'\u4ECA\u65E5\u65B0\u54C1'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/cake', activeClassName: 'active' },
+							'\u997C\u5E72\u7CD5\u70B9'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/snack', activeClassName: 'active' },
+							'\u4F11\u95F2\u96F6\u98DF'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/candy', activeClassName: 'active' },
+							'\u7CD6\u679C\u5DE7\u514B\u529B'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/pork', activeClassName: 'active' },
+							'\u8089\u812F\u5E72\u5364\u5473'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/drink', activeClassName: 'active' },
+							'\u996E\u6599\u51B2\u8C03'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/milk', activeClassName: 'active' },
+							'\u542B\u4E73\u996E\u54C1'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/fast', activeClassName: 'active' },
+							'\u7F50\u5934\u7D20\u98DF'
+						),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: '/board/brand', activeClassName: 'active' },
+							'\u54C1\u724C\u7279\u5356'
+						)
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'bo', ref: 'bo' },
+					this.props.children,
+					_react2.default.createElement(
+						'div',
+						{ onClick: this.top },
+						_react2.default.createElement('img', { src: './images/btn_top.png', className: 'go' })
+					)
+				)
+			);
+		}
+	}]);
+
+	return Board;
+}(_react2.default.Component);
+
+exports.default = Board;
+
+/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\workspace\\goodsnack\\demo-react\\node_modules\\._react-hot-loader@1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "board.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\workspace\\goodsnack\\demo-react\\node_modules\\._react-hot-api@0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\workspace\\goodsnack\\demo-react\\node_modules\\._react-hot-loader@1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -3297,7 +3460,7 @@ exports.default = Kind;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "kind.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -3327,9 +3490,9 @@ function changer() {
     case 'my':
       return { title: '', left: '个人中心' };
     case 'loginup':
-      return { title: '返回', left: '登录', loginup: '注册' };
+      return { titles: '返回', left: '登录', loginup: '注册', footer: "none" };
     case 'loginin':
-      return { title: '返回', left: '注册', loginin: '登录' };
+      return { titles: '返回', left: '注册', loginin: '登录', footer: "none" };
     default:
       return state;
   }
@@ -3343,13 +3506,13 @@ function mapStateToProps(state) {
     one: state.one,
     two: state.two,
     three: state.three,
-
     right: state.right,
     search: state.search,
     cart: state.cart,
     loginup: state.loginup,
-    loginin: state.loginin
-
+    loginin: state.loginin,
+    footer: state.footer,
+    goback: state.titles
   };
 }
 
@@ -3371,13 +3534,35 @@ exports.store = store;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "store.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = window.ReactRedux;
 
 /***/ }),
+<<<<<<< HEAD
 /* 17 */
+=======
+/* 18 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 21 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3421,7 +3606,11 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
+<<<<<<< HEAD
 /* 18 */
+=======
+/* 22 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -3434,9 +3623,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+<<<<<<< HEAD
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(0);
+=======
+var EventPluginRegistry = __webpack_require__(60);
+var EventPluginUtils = __webpack_require__(13);
+var ReactErrorUtils = __webpack_require__(23);
+
+var accumulateInto = __webpack_require__(24);
+var forEachAccumulated = __webpack_require__(25);
+var invariant = __webpack_require__(8);
+>>>>>>> origin/zhk
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -3591,6 +3790,7 @@ _class.contextTypes = {
     // 是否是infinite列表
     infinite: _react.PropTypes.bool
 };
+<<<<<<< HEAD
 _class.propTypes = {
     /**
      * @property defaultImage
@@ -3659,6 +3859,70 @@ _class.propTypes = {
     onTouchMove: _react.PropTypes.func,
     onTouchEnd: _react.PropTypes.func,
     onTouchCancel: _react.PropTypes.func
+=======
+
+module.exports = EventPluginHub;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * 
+ */
+
+
+
+var caughtError = null;
+
+/**
+ * Call a function while guarding against errors that happens within it.
+ *
+ * @param {String} name of the guard to use for logging or debugging
+ * @param {Function} func The function to invoke
+ * @param {*} a First argument
+ * @param {*} b Second argument
+ */
+function invokeGuardedCallback(name, func, a) {
+  try {
+    func(a);
+  } catch (x) {
+    if (caughtError === null) {
+      caughtError = x;
+    }
+  }
+}
+
+var ReactErrorUtils = {
+  invokeGuardedCallback: invokeGuardedCallback,
+
+  /**
+   * Invoked by ReactTestUtils.Simulate so that any errors thrown by the event
+   * handler are sure to be rethrown by rethrowCaughtError.
+   */
+  invokeGuardedCallbackWithCatch: invokeGuardedCallback,
+
+  /**
+   * During execution of guarded functions we will capture the first error which
+   * we will rethrow to be handled by the top level error handler.
+   */
+  rethrowCaughtError: function () {
+    if (caughtError) {
+      var error = caughtError;
+      caughtError = null;
+      throw error;
+    }
+  }
+>>>>>>> origin/zhk
 };
 _class.defaultProps = {
     defaultImage: null,
@@ -3671,10 +3935,138 @@ _class.defaultProps = {
 };
 exports.default = _class;
 
+<<<<<<< HEAD
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
 /* 19 */
+=======
+if (process.env.NODE_ENV !== 'production') {
+  /**
+   * To help development we can get better devtools integration by simulating a
+   * real browser event.
+   */
+  if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function' && typeof document !== 'undefined' && typeof document.createEvent === 'function') {
+    var fakeNode = document.createElement('react');
+    ReactErrorUtils.invokeGuardedCallback = function (name, func, a) {
+      var boundFunc = func.bind(null, a);
+      var evtType = 'react-' + name;
+      fakeNode.addEventListener(evtType, boundFunc, false);
+      var evt = document.createEvent('Event');
+      // $FlowFixMe https://github.com/facebook/flow/issues/2336
+      evt.initEvent(evtType, false, false);
+      fakeNode.dispatchEvent(evt);
+      fakeNode.removeEventListener(evtType, boundFunc, false);
+    };
+  }
+}
+
+module.exports = ReactErrorUtils;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright 2014-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * 
+ */
+
+
+
+var _prodInvariant = __webpack_require__(9);
+
+var invariant = __webpack_require__(8);
+
+/**
+ * Accumulates items that must not be null or undefined into the first one. This
+ * is used to conserve memory by avoiding array allocations, and thus sacrifices
+ * API cleanness. Since `current` can be null before being passed in and not
+ * null after this function, make sure to assign it back to `current`:
+ *
+ * `a = accumulateInto(a, b);`
+ *
+ * This API should be sparingly used. Try `accumulate` for something cleaner.
+ *
+ * @return {*|array<*>} An accumulation of items.
+ */
+
+function accumulateInto(current, next) {
+  !(next != null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'accumulateInto(...): Accumulated items must not be null or undefined.') : _prodInvariant('30') : void 0;
+
+  if (current == null) {
+    return next;
+  }
+
+  // Both are not empty. Warning: Never call x.concat(y) when you are not
+  // certain that x is an Array (x could be a string with concat method).
+  if (Array.isArray(current)) {
+    if (Array.isArray(next)) {
+      current.push.apply(current, next);
+      return current;
+    }
+    current.push(next);
+    return current;
+  }
+
+  if (Array.isArray(next)) {
+    // A bit too dangerous to mutate `next`.
+    return [current].concat(next);
+  }
+
+  return [current, next];
+}
+
+module.exports = accumulateInto;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * 
+ */
+
+
+
+/**
+ * @param {array} arr an "accumulation" of items which is either an Array or
+ * a single item. Useful when paired with the `accumulate` module. This is a
+ * simple utility that allows us to reason about a collection of items, but
+ * handling the case when there is exactly one item (and we do not need to
+ * allocate an array).
+ */
+
+function forEachAccumulated(arr, cb, scope) {
+  if (Array.isArray(arr)) {
+    arr.forEach(cb, scope);
+  } else if (arr) {
+    cb.call(scope, arr);
+  }
+}
+
+module.exports = forEachAccumulated;
+
+/***/ }),
+/* 26 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -3791,11 +4183,137 @@ var loadingApiDefaultProps = {
 var LoadingApi = function (_Component) {
     _inherits(LoadingApi, _Component);
 
+<<<<<<< HEAD
+    function LoadingApi(props) {
+        _classCallCheck(this, LoadingApi);
+=======
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+>>>>>>> origin/zhk
+
+        var _this = _possibleConstructorReturn(this, (LoadingApi.__proto__ || Object.getPrototypeOf(LoadingApi)).call(this, props));
+
+<<<<<<< HEAD
+=======
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.loading = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(6);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _modal = __webpack_require__(28);
+
+var _modal2 = _interopRequireDefault(_modal);
+
+var _loading = __webpack_require__(78);
+
+var _loading2 = _interopRequireDefault(_loading);
+
+__webpack_require__(19);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 加载动画api
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @component loading
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @type {Object}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @version 3.0.0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description Loading API，调用后弹出一个居中的Loading Icon。
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @instructions {instruInfo: ./loading.md}{instruUrl: loading.html?hideIcon}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @author zongze.li
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+
+var container = document.createElement('div');
+document.body.appendChild(container);
+
+var that = null;
+
+var loadingApiPropTypes = {
+    /**
+     * @property text
+     * @type String
+     * @default ''
+     * @description loading伴随动画图标的文字。
+     */
+    text: _react.PropTypes.string,
+    /**
+     * @property extraClass
+     * @type String
+     * @default ''
+     * @description 附加给loading组件内层的div的额外class。
+     */
+    extraClass: _react.PropTypes.string,
+    /**
+     * @property modalExtraClass
+     * @type String
+     * @default ''
+     * @description 附加给外层modal组件的额外class。
+     */
+    modalExtraClass: _react.PropTypes.string,
+    /**
+     * @property show
+     * @type Bool
+     * @default false
+     * @description 是否显示loading，true为显示loading动画，false为隐藏。
+     */
+    show: _react.PropTypes.bool,
+    /**
+     * @property contentOffset
+     * @type Array
+     * @default [0,0]
+     * @description 内容区在水平/垂直方向上的偏移,例如[0,-100]可以使模态框内容区向上偏移100个像素。
+     */
+    contentOffset: _react.PropTypes.arrayOf(_react.PropTypes.number),
+    /**
+     * @property maskOffset
+     * @type Array
+     * @default [0,0]
+     * @description 蒙层遮盖的范围。如果不需要蒙层遮盖住整个屏幕,可以设置这个属性。
+     *
+     * 数组的第一个元素代表蒙层上边缘距离屏幕顶部的距离,第二个元素代表下边缘距离底部的距离。
+     */
+    maskOffset: _react.PropTypes.arrayOf(_react.PropTypes.number)
+};
+
+var loadingApiDefaultProps = {
+    text: '',
+    extraClass: '',
+    show: false,
+    contentOffset: [0, 0],
+    maskOffset: [0, 0]
+};
+
+var LoadingApi = function (_Component) {
+    _inherits(LoadingApi, _Component);
+
     function LoadingApi(props) {
         _classCallCheck(this, LoadingApi);
 
         var _this = _possibleConstructorReturn(this, (LoadingApi.__proto__ || Object.getPrototypeOf(LoadingApi)).call(this, props));
 
+>>>>>>> origin/zhk
         _this.state = _extends({}, props);
         that = _this;
         return _this;
@@ -3859,7 +4377,11 @@ var loading = exports.loading = {
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 20 */
+=======
+/* 28 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -3882,7 +4404,11 @@ var _classnames = __webpack_require__(7);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+<<<<<<< HEAD
 __webpack_require__(29);
+=======
+__webpack_require__(20);
+>>>>>>> origin/zhk
 
 __webpack_require__(11);
 
@@ -4214,7 +4740,11 @@ RealModal.propTypes = propTypes;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "modal.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 21 */
+=======
+/* 29 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -4328,7 +4858,11 @@ exports.default = Touchable;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
+<<<<<<< HEAD
 /* 22 */
+=======
+/* 30 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4359,11 +4893,17 @@ var invariant = __webpack_require__(8);
  */
 var listenerBank = {};
 
+<<<<<<< HEAD
 /**
  * Internal queue of events that have accumulated their dispatches and are
  * waiting to have their dispatches executed.
  */
 var eventQueue = null;
+=======
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+>>>>>>> origin/zhk
 
 /**
  * Dispatches an event and releases it back into the pool, unless persistent.
@@ -4388,16 +4928,23 @@ var executeDispatchesAndReleaseTopLevel = function (e) {
   return executeDispatchesAndRelease(e, false);
 };
 
+<<<<<<< HEAD
 var getDictionaryKey = function (inst) {
   // Prevents V8 performance issue:
   // https://github.com/facebook/react/pull/7232
   return '.' + inst._rootNodeID;
 };
+=======
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+>>>>>>> origin/zhk
 
 function isInteractive(tag) {
   return tag === 'button' || tag === 'input' || tag === 'select' || tag === 'textarea';
 }
 
+<<<<<<< HEAD
 function shouldPreventMouseEvent(name, type, props) {
   switch (name) {
     case 'onClick':
@@ -4415,6 +4962,11 @@ function shouldPreventMouseEvent(name, type, props) {
       return false;
   }
 }
+=======
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+>>>>>>> origin/zhk
 
 /**
  * This is a unified interface for event plugins to be installed and configured.
@@ -4612,7 +5164,11 @@ module.exports = EventPluginHub;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
+<<<<<<< HEAD
 /* 23 */
+=======
+/* 34 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4795,6 +5351,7 @@ function forEachAccumulated(arr, cb, scope) {
 module.exports = forEachAccumulated;
 
 /***/ }),
+<<<<<<< HEAD
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4853,6 +5410,9 @@ module.exports = __webpack_amd_options__;
 
 /***/ }),
 /* 31 */
+=======
+/* 35 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5212,7 +5772,11 @@ exports.default = Candy;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "candy.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 34 */
+=======
+/* 36 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5334,7 +5898,11 @@ exports.default = Drink;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "drink.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 35 */
+=======
+/* 37 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5456,7 +6024,11 @@ exports.default = Fast;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "fast.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 36 */
+=======
+/* 38 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5579,7 +6151,11 @@ exports.default = Group;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "group.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 37 */
+=======
+/* 39 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5846,7 +6422,11 @@ exports.default = Home;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "home.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 38 */
+=======
+/* 40 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -5968,7 +6548,11 @@ exports.default = Milk;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "milk.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 39 */
+=======
+/* 41 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -6091,7 +6675,11 @@ exports.default = New;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "new.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 40 */
+=======
+/* 42 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -6213,7 +6801,11 @@ exports.default = Pork;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "pork.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 41 */
+=======
+/* 43 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -6335,6 +6927,7 @@ exports.default = Snack;
 /* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "snack.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
+<<<<<<< HEAD
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6487,6 +7080,9 @@ exports.default = Board;
 
 /***/ }),
 /* 43 */
+=======
+/* 44 */
+>>>>>>> origin/zhk
 /***/ (function(module, exports, __webpack_require__) {
 
 /* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\xampp\\htdocs\\study\\好时期中（终极）\\好时期中（终极）\\demo-react\\node_modules\\.1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -7196,13 +7792,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(1);
 
-var _reactRedux = __webpack_require__(16);
+var _reactRedux = __webpack_require__(17);
 
-var _store = __webpack_require__(15);
+var _store = __webpack_require__(16);
 
 var _index = __webpack_require__(68);
 
 var _index2 = _interopRequireDefault(_index);
+
+var _board = __webpack_require__(14);
+
+var _board2 = _interopRequireDefault(_board);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -7218,10 +7818,43 @@ var Index = function (_React$Component) {
   function Index(props) {
     _classCallCheck(this, Index);
 
-    return _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).call(this, props));
+
+    _this.setLocal = _this.setLocal.bind(_this);
+    _this.back = _this.back.bind(_this);
+    return _this;
   }
 
   _createClass(Index, [{
+    key: 'setLocal',
+    value: function setLocal() {
+      if (this.refs.searchItem.value != '') {
+        // console.log('this', this.refs.searchItem.value)
+        var item = this.refs.searchItem.value;
+        var list1 = { 'value': item };
+        var list2 = { 'search_history': [list1] };
+        var list3 = JSON.stringify(list2);
+        // console.log(list3)
+        if (!window.localStorage.getItem('searchHistory')) {
+          window.localStorage.setItem('searchHistory', list3);
+          // console.log('first')
+        } else {
+          var list4 = window.localStorage.getItem('searchHistory');
+          // console.log('1', list4)
+          list4 = JSON.parse(list4);
+          // console.log('2', list4)
+          list4.search_history.push(list1);
+          // console.log(list4)
+          list4 = JSON.stringify(list4);
+          window.localStorage.setItem('searchHistory', list4);
+        }
+        // console.log(window.localStorage.getItem('searchHistory'))
+      } else {
+        // 弹出模态框“关键字不能为空”
+        alert('bunengweikong');
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -7235,8 +7868,17 @@ var Index = function (_React$Component) {
             { className: 'yo-header' },
             _react2.default.createElement(
               'div',
-              { className: 'regret', onClick: this.back },
-              this.props.value == 'boardValue' ? [_react2.default.createElement('img', { src: 'http://img1.haoshiqi.net/assets/hsqimg/logo2.png' })] : this.props.value
+              { className: 'regret' },
+              this.props.value == 'boardValue' ? [_react2.default.createElement('img', { src: 'http://img1.haoshiqi.net/assets/hsqimg/logo2.png' })] : _react2.default.createElement(
+                'div',
+                { onClick: this.back },
+                this.props.value
+              ),
+              this.props.goback == "返回" ? [_react2.default.createElement(
+                _reactRouter.Link,
+                { to: '/my' },
+                '\u8FD4\u56DE'
+              )] : ""
             ),
             _react2.default.createElement(
               'div',
@@ -7254,13 +7896,32 @@ var Index = function (_React$Component) {
               ) : this.props.two,
               this.props.three == 'input' ? _react2.default.createElement(
                 _reactRouter.Link,
-                { to: '/search' },
-                _react2.default.createElement('input', { type: 'text', className: 'searchinput', placeholder: '\u641C\u7D22\u60A8\u60F3\u8981\u7684\u5546\u54C1' })
+                { to: '' },
+                _react2.default.createElement('input', {
+                  type: 'text',
+                  className: 'searchinput',
+                  ref: 'searchItem',
+                  placeholder: '\u641C\u7D22\u60A8\u60F3\u8981\u7684\u5546\u54C1' })
               ) : this.props.three
             ),
-            _react2.default.createElement(
-              'div',
+            this.props.right == 'place' ? [_react2.default.createElement(
+              _reactRouter.Link,
+              { to: '', className: 'affirm' },
+              ' \u4E0A\u6D77\u4E37'
+            )] : '',
+            this.props.search == '搜索' ? [_react2.default.createElement(
+              _reactRouter.Link,
+              { to: '', className: 'affirm' },
+              _react2.default.createElement(
+                'span',
+                { onClick: this.setLocal },
+                '\u641C\u7D22'
+              )
+            )] : '',
+            this.props.cart == '编辑' ? _react2.default.createElement(
+              'span',
               { className: 'affirm' },
+<<<<<<< HEAD
               this.props.right == 'place' ? [_react2.default.createElement(
                 _reactRouter.Link,
                 { to: '/city' },
@@ -7291,6 +7952,20 @@ var Index = function (_React$Component) {
                 ' \u767B\u5F55'
               )] : ''
             )
+=======
+              'bianji'
+            ) : '',
+            this.props.loginup == '注册' ? [_react2.default.createElement(
+              _reactRouter.Link,
+              { to: '/my/loginin', className: 'affirm' },
+              ' \u6CE8\u518C'
+            )] : '',
+            this.props.loginin == '登录' ? [_react2.default.createElement(
+              _reactRouter.Link,
+              { to: '/my/loginup', className: 'affirm' },
+              ' \u767B\u5F55'
+            )] : ''
+>>>>>>> origin/zhk
           )
         ),
         _react2.default.createElement(
@@ -7298,7 +7973,7 @@ var Index = function (_React$Component) {
           null,
           this.props.children
         ),
-        _react2.default.createElement(
+        this.props.footer == 'none' ? '' : [_react2.default.createElement(
           'footer',
           null,
           _react2.default.createElement(
@@ -7377,12 +8052,12 @@ var Index = function (_React$Component) {
               )
             )
           )
-        )
+        )]
       );
     }
   }, {
     key: 'back',
-    value: function back() {
+    value: function back(event) {
       _reactRouter.browserHistory.goBack();
     }
   }, {
@@ -7442,7 +8117,11 @@ var _src3 = __webpack_require__(3);
 
 var _src4 = _interopRequireDefault(_src3);
 
+<<<<<<< HEAD
 var _src5 = __webpack_require__(19);
+=======
+var _src5 = __webpack_require__(27);
+>>>>>>> origin/zhk
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -7588,7 +8267,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(1);
 
-var _kind = __webpack_require__(14);
+var _kind = __webpack_require__(15);
 
 var _kind2 = _interopRequireDefault(_kind);
 
@@ -7596,7 +8275,11 @@ var _src = __webpack_require__(53);
 
 var _src2 = _interopRequireDefault(_src);
 
+<<<<<<< HEAD
 var _src3 = __webpack_require__(19);
+=======
+var _src3 = __webpack_require__(27);
+>>>>>>> origin/zhk
 
 var _utilMyAjax = __webpack_require__(71);
 
@@ -8365,13 +9048,61 @@ var Search = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this, props));
 
-    _this.state = {};
+    _this.clean = _this.clean.bind(_this);
+    _this.state = {
+      history: ''
+    };
     return _this;
   }
 
   _createClass(Search, [{
+    key: 'clean',
+    value: function clean() {
+      window.localStorage.removeItem('searchHistory');
+      console.log('clear is ok');
+    }
+  }, {
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+
+      // console.log("bbbbbbbbbbb",this.state.history)
+      if (window.localStorage.getItem('searchHistory')) {
+
+        var list = JSON.parse(window.localStorage.getItem('searchHistory'));
+        console.log("list", list);
+        var list1 = list.search_history.map(function (val) {
+          return _react2.default.createElement(
+            'li',
+            { className: 'history' },
+            _react2.default.createElement(
+              'i',
+              { className: 'yo-ico' },
+              '\uE69F'
+            ),
+            val.value
+          );
+        });
+        this.setState({
+          history: [list1,, _react2.default.createElement(
+            'li',
+            { onClick: this.clean, className: 'normal' },
+            '\u6E05\u9664\u5386\u53F2'
+          )]
+        });
+      } else {
+        this.setState({
+          history: [_react2.default.createElement(
+            'li',
+            { className: 'normal' },
+            '\u6682\u65E0\u641C\u7D22\u5386\u53F2'
+          )]
+        });
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
+      // console.log('history', this.state.history)
       return _react2.default.createElement(
         'div',
         { className: 'm-search' },
@@ -8391,7 +9122,12 @@ var Search = function (_React$Component) {
           _react2.default.createElement(
             'h4',
             null,
-            '\u6700\u8FD1\u641C\u7D22\u8FC7'
+            '\u6700\u8FD1\u641C\u8FC7'
+          ),
+          _react2.default.createElement(
+            'ul',
+            null,
+            this.state.history
           )
         )
       );
@@ -8406,11 +9142,16 @@ var Search = function (_React$Component) {
         var lis1 = res.data.list.map(function (val) {
           return _react2.default.createElement(
             'li',
-            null,
+            { className: 'kind' },
             _react2.default.createElement(
               'span',
               null,
               val.value
+            ),
+            _react2.default.createElement(
+              'i',
+              { className: 'yo-ico' },
+              '\uE6B1'
             )
           );
         });
@@ -8422,9 +9163,6 @@ var Search = function (_React$Component) {
           )
         });
       });
-      // localStorage.setItem(this.state.item)
-
-      console.log(localStorage.setItem("abc", "bcd"));
     }
   }]);
 
@@ -8624,9 +9362,13 @@ function Alert() {
 
 'use strict';
 
+<<<<<<< HEAD
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+=======
+module.exports = __webpack_require__(30);
+>>>>>>> origin/zhk
 
 var _react = __webpack_require__(0);
 
@@ -9061,9 +9803,18 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+<<<<<<< HEAD
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _EventEmitter2 = __webpack_require__(57);
+=======
+var EventPluginHub = __webpack_require__(22);
+var EventPluginUtils = __webpack_require__(13);
+
+var accumulateInto = __webpack_require__(24);
+var forEachAccumulated = __webpack_require__(25);
+var warning = __webpack_require__(12);
+>>>>>>> origin/zhk
 
 var _EventEmitter3 = _interopRequireDefault(_EventEmitter2);
 
@@ -9199,6 +9950,7 @@ var EventEmitter = function () {
     return this;
   }
 
+<<<<<<< HEAD
   /**
    * Add callback to the event.
    *
@@ -9209,6 +9961,10 @@ var EventEmitter = function () {
    *
    * @return {this}
    */
+=======
+var emptyFunction = __webpack_require__(21);
+var warning = __webpack_require__(12);
+>>>>>>> origin/zhk
 
 
   _createClass(EventEmitter, [{
@@ -9805,8 +10561,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return 'mousedown';
         }
 
+<<<<<<< HEAD
         return 'click';
     };
+=======
+__webpack_require__(18);
+>>>>>>> origin/zhk
 
     /**
      * @param {EventTarget|Element} targetElement
@@ -11164,6 +11924,7 @@ var ListCore = function (_ComponentCore) {
             var dataSource = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : this.dataSource;
             var VISIBLE_SIZE = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : this.VISIBLE_SIZE;
 
+<<<<<<< HEAD
             var len = dataSource.length;
             var startIndex = sIndex;
             // 从保存的startIndex开始循环,根据当前滚动的方向的不同,i相应增加/减少
@@ -11183,6 +11944,9 @@ var ListCore = function (_ComponentCore) {
                     }
                 }
             }
+=======
+    if ("function" === 'function' && _typeof(__webpack_require__(31)) === 'object' && __webpack_require__(31)) {
+>>>>>>> origin/zhk
 
             if (startIndex > dataSource.length - VISIBLE_SIZE) {
                 startIndex = dataSource.length - VISIBLE_SIZE > 0 ? dataSource.length - VISIBLE_SIZE : 0;
@@ -11417,7 +12181,17 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+<<<<<<< HEAD
 var _util = __webpack_require__(9);
+=======
+var _src = __webpack_require__(79);
+
+var _src2 = _interopRequireDefault(_src);
+
+var _src3 = __webpack_require__(29);
+
+var _src4 = _interopRequireDefault(_src3);
+>>>>>>> origin/zhk
 
 var _classnames = __webpack_require__(7);
 
@@ -11723,6 +12497,874 @@ var defaultProps = {
 
 var propTypes = {
     /**
+<<<<<<< HEAD
+=======
+     * @param ds
+     * @param refreshAll
+     * @param visibleSize
+     * @param offsetY
+     * @param infinite
+     * @param startIndex
+     * @returns {ListCore}
+     * @description 设置实例属性, 在构造函数中被调用,也会在组件的componentWillReceiveProps回调中调用
+     * 可以根据props初始化/重置组件的状态
+     */
+
+
+    _createClass(ListCore, [{
+        key: 'refresh',
+        value: function refresh(_ref2) {
+            var _ref2$dataSource = _ref2.dataSource,
+                dataSource = _ref2$dataSource === undefined ? this.dataSource : _ref2$dataSource,
+                _ref2$refreshAll = _ref2.refreshAll,
+                refreshAll = _ref2$refreshAll === undefined ? false : _ref2$refreshAll,
+                _ref2$infiniteSize = _ref2.infiniteSize,
+                infiniteSize = _ref2$infiniteSize === undefined ? this.visibleSize : _ref2$infiniteSize,
+                _ref2$staticSectionHe = _ref2.staticSectionHeight,
+                staticSectionHeight = _ref2$staticSectionHe === undefined ? this.staticSectionHeight : _ref2$staticSectionHe,
+                _ref2$offsetY = _ref2.offsetY,
+                offsetY = _ref2$offsetY === undefined ? this.offsetY : _ref2$offsetY,
+                _ref2$infinite = _ref2.infinite,
+                infinite = _ref2$infinite === undefined ? this.infinite : _ref2$infinite;
+
+            if (!Array.isArray(dataSource)) {
+                if (typeof dataSource.toArray === 'function') {
+                    dataSource = dataSource.toArray();
+                } else {
+                    throw new Error('yo-list: dataSource必须为数组或者Immutable List!');
+                }
+            }
+
+            if (!dataSource.length) {
+                throw new Error('yo-list: dataSource不能为空数组!');
+            }
+
+            this.WINDOW_HEIGHT = window.screen.height;
+            this.infinite = infinite;
+            this.VISIBLE_SIZE = infiniteSize;
+            this.dataSource = this.renderDataSource(dataSource, refreshAll);
+            this.isHeightFixed = this.ifHeightFixed();
+            this.direction = this.getDirection(offsetY);
+            this.offsetY = offsetY;
+            this.startIndex = this.refreshStartIndexByOffsetY(offsetY);
+            this.visibleList = this.getVisibleList(offsetY);
+            this.staticSectionHeight = staticSectionHeight;
+            this.totalHeight = this.getTotalHeight();
+
+            this.emitChange();
+
+            return this;
+        }
+
+        /**
+         * @param dataSource
+         * @returns {boolean}
+         * 判断数据源中的元素是否都被计算出(设置了)高度
+         */
+
+    }, {
+        key: 'ifHeightFixed',
+        value: function ifHeightFixed() {
+            var _this2 = this;
+
+            var dataSource = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.dataSource;
+
+            return dataSource.every(function (item) {
+                return !!_this2.getAttr(item.srcData, 'height');
+            }) || !!this.itemHeight || !this.infinite;
+        }
+
+        /**
+         * @returns {number}
+         * 返回一个guid
+         */
+
+    }, {
+        key: 'getGuid',
+        value: function getGuid() {
+            return ++ListCore.guid;
+        }
+
+        /**
+         * @param offsetY
+         * @returns {string}
+         * 根据传入的offsetY计算出组件滚动的方向
+         */
+
+    }, {
+        key: 'getDirection',
+        value: function getDirection(offsetY) {
+            return offsetY - this.offsetY >= 0 ? 'down' : 'up';
+        }
+
+        /**
+         * @param offsetY
+         * @returns {number}
+         * 根据传入的offsetY计算startIndex,startIndex被用来计算visibleList(无穷模式中保留在容器中的列表项的数组)
+         */
+
+    }, {
+        key: 'refreshStartIndexByOffsetY',
+        value: function refreshStartIndexByOffsetY(y) {
+            var offsetY = y - window.screen.height / 5;
+
+            if (this.infinite && this.isHeightFixed) {
+                for (var i = 0; i < this.dataSource.length; i++) {
+                    var item = this.dataSource[i];
+                    var itemPosData = this.getItemPositionData(item);
+                    if (i === 0 && itemPosData.height > offsetY) {
+                        return i;
+                    } else if (i > 0) {
+                        var prev = this.dataSource[i - 1];
+                        var prevPosData = this.getItemPositionData(prev);
+                        if (prevPosData._translateY < offsetY && prevPosData._translateY >= offsetY) {
+                            return i;
+                        }
+                    }
+                }
+            } else if (this.infinite) {
+                return this.startIndex ? this.startIndex : 0;
+            }
+
+            return 0;
+        }
+
+        /**
+         * @param offsetY
+         * @returns {ListCore}
+         * 在列表滚动时,根据offsetY更新visibleList
+         */
+
+    }, {
+        key: 'onScrollTo',
+        value: function onScrollTo(offsetY, manually) {
+            this.direction = this.getDirection(offsetY);
+            this.offsetY = offsetY;
+            if (manually) {
+                this.startIndex = 0;
+            }
+            var cachedIndex = this.startIndex;
+            if (this.infinite) {
+                this.visibleList = this.getVisibleList(offsetY);
+                // 只有当visibleList里面的内容真正发生变化的时候才触发onchange
+                // 这样可以确保setState调用次数最少
+                if (this.startIndex !== cachedIndex || this.startIndex === 0 && this.offsetY === 0 || manually) {
+                    this.emitChange();
+                }
+            }
+
+            return this;
+        }
+    }, {
+        key: 'getItemPositionData',
+        value: function getItemPositionData(item) {
+            var key = this.getAttr(item, 'key');
+            return item._type === 'groupTitle' ? item : this.positionMap[key];
+        }
+    }, {
+        key: 'setItemPositionData',
+        value: function setItemPositionData(item, attr) {
+            // grouptitle做特殊处理,因为grouptitle是grouplist组件内部的数据对象,所以不会修改到源数据
+            // 与此同时，grouplist需要获取到_translateY这些信息，因此也只能在原来的数据对象上修改
+            if (item._type === 'groupTitle') {
+                Object.assign(item, attr);
+            } else if (this.positionMap[item.key]) {
+                Object.assign(this.positionMap[item.key], attr);
+            }
+        }
+
+        /**
+         * @param ds
+         * @param refreshAll
+         * @returns {Array}
+         * 处理数据源
+         * 为每个元素的在pos表中的项添加_order(无穷模式下该列表项对应的槽的index),_resolved(是否已经计算出位置),_index(在数据源中的位置)
+         * _translateY(无穷列表中元素的translateY)和_bottom(列表项的bottom)
+         */
+
+    }, {
+        key: 'renderDataSource',
+        value: function renderDataSource(ds) {
+            var _this3 = this;
+
+            var refreshAll = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+            return ds.map(function (ditem, i) {
+                var key = _this3.getAttr(ditem, 'key');
+                var renderedItem = {};
+
+                if (key == null) {
+                    if (_this3.infinite) {
+                        throw new Error('infinite模式的列表数据源的每一项必须有key属性。');
+                    } else {
+                        key = _this3.getGuid();
+                        if (process.env.NODE_ENV === 'dev') {
+                            console.warn('Yo-List:列表项没有key属性,将自动添加自增的key。这会使得列表在更新时出现大量的不必要的dom操作，请为每一个列表项指定一个唯一的key。');
+                        }
+                    }
+                }
+
+                // 区分groupTitle和item，因为groupTitle是组件添加的，不会影响到源数据，所以可以直接在上面增加属性
+                renderedItem = ditem._type !== 'groupTitle' ? {
+                    // srcData指向源数据
+                    srcData: ditem,
+                    key: key,
+                    _index: i,
+                    _type: 'item'
+                } : Object.assign(ditem, { srcData: ditem, _index: i }); // 这里给title增加了一个指向自己的指针srcData，这是为了兼容其他普通item的数据格式，而不是在使用它的地方做各种判断
+
+                if (refreshAll) {
+                    _this3.setItemPositionData(renderedItem, { _bottom: null, _translateY: null, _order: null });
+                }
+
+                var itemPosData = _this3.getItemPositionData(renderedItem);
+                if (!itemPosData) {
+                    itemPosData = _this3.positionMap[renderedItem.key] = {};
+                }
+
+                var itemHeight = _this3.getAttr(ditem, 'height');
+                var noHeightIdentified = _this3.itemHeight == null && itemHeight == null && itemPosData.height == null;
+                if (_this3.infinite) {
+                    // 设置height,_order,_resolved和_index
+                    // 如果这个item具有高度,则直接设为resolved
+                    _this3.setItemPositionData(renderedItem, {
+                        height: itemHeight || itemPosData.height || _this3.itemHeight,
+                        _order: i % _this3.VISIBLE_SIZE,
+                        _resolved: _this3.infinite && !noHeightIdentified,
+                        _index: i
+                    });
+                    // 即使这个元素高度确定,之前一个高度为null,也无法算出translateY和bottom
+                    // 此处再次验证之前一个元素是否为resolve
+                    if (i > 0) {
+                        var prevItemPosData = _this3.getItemPositionData(ds[i - 1]);
+                        if (!prevItemPosData._resolved) {
+                            _this3.setItemPositionData(renderedItem, { _resolved: false });
+                        }
+                    }
+                    // 第一个item,直接设置_translateY为0
+                    if (i === 0) {
+                        _this3.setItemPositionData(renderedItem, { _translateY: 0 });
+                    }
+                    // 之后的所有item,如果有height,设置它们的_translateY为前一个元素的bottom
+                    // 设置它们的bottom为_translateY+height
+                    if (itemPosData._resolved && !itemPosData._bottom) {
+                        var _translateY = i === 0 ? 0 : _this3.getItemPositionData(ds[i - 1])._bottom;
+                        var _bottom = _translateY + itemPosData.height;
+                        _this3.setItemPositionData(renderedItem, {
+                            _translateY: _translateY,
+                            _bottom: _bottom
+                        });
+                    } else if (!itemPosData._resolved) {
+                        // 不定高的情况
+                        if (i > 0) {
+                            var _prevItemPosData = _this3.getItemPositionData(ds[i - 1]);
+                            if (_prevItemPosData._bottom) {
+                                _this3.setItemPositionData(renderedItem, { _translateY: _prevItemPosData._bottom });
+                            }
+                        }
+                    }
+                }
+
+                return renderedItem;
+            });
+        }
+
+        /**
+         * @param i
+         * @param borderY
+         * @param dataSource
+         * @returns {boolean}
+         * 根据offsetY计算出刚好跨过offsetY的元素(top在y之上,bottom在y之下),或者是一个没有完成定位的元素
+         */
+
+    }, {
+        key: 'isBorderItem',
+        value: function isBorderItem(i, borderY) {
+            var dataSource = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : this.dataSource;
+
+            var itemPosData = this.getItemPositionData(dataSource[i]);
+            return itemPosData._resolved && itemPosData._bottom >= borderY && itemPosData._translateY <= borderY || !itemPosData._resolved;
+        }
+
+        /**
+         * @param startY
+         * @param startIndex
+         * @param direction
+         * @param dataSource
+         * @param VISIBLE_SIZE
+         * @returns {Number}
+         * 根据当前滚动的方向和y计算出startIndex
+         * 缓存了当前的startIndex,这样可以将查找的开销从O(n)降低到O(1),在处理大列表的时候可以提升性能
+         */
+
+    }, {
+        key: 'getStartItemIndex',
+        value: function getStartItemIndex(startY) {
+            var sIndex = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.startIndex;
+            var direction = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : this.direction;
+            var dataSource = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : this.dataSource;
+            var VISIBLE_SIZE = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : this.VISIBLE_SIZE;
+
+            var len = dataSource.length;
+            var startIndex = sIndex;
+            // 从保存的startIndex开始循环,根据当前滚动的方向的不同,i相应增加/减少
+            // 这样可以将查找的时间复杂度从线性降低到常量
+            if (direction === 'down' || startIndex === 0) {
+                for (var i = startIndex; i < len; i++) {
+                    if (this.isBorderItem(i, startY)) {
+                        startIndex = i;
+                        break;
+                    }
+                }
+            } else {
+                for (var _i = startIndex; _i >= 0; _i--) {
+                    if (this.isBorderItem(_i, startY)) {
+                        startIndex = _i;
+                        break;
+                    }
+                }
+            }
+
+            if (startIndex > dataSource.length - VISIBLE_SIZE) {
+                startIndex = dataSource.length - VISIBLE_SIZE > 0 ? dataSource.length - VISIBLE_SIZE : 0;
+            }
+
+            return startIndex;
+        }
+
+        /**
+         * @param startIndex
+         * @param dataSource
+         * @param VISIBLE_SIZE
+         * @returns {Number}
+         * 根据startIndex算出endIndex
+         */
+
+    }, {
+        key: 'getEndItemIndex',
+        value: function getEndItemIndex(startIndex) {
+            var dataSource = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.dataSource;
+            var VISIBLE_SIZE = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : this.VISIBLE_SIZE;
+
+            return startIndex + VISIBLE_SIZE > dataSource.length ? dataSource.length : startIndex + VISIBLE_SIZE;
+        }
+
+        /**
+         * @param offsetY
+         * @param sIndex
+         * @param dataSource
+         * @param VISIBLE_SIZE
+         * @returns {Array}
+         * 根据offsetY算出visibleList
+         */
+
+    }, {
+        key: 'getVisibleList',
+        value: function getVisibleList() {
+            var offsetY = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.offsetY;
+            var sIndex = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+            var dataSource = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : this.dataSource;
+
+            offsetY = offsetY - this.staticSectionHeight;
+            var ret = null;
+
+            if (this.infinite) {
+                var startY = offsetY - this.WINDOW_HEIGHT / 5;
+                startY = startY > 0 ? startY : 0;
+                var startIndex = sIndex === null ? this.getStartItemIndex(startY) : sIndex,
+                    endIndex = this.getEndItemIndex(startIndex);
+
+                ret = [];
+                for (var i = startIndex; i < endIndex; i++) {
+                    var item = this.dataSource[i];
+                    ret.push(_extends({}, item, this.getItemPositionData(item)));
+                }
+                this.startIndex = startIndex;
+            } else {
+                ret = dataSource.slice();
+            }
+
+            return ret;
+        }
+
+        /**
+         * @param dataSource
+         * @returns {Object}
+         * 获取数据源中第一个还没有resolve的元素
+         */
+
+    }, {
+        key: 'getFirstNotResolvedItemIndex',
+        value: function getFirstNotResolvedItemIndex() {
+            var _this4 = this;
+
+            var dataSource = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.dataSource;
+
+            return dataSource.findIndex(function (ditem, i) {
+                if (i > 0) {
+                    var itemPosData = _this4.getItemPositionData(ditem);
+                    var prevItemPosData = _this4.getItemPositionData(dataSource[i - 1]);
+                    return !itemPosData._resolved && prevItemPosData._resolved;
+                }
+                return false;
+            });
+        }
+
+        /**
+         * @param key
+         * @param dataSource
+         * @returns {Number}
+         * 根据key返回一个数据源中的元素
+         */
+
+    }, {
+        key: 'getItemIndexByKey',
+        value: function getItemIndexByKey(key) {
+            var dataSource = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.dataSource;
+
+            return dataSource.findIndex(function (item) {
+                return item.key === key;
+            });
+        }
+
+        /**
+         * @param notResolvedItemIndex
+         * @param dataSource
+         * 更新一个未定位元素的_translateY,它是前一个元素的_bottom
+         */
+
+    }, {
+        key: 'updateTranslateY',
+        value: function updateTranslateY(notResolvedItemIndex) {
+            var dataSource = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.dataSource;
+
+            var notResolvedItem = dataSource[notResolvedItemIndex];
+
+            if (notResolvedItem) {
+                var prevItemIndex = notResolvedItemIndex - 1;
+                var prevItem = dataSource[prevItemIndex];
+                var prevItemPosData = this.getItemPositionData(prevItem);
+
+                if (prevItemPosData && prevItemPosData._resolved) {
+                    this.setItemPositionData(notResolvedItem, { _translateY: prevItemPosData._bottom });
+                    // 同时也需要更新visibleList里面对应item的定位信息
+                    var visibleListItemToBeUpdated = this.visibleList.find(function (item) {
+                        return item.key === notResolvedItem.key;
+                    });
+                    if (visibleListItemToBeUpdated) {
+                        Object.assign(visibleListItemToBeUpdated, this.getItemPositionData(notResolvedItem));
+                    }
+                }
+            }
+        }
+
+        /**
+         * @param key
+         * @param height
+         * @param dataSource
+         * @returns {ListCore}
+         * 不定高模式的核心逻辑,定位一个尚未定位的列表项
+         * 在列表项的componentDidUpdate和Mount中被调用,传入已经渲染好的列表项的dom高度,然后更新数据源中对应元素的高度并计算它的定位
+         * 在该元素完成定位后,渲染下一个未被定位的列表项,并重复以上逻辑,直到visibleList中所有的项都完成定位
+         */
+
+    }, {
+        key: 'resolveItem',
+        value: function resolveItem(key, height) {
+            var dataSource = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : this.dataSource;
+
+            var targetIndex = this.getItemIndexByKey(key);
+            var targetItem = this.dataSource[targetIndex];
+            var _translateY = void 0;
+
+            if (targetIndex > 0) {
+                var prevItemPosData = this.getItemPositionData(dataSource[targetIndex - 1]);
+                _translateY = prevItemPosData._bottom;
+            } else {
+                _translateY = 0;
+            }
+
+            if (_translateY != null) {
+                var _bottom = _translateY + height;
+                var _resolved = true;
+                this.setItemPositionData(targetItem, { _translateY: _translateY, _bottom: _bottom, _resolved: _resolved, height: height });
+                this.visibleList = this.getVisibleList();
+                this.totalHeight += height;
+                this.updateTranslateY(this.getFirstNotResolvedItemIndex());
+                this.emitChange();
+            }
+
+            return this;
+        }
+
+        /**
+         * @param dataSource
+         * @returns {Array}
+         * 计算列表中所有项的高度,用来refresh Scroller
+         */
+
+    }, {
+        key: 'getTotalHeight',
+        value: function getTotalHeight() {
+            var _this5 = this;
+
+            var dataSource = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.dataSource;
+
+            return dataSource.reduce(function (acc, item) {
+                var ret = acc;
+                var itemPosData = _this5.getItemPositionData(item);
+                ret += itemPosData._resolved ? itemPosData.height : 0;
+                return ret;
+            }, 0) + this.staticSectionHeight;
+        }
+
+        /**
+         * @returns {ListCore}
+         * 触发组件change事件,组件收到change事件后会执行setState
+         */
+
+    }, {
+        key: 'emitChange',
+        value: function emitChange() {
+            this.emitEvent('change', this.visibleList, this.totalHeight);
+            return this;
+        }
+    }]);
+
+    return ListCore;
+}(_ComponentCore3.default);
+
+ListCore.guid = -1;
+exports.default = ListCore;
+
+/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\workspace\\goodsnack\\demo-react\\node_modules\\._react-hot-loader@1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ListCore.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\workspace\\goodsnack\\demo-react\\node_modules\\._react-hot-api@0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\workspace\\goodsnack\\demo-react\\node_modules\\._react-hot-loader@1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _util = __webpack_require__(10);
+
+var _classnames = __webpack_require__(7);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _src = __webpack_require__(29);
+
+var _src2 = _interopRequireDefault(_src);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 列表项组件
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+
+var _class = function (_Component) {
+    _inherits(_class, _Component);
+
+    /**
+     * key和translateY在shouldComponentUpdate中会被使用
+     * 将会根据nextProps.item中对应的值,来决定是否render
+     * @param props
+     */
+    function _class(props) {
+        _classCallCheck(this, _class);
+
+        var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+
+        _this.key = props.item.key;
+        _this.translateY = props.item._translateY;
+        return _this;
+    }
+
+    _createClass(_class, [{
+        key: 'getChildContext',
+        value: function getChildContext() {
+            return { offsetY: this.props.item._translateY, itemRef: this };
+        }
+
+        /**
+         * 不定高的核心逻辑,在dom rendered以后更新对应列表项的定位信息,并渲染出下一个未经定位的列表项,直到填满visibleList的size
+         */
+
+    }, {
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            var isHeightFixed = this.props.listModel.isHeightFixed;
+            // 不定高无穷列表的容器是flex-box的话, 浏览器会先渲染dom然后调整高度, 这时候取到的高度不准
+            // setTimeout是无奈之举，确实没有想到更好的办法，因为这个调整高度的时机用js根本无法准确获取
+
+            if (isHeightFixed) {
+                this.updateItemHeightWhenDomRendered();
+            } else {
+                this.domNode.style.visibility = 'hidden';
+                setTimeout(function () {
+                    _this2.updateItemHeightWhenDomRendered();
+                    _this2.domNode.style.visibility = 'visible';
+                }, _util.DELAY_TIME_FOR_INFINITE_WITHOUT_HEIGHT);
+            }
+        }
+
+        /**
+         * 根据之前的key和_translateY和接收到的props.item中的对应值,决定是否render
+         * 使用者定义的shouldItemUpdate可以接收到shouldComponentUpdate的结果,并返回一个新的结果
+         * @param nextProps
+         * @returns {Bool}
+         */
+
+    }, {
+        key: 'shouldComponentUpdate',
+        value: function shouldComponentUpdate(nextProps) {
+            var listModel = nextProps.listModel,
+                shouldItemUpdate = nextProps.shouldItemUpdate;
+
+            var ret = true;
+            // 当容器内部item的key和translateY发生变化时重新render
+            if (listModel.infinite && this.key === nextProps.item.key && this.translateY === nextProps.item._translateY) {
+                ret = false;
+            }
+
+            this.key = nextProps.item.key;
+            this.translateY = nextProps.item._translateY;
+
+            if (shouldItemUpdate && !ret) {
+                return shouldItemUpdate(nextProps.item.srcData, this.props.item.srcData);
+            }
+            return ret;
+        }
+    }, {
+        key: 'componentDidUpdate',
+        value: function componentDidUpdate() {
+            this.updateItemHeightWhenDomRendered();
+        }
+
+        /**
+         * 不定高模式的无穷列表需要在列表项渲染后更新它的位置信息
+         */
+
+    }, {
+        key: 'updateItemHeightWhenDomRendered',
+        value: function updateItemHeightWhenDomRendered() {
+            var _props = this.props,
+                item = _props.item,
+                listModel = _props.listModel,
+                onListItemUpdate = _props.onListItemUpdate;
+
+
+            if (!item._resolved && item._translateY !== undefined && listModel.infinite && !listModel.isHeightFixed) {
+                listModel.resolveItem(item.key, this.domNode.offsetHeight);
+            }
+
+            onListItemUpdate(item.srcData, this.domNode);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this3 = this;
+
+            var _props2 = this.props,
+                renderItem = _props2.renderItem,
+                item = _props2.item,
+                onItemTap = _props2.onItemTap,
+                listModel = _props2.listModel,
+                itemTouchClass = _props2.itemTouchClass,
+                itemExtraClass = _props2.itemExtraClass,
+                onItemTouchStart = _props2.onItemTouchStart;
+
+            var transform = 'translate(0,' + item._translateY + 'px) translateZ(0px)';
+            var infiniteStyle = {
+                WebkitTransform: transform,
+                transform: transform,
+                height: item.height,
+                position: 'absolute',
+                top: 0
+            };
+            var basicProps = {
+                ref: function ref(dom) {
+                    _this3.domNode = dom;
+                },
+                style: listModel.infinite ? infiniteStyle : null
+            };
+            var additionalProps = {
+                className: (0, _classnames2.default)(itemExtraClass(item.srcData, item._index), item._type !== 'groupTitle' ? 'item' : 'group-title label')
+            };
+
+            return _react2.default.createElement(
+                _src2.default,
+                {
+                    internalUse: true,
+                    onTap: onItemTap,
+                    touchClass: itemTouchClass(item.srcData, item._index),
+                    onTouchStart: function onTouchStart(evt) {
+                        onItemTouchStart(item.srcData, item._index, evt);
+                    }
+                },
+                _react2.default.createElement(
+                    'li',
+                    Object.assign({}, basicProps, additionalProps),
+                    renderItem(item.srcData, item._index)
+                )
+            );
+        }
+    }]);
+
+    return _class;
+}(_react.Component);
+
+_class.propTypes = {
+    item: _react.PropTypes.object,
+    listModel: _react.PropTypes.object,
+    itemTouchClass: _react.PropTypes.func,
+    itemExtraClass: _react.PropTypes.func,
+    scroller: _react.PropTypes.object,
+    onItemTouchStart: _react.PropTypes.func,
+    renderItem: _react.PropTypes.func,
+    onItemTap: _react.PropTypes.func,
+    onListItemUpdate: _react.PropTypes.func
+};
+_class.childContextTypes = {
+    offsetY: _react.PropTypes.number,
+    itemRef: _react.PropTypes.object
+};
+_class.defaultProps = {
+    onListItemUpdate: function onListItemUpdate() {}
+};
+exports.default = _class;
+
+/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\workspace\\goodsnack\\demo-react\\node_modules\\._react-hot-loader@1.3.1@react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ListItem.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\workspace\\goodsnack\\demo-react\\node_modules\\._react-hot-api@0.4.7@react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\workspace\\goodsnack\\demo-react\\node_modules\\._react-hot-loader@1.3.1@react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _ListCore = __webpack_require__(75);
+
+var _ListCore2 = _interopRequireDefault(_ListCore);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _src = __webpack_require__(3);
+
+var _src2 = _interopRequireDefault(_src);
+
+var _ListItem = __webpack_require__(76);
+
+var _ListItem2 = _interopRequireDefault(_ListItem);
+
+var _lazyimage = __webpack_require__(26);
+
+var _lazyimage2 = _interopRequireDefault(_lazyimage);
+
+var _classnames = __webpack_require__(7);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _util = __webpack_require__(10);
+
+__webpack_require__(11);
+
+__webpack_require__(51);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @component List
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @version 3.0.0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 列表组件，继承了Scroller的特性，有下拉刷新和加载更多功能。
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 除此之外，List优化了长列表的性能，在数据源较大时能够提升滚动的性能并避免内存溢出。
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 使用列表组件实现的组件：GroupList、Calendar、SwipeMenuList。
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 特别感谢大明哥(leeds.li)和她的不定高无穷列表的实现思路。
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @author jiao.shen
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @instructions {instruInfo: ./list/list.md}{instruUrl: list/infinite_mode_with_height.html?hideIcon}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @instructions {instruInfo: ./list/example.md}{instruUrl: list/base.html?hideIcon}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @instructions {instruInfo: ./list/modify_height.md}{instruUrl: list/modify_height.html?hideIcon}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @instructions {instruInfo: ./list/static_section.md}{instruUrl: list/static_section.html?hideIcon}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+
+var defaultProps = {
+    infinite: false,
+    offsetY: 0,
+    infiniteSize: 12,
+    itemTouchClass: 'item-touch',
+    onScroll: function onScroll() {},
+    onInfiniteAppend: function onInfiniteAppend() {},
+    renderItem: function renderItem(item) {
+        return typeof item.get === 'function' ? item.get('text') : item.text;
+    },
+
+    extraClass: '',
+    containerExtraClass: '',
+    groupTitleExtraClass: '',
+    usePullRefresh: false,
+    onRefresh: function onRefresh() {},
+
+    useLoadMore: false,
+    onLoad: function onLoad() {},
+    onItemTap: function onItemTap() {},
+
+    shouldItemUpdate: null,
+    itemExtraClass: function itemExtraClass() {
+        return '';
+    },
+    onItemTouchStart: function onItemTouchStart() {},
+
+    disabled: false,
+    directionLockThreshold: 50,
+    style: null,
+    scrollWithoutTouchStart: true,
+    staticSection: null,
+    staticSectionHeight: null,
+    deceleration: 0.0015,
+    stickyOffset: 0
+};
+
+var propTypes = {
+    /**
+>>>>>>> origin/zhk
      * @property dataSource
      * @type Array/Immutable List
      * @default none
@@ -13315,7 +14957,11 @@ exports.default = exports.TAP_DELAY = undefined;
 
 var _reactDom = __webpack_require__(6);
 
+<<<<<<< HEAD
 var _reactDom2 = _interopRequireDefault(_reactDom);
+=======
+__webpack_require__(19);
+>>>>>>> origin/zhk
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13455,11 +15101,19 @@ var _reactDom = __webpack_require__(6);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+<<<<<<< HEAD
 var _reactRouter = __webpack_require__(1);
+=======
+var _modal = __webpack_require__(28);
+>>>>>>> origin/zhk
 
 var _reactRedux = __webpack_require__(16);
 
+<<<<<<< HEAD
 var _store = __webpack_require__(15);
+=======
+__webpack_require__(20);
+>>>>>>> origin/zhk
 
 var _index = __webpack_require__(46);
 
@@ -14462,9 +16116,15 @@ _assign(SyntheticEvent.prototype, {
     }
   }
 
+<<<<<<< HEAD
 });
 
 SyntheticEvent.Interface = EventInterface;
+=======
+var _reactRedux = __webpack_require__(17);
+
+var _store = __webpack_require__(16);
+>>>>>>> origin/zhk
 
 if (process.env.NODE_ENV !== 'production') {
   if (isProxySupported) {
@@ -14502,15 +16162,23 @@ SyntheticEvent.augmentClass = function (Class, Interface) {
   E.prototype = Super.prototype;
   var prototype = new E();
 
+<<<<<<< HEAD
   _assign(prototype, Class.prototype);
   Class.prototype = prototype;
   Class.prototype.constructor = Class;
+=======
+var _board = __webpack_require__(14);
+>>>>>>> origin/zhk
 
   Class.Interface = _assign({}, Super.Interface, Interface);
   Class.augmentClass = Super.augmentClass;
 
+<<<<<<< HEAD
   PooledClass.addPoolingTo(Class, PooledClass.fourArgumentPooler);
 };
+=======
+var _kind = __webpack_require__(15);
+>>>>>>> origin/zhk
 
 PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
 
@@ -14568,10 +16236,15 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 
 
 
+<<<<<<< HEAD
 var SyntheticEvent = __webpack_require__(78);
+=======
+var _home = __webpack_require__(39);
+>>>>>>> origin/zhk
 
 var getEventTarget = __webpack_require__(81);
 
+<<<<<<< HEAD
 /**
  * @interface UIEvent
  * @see http://www.w3.org/TR/DOM-Level-3-Events/
@@ -14581,6 +16254,9 @@ var UIEventInterface = {
     if (event.view) {
       return event.view;
     }
+=======
+var _group = __webpack_require__(38);
+>>>>>>> origin/zhk
 
     var target = getEventTarget(event);
     if (target.window === target) {
@@ -14588,6 +16264,7 @@ var UIEventInterface = {
       return target;
     }
 
+<<<<<<< HEAD
     var doc = target.ownerDocument;
     // TODO: Figure out why `ownerDocument` is sometimes undefined in IE8.
     if (doc) {
@@ -14600,6 +16277,9 @@ var UIEventInterface = {
     return event.detail || 0;
   }
 };
+=======
+var _new = __webpack_require__(41);
+>>>>>>> origin/zhk
 
 /**
  * @param {object} dispatchConfig Configuration used to dispatch this event.
@@ -14611,13 +16291,21 @@ function SyntheticUIEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEve
   return SyntheticEvent.call(this, dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget);
 }
 
+<<<<<<< HEAD
 SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
+=======
+var _cake = __webpack_require__(34);
+>>>>>>> origin/zhk
 
 module.exports = SyntheticUIEvent;
 
+<<<<<<< HEAD
 /***/ }),
 /* 80 */
 /***/ (function(module, exports, __webpack_require__) {
+=======
+var _candy = __webpack_require__(35);
+>>>>>>> origin/zhk
 
 "use strict";
 /**
@@ -14630,26 +16318,46 @@ module.exports = SyntheticUIEvent;
  *
  */
 
+<<<<<<< HEAD
+=======
+var _snack = __webpack_require__(43);
+>>>>>>> origin/zhk
 
 
+<<<<<<< HEAD
 var ViewportMetrics = {
+=======
+var _pork = __webpack_require__(42);
+>>>>>>> origin/zhk
 
   currentScrollLeft: 0,
 
+<<<<<<< HEAD
   currentScrollTop: 0,
+=======
+var _drink = __webpack_require__(36);
+>>>>>>> origin/zhk
 
   refreshScrollValues: function (scrollPosition) {
     ViewportMetrics.currentScrollLeft = scrollPosition.x;
     ViewportMetrics.currentScrollTop = scrollPosition.y;
   }
 
+<<<<<<< HEAD
 };
+=======
+var _milk = __webpack_require__(40);
+>>>>>>> origin/zhk
 
 module.exports = ViewportMetrics;
 
+<<<<<<< HEAD
 /***/ }),
 /* 81 */
 /***/ (function(module, exports, __webpack_require__) {
+=======
+var _fast = __webpack_require__(37);
+>>>>>>> origin/zhk
 
 "use strict";
 /**
@@ -14662,6 +16370,10 @@ module.exports = ViewportMetrics;
  *
  */
 
+<<<<<<< HEAD
+=======
+var _brand = __webpack_require__(33);
+>>>>>>> origin/zhk
 
 
 /**
@@ -14672,18 +16384,62 @@ module.exports = ViewportMetrics;
  * @return {DOMEventTarget} Target node.
  */
 
+<<<<<<< HEAD
 function getEventTarget(nativeEvent) {
   var target = nativeEvent.target || nativeEvent.srcElement || window;
+=======
+__webpack_require__(32);
+>>>>>>> origin/zhk
 
   // Normalize SVG <use> element events #4963
   if (target.correspondingUseElement) {
     target = target.correspondingUseElement;
   }
 
+<<<<<<< HEAD
   // Safari may fire events on text nodes (Node.TEXT_NODE is 3).
   // @see http://www.quirksmode.org/js/events_properties.html
   return target.nodeType === 3 ? target.parentNode : target;
 }
+=======
+_reactDom2.default.render(_react2.default.createElement(
+  _reactRedux.Provider,
+  { store: _store.store },
+  _react2.default.createElement(
+    _reactRouter.Router,
+    { history: _reactRouter.hashHistory },
+    _react2.default.createElement(
+      _reactRouter.Route,
+      { path: '/', component: _index2.default },
+      _react2.default.createElement(_reactRouter.IndexRedirect, { to: '/board', component: _board2.default }),
+      _react2.default.createElement(
+        _reactRouter.Route,
+        { path: 'board', type: 'board', component: _board2.default },
+        _react2.default.createElement(_reactRouter.IndexRedirect, { to: '/board/home', component: _home2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'home', component: _home2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'group', component: _group2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'new', component: _new2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'cake', component: _cake2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'snack', component: _snack2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'candy', component: _candy2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'pork', component: _pork2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'drink', component: _drink2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'milk', component: _milk2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'fast', component: _fast2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'brand', component: _brand2.default })
+      ),
+      _react2.default.createElement(_reactRouter.Route, { path: 'kind', type: 'kind', component: _kind2.default }),
+      _react2.default.createElement(_reactRouter.Route, { path: 'cart', type: 'cart', component: _cart2.default }),
+      _react2.default.createElement(_reactRouter.Route, { path: 'my', type: 'my', component: _my.My }),
+      _react2.default.createElement(_reactRouter.Route, { path: 'search', type: 'search', component: _search2.default }),
+      _react2.default.createElement(_reactRouter.Router, { path: 'my/loginup', type: 'loginup', component: _my.LoginUp }),
+      _react2.default.createElement(_reactRouter.Router, { path: 'my/loginin', type: 'loginin', component: _my.LoginIn }),
+      _react2.default.createElement(_reactRouter.Route, { path: 'details/:id', type: 'search', component: _details2.default }),
+      _react2.default.createElement(_reactRouter.Route, { path: 'list/:id', type: 'search', component: _list2.default })
+    )
+  )
+), document.getElementById('root'));
+>>>>>>> origin/zhk
 
 module.exports = getEventTarget;
 
@@ -15004,7 +16760,11 @@ should be injected by the application.'
   alreadyInjected = true;
 
   __webpack_require__(22).injection.injectEventPluginsByName({
+<<<<<<< HEAD
     'TapEventPlugin':       __webpack_require__(83)(shouldRejectClick)
+=======
+    'TapEventPlugin':       __webpack_require__(86)(shouldRejectClick)
+>>>>>>> origin/zhk
   });
 };
 
@@ -15051,10 +16811,14 @@ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 var propIsEnumerable = Object.prototype.propertyIsEnumerable;
 
+<<<<<<< HEAD
 function toObject(val) {
 	if (val === null || val === undefined) {
 		throw new TypeError('Object.assign cannot be called with null or undefined');
 	}
+=======
+var shallowCompare = __webpack_require__(30);
+>>>>>>> origin/zhk
 
 	return Object(val);
 }
