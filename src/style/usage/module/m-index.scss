@@ -9,11 +9,17 @@
 		}
 		.regret{
 			padding-left:.1rem;
+			color: #914e07;
+			font-size: .14rem;
 			a{
+				display: block;
 				color: #914e07;
+				width: 100%;
+				height: 100%;
 			}
 		}
 		.affirm{
+			font-size: .14rem;
 			a{
 				color: #914e07;
 				text-align:center;
@@ -28,7 +34,7 @@
 		}
 		img{
 			width: .6rem;
-			height: auto;
+			height: .18rem;
 		}
 		input{
 			color: #000;
@@ -36,6 +42,7 @@
 		.boardinput{
 			width: 1.6rem;
 			line-height:0.3rem;
+			font-size: .12rem;
 		}
 		.kindinput{
 			width: 3rem;
