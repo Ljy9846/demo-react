@@ -48,7 +48,7 @@ class Home extends React.Component{
 											<div className="product-right">
 												<h3>{val.skuInfo.name}</h3>
 												<p><i>￥</i>{ skuInfo }<s>{ market_price }</s></p>
-												<img src="./images/button_shopCart.png"/>
+												<Scroller.LazyImage height="100" src="./images/button_shopCart.png"/>
 											</div>
 										</div>
 									</Link>
@@ -97,7 +97,7 @@ class Home extends React.Component{
 	    
 	    	let bannerlist = res.data.bannerList.map(val=>{
 				return(
-					<li className="item"><img className="img" src={val.image} /></li>
+					<li className="item"><Scroller.LazyImage height="100" className="img" src={val.image} /></li>
 				)
 			})
 	    	let homenav = res.data.subButtonList.map(val=>{
@@ -111,7 +111,7 @@ class Home extends React.Component{
 	    	let newlist = res.data.marketingActivities.map(val=>{
 				return(
 					<a key={val.id} href={val.jump_url}>
-						<img src={val.icon}/>
+						<Scroller.LazyImage height="100" src={val.icon}/>
 					</a>
 				)
 			})
@@ -133,7 +133,7 @@ class Home extends React.Component{
 		        	
 		        	<Link to={"/details/"+skuId+"&&"+product_id}>
 					<div>
-						<img src={val.skuInfo.skuThumbnail} />
+						<Scroller.LazyImage height="100" src={val.skuInfo.skuThumbnail} />
 						<div className="product-right">
 							<h3>{val.skuInfo.name}</h3>
 							<p><i>￥</i>{ skuInfo }<s>{ market_price }</s></p>
