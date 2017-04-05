@@ -54,7 +54,7 @@ ReactDOM.render(
         <Route path='search' type='search' component={Search}></Route>
         <Router path='my/loginup' type='loginup' component={LoginUp} />
         <Router path='my/loginin' type='loginin' component={LoginIn} />
-        <Route path='details/:Id' type='search' component={Details}></Route>
+        <Route path='details/:id' type='search' component={Details}></Route>
         <Route path='list/:id' type='search' component={List}></Route>
        
       </Route>
