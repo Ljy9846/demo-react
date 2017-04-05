@@ -6,6 +6,8 @@ function changer (state = {title: 'state返回',left:'stateinput',right:'state�
       return { title: 'boardValue',one:'input',right:'place'}
     case 'kind':
       return { title: '',two:'input'}
+    case 'list':
+      return { titless: '返回',list:'list'}
       case 'search':
       return { title: '返回',three:'input',search:'搜索',footer:"none"}
     case 'cart':
@@ -16,6 +18,8 @@ function changer (state = {title: 'state返回',left:'stateinput',right:'state�
       return { titles: '返回',left:'登录',loginup:'注册',footer:"none"}
     case 'loginin':
       return { titles: '返回',left:'注册',loginin:'登录',footer:"none"}
+    case'details':
+      return { title:'返回',left:'商品详情'}
     default:
       return state
   }
@@ -35,7 +39,9 @@ function mapStateToProps (state) {
     loginup:state.loginup,
     loginin:state.loginin,
     footer:state.footer,
-    goback:state.titles
+    goback:state.titles,
+    list:state.list,
+    tolist:state.titless
   }
 }
 
