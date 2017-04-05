@@ -1,5 +1,14 @@
+.m-list{
+  height:100%;
+  overflow:auto;
+  @include flexbox();
+  @include flex-direction(column);
+}
+
+
     .product{
-       height: 1.24rem;
+       overflow:auto;
+       height:100%;
        touch-action: none;
        .sort{
           @include flexbox();

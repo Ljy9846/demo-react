@@ -11,6 +11,7 @@ class List extends React.Component{
 	    this.state = {
 	      productlist:[]//产品
 	    }
+	   
 	}
 	
 	handleCart(id){
@@ -19,13 +20,17 @@ class List extends React.Component{
 
 	render(){
 		return(
-			<div className="product">
-				<ul className="sort">
-					<li>综合排序</li>
-					<li>销量</li>
-					<li>筛选</li>
-				</ul>
-				{this.state.productlist}
+			<div className="m-list">
+				<Scroller>
+					<div className="product">
+						<ul className="sort">
+							<li>综合排序</li>
+							<li>销量</li>
+							<li>筛选</li>
+						</ul>
+						{this.state.productlist}
+					</div>
+				</Scroller>
 			</div>
 		)
 	}
@@ -50,7 +55,7 @@ class List extends React.Component{
 
 		        return(
 		        	<a >
-					<Link to={"/details/"+id}>
+					<Link to={"/details/"+val.skuInfo.skuId+"&&"+val.skuInfo.product_id}>
 						<img src={val.main_sku_pic} />
 						<div className="product-right">
 							<h3>{val.skuInfo.name}</h3>
