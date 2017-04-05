@@ -1,6 +1,7 @@
 import React from 'react'
 import { browserHistory, Link } from 'react-router'
 import fetchData from '../util/util.fetch'
+import Confirm from '../../component_dev/confirm/src'
 
 class Search extends React.Component {
   constructor (props) {
@@ -10,10 +11,28 @@ class Search extends React.Component {
       history: ''
     }
   }
-
+// http://m.api.haoshiqi.net/product/itemssearch?device=pc&channel=h5&swidth=1366&sheight=768&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23list%3Fsearchtag%3Dabc%26backLevel%3D-2%26channel_id%3Dh5&searchTag=abc&q=abc&needPagination=1&pageNum=1&pageLimit=20
+// var url1 ='http://m.api.haoshiqi.net/product/itemssearch?device=pc&channel=h5&swidth=1366&sheight=768&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23list%3Fsearchtag%3Dabb%26backLevel%3D-2%26channel_id%3Dh5&searchTag='+{}+'&q='+{}+'&needPagination=1&pageNum=1&pageLimit=20'
+// http://m.api.haoshiqi.net/product/itemssearch?device=pc&channel=h5&swidth=1366&sheight=768&zoneId=857&v=2.1.3&terminal=wap&page=http%3A%2F%2Fm.haoshiqi.net%2F%23list%3Fsearchtag%3Dbcd%26backLevel%3D-2%26channel_id%3Dh5&searchTag=bcd&q=bcd&needPagination=1&pageNum=1&pageLimit=20
   clean () {
-    window.localStorage.removeItem('searchHistory')
-    console.log('clear is ok')
+    Confirm({
+		    content:'确定清空搜索历史吗？',
+		    title:'提醒',
+		    btnText:['确定','取消']
+		}).then(
+			res=>{
+		    	if(`${res}` == "true"){
+            window.localStorage.removeItem('searchHistory')
+            console.log('clear is ok')
+            this.setState({
+              history:[
+                <li className="normal">暂无搜索历史</li>
+                  ]
+            })
+		    	}
+		    }
+		)
+
   }
 
   componentWillMount () {

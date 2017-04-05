@@ -14,7 +14,6 @@ class Index extends React.Component {
     this.state={
     	city:'北京市'
     }
-    
     this.setLocal = this.setLocal.bind(this)
     this.back = this.back.bind(this)
   }
@@ -34,15 +33,30 @@ class Index extends React.Component {
         // console.log('1', list4)
         list4 = JSON.parse(list4)
         // console.log('2', list4)
+        const lis = list4.search_history
+        var key = 0
+        for(var i=0;i<lis.length;i++){
+          console.log("item",lis[i].value)
+          if(lis[i].value==item){
+            console.log("chongle")
+            key = 1
+            break
+          }else{
+            console.log("meichong")
+          }
+        }
+        if(key == 0){
         list4.search_history.push(list1)
         // console.log(list4)
         list4 = JSON.stringify(list4)
         window.localStorage.setItem('searchHistory', list4)
+        }
       }
     // console.log(window.localStorage.getItem('searchHistory'))
+    window.location.href="/#/list/:"+'name:'+item
     }else {
       // 弹出模态框“关键字不能为空”
-      Alert('不能为空！')
+      Alert('关键字不能为空')
     }
   }
 
@@ -54,9 +68,11 @@ class Index extends React.Component {
             <div className='regret'>
               {this.props.value == 'boardValue' ? ([<img src='http://img1.haoshiqi.net/assets/hsqimg/logo2.png' />]) : <div onClick={this.back}>{this.props.value}</div>}
               {this.props.goback=="返回"?[<Link to="/my">返回</Link>]:""}
+              {this.props.tolist == '返回'?[<Link to='/kind'>返回</Link>]:''}
             </div>
             <div className='centerheader'>
               {this.props.up}
+              {this.props.list=='list'?[<div>商品详情</div>]:""}
               {this.props.one == 'input' ? (<Link to='/search'>
                                             <input type='text' className='boardinput' placeholder='搜索您想要找的商品' />
                                             </Link>) : this.props.one}
@@ -77,7 +93,7 @@ class Index extends React.Component {
 				{this.props.search == '搜索' ? ([<Link to='' className='affirm'>
 											   <span onClick={this.setLocal}>搜索</span>
 											   </Link>]) : ''}
-				{this.props.cart == '编辑' ? (<span className='affirm'>bianji</span>) : ''}
+				{this.props.cart == '编辑' ? (<span className='affirm'></span>) : ''}
 				{this.props.loginup == '注册' ? ([<Link to='/my/loginin' className='affirm'> 注册
 												</Link>]) : ''}
 				{this.props.loginin == '登录' ? ([<Link to='/my/loginup' className='affirm'> 登录
