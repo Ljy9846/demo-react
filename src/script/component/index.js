@@ -72,7 +72,7 @@ class Index extends React.Component {
             </div>
             <div className='centerheader'>
               {this.props.up}
-              {this.props.list=='list'?[<div>商品详情</div>]:""}
+              {this.props.list=='list'?[<div>商品列表</div>]:""}
               {this.props.one == 'input' ? (<Link to='/search'>
                                             <input type='text' className='boardinput' placeholder='搜索您想要找的商品' />
                                             </Link>) : this.props.one}
