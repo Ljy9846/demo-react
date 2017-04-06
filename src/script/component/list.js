@@ -136,11 +136,11 @@ class List extends React.Component{
 	render(){
 		return(
 			<div className="m-list">
-				<ul className="sort">
+{/*				<ul className="sort">
 					<li onClick={this.handleDef.bind(this)}>综合排序</li>
 					<li onClick={this.handleSaled.bind(this)}>销量</li>
 					<li onClick={this.handlePrc.bind(this)}>价格</li>
-				</ul>
+				</ul>*/}
 				<Scroller>
 					<div className="product">
 						{this.state.productlist}
