@@ -9,7 +9,7 @@ class City extends React.Component{
 	    this.state = {
 	      citylist:[]//产品 
 	    }
-	}
+	} 
 	render(){
 		return(
 			<div className="citylist">
