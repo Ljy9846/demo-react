@@ -7,8 +7,8 @@ class City extends React.Component{
 	constructor (props) {
 	    super(props);
 	    this.state = {
-	      citylist:[]//产品 
-	    }
+	      citylist:[]//产品  
+	    }  
 	} 
 	render(){
 		return(
